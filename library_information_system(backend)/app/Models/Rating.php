@@ -5,18 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Borrowing extends Model
+class Rating extends Model
 {
     use HasFactory;
 
-    protected $table = 'borrowing';
+    protected $table = 'ratings';
 
     protected $fillable = [
-        'id_siswa', 
-        'tanggal_pinjam', 
-        'tanggal_pengembalian', 
-        'status', 
-        'kode_buku'
+        'kode_buku',
+        'id_siswa',
+        'rating',
     ];
 
     public function book()
@@ -27,6 +25,7 @@ class Borrowing extends Model
     public function student()
     {
         return $this->belongsTo(Student::class, 'id_siswa', 'id_siswa');
-    }   
+    }
+
     
 }

@@ -9,19 +9,29 @@ class Book extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'id_buku';
+    protected $table = 'books';
 
     protected $fillable = 
     [
+    'kode_buku',
     'judul',
     'pengarang',
     'penerbit',
+    'tahun_terbit',
+    'foto_buku',
+    'deskripsi',
     'stok', 
-    'cover_buku',
     'lantai',
     'rak',
-    'deskripsi',
     'kategori'
 ]; 
+
+    public function borrowings()
+    {
+        return $this->hasMany(Borrowing::class);
+    }
+    
+
+
 
 }
