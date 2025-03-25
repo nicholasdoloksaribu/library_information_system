@@ -9,7 +9,9 @@ class Borrowing extends Model
 {
     use HasFactory;
 
-    protected $table = 'borrowing';
+    protected $table = 'borrowings';
+
+    protected $primaryKey = 'id_peminjaman';
 
     protected $fillable = [
         'id_siswa', 
@@ -27,6 +29,13 @@ class Borrowing extends Model
     public function student()
     {
         return $this->belongsTo(Student::class, 'id_siswa', 'id_siswa');
-    }   
+    }  
+    
+    public function fine()
+    {
+        return $this->hasOne(Fine::class, 'id_peminjaman', 'id_peminjaman');
+    }
+ 
+
     
 }

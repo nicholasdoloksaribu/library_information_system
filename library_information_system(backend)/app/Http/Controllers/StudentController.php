@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Student;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Support\Facades\Hash;
 use App\Models\Staff;
+use App\Models\Student;
+use Illuminate\Http\Request;
+use App\Models\Activity_Staff;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Facades\Storage;
 
 class StudentController extends Controller
 {
@@ -20,7 +23,15 @@ class StudentController extends Controller
 
     public function show($id_siswa)
     {
-    $student = Student::where('id_siswa', $id_siswa)->first();
+
+    $student = auth()->user();
+
+    if ($student->id_siswa != $id_siswa) {
+        # code...
+        return response()->json([
+            'message' => 'anda tidak bisa lihat profil orang lain',
+        ], 403);
+    }
 
     if (!$student) {
         return response()->json([
@@ -38,7 +49,7 @@ class StudentController extends Controller
             'name' => 'required|string',
             'email' => 'required|email|unique:students,email',
             'no_telepon' => 'required|string|min:10|max:13|unique:students,no_telepon|regex:/^([0-9\s\-\+\(\)]*)$/',
-            'foto_profil' => 'nullable|string',
+            'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'tanggal_daftar' => 'nullable|date',
             'password' => 'required|string|min:6|confirmed',
             'status' => 'nullable|string|in:pending,approved,rejected'
@@ -46,7 +57,8 @@ class StudentController extends Controller
 
         //cek apakah no telepon sudah digunakan
         $noTeleponExist = Student::where('no_telepon', $request->no_telepon)->exists();
-        if($noTeleponExist){
+        $noTeleponExistStaff = Staff::where('no_telepon', $request->no_telepon)->exists();
+        if($noTeleponExist || $noTeleponExistStaff){
             return response()->json([
                 'message' => 'No telepon sudah digunakan'
             ],400);
@@ -73,21 +85,34 @@ class StudentController extends Controller
                 'message' => 'Password sudah digunakan silahkan gunakan password lain'
             ], 400);
         }
+
+        $filePath = null;
+        if ($request->hasFile('foto_profil')) {
+            $file = $request->file('foto_profil');
+            $fileName = $file->getClientOriginalName();
+            $filePath = $file->storeAs('uploads/foto_profil', $fileName, 'public');
+        }
+        
         try {
-            $student = new Student();
-            $student->name = $request->name;
-            $student->email = $request->email;
-            $student->no_telepon = $request->no_telepon;
-            $student->foto_profil = $request->foto_profil;
-            $student->tanggal_daftar = now();
-            $student->password = Hash::make($request->password);
-            $student->status = $request->status ?? 'pending'; // default pending
-            $student->save();
-    
+            $student = Student::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'no_telepon' => $request->no_telepon,
+                'foto_profil' => $filePath,
+                'tanggal_daftar' => now(),
+                'password' => bcrypt($request->password),
+                'status' =>'pending'
+            ]);
+            
+
+
+             # code...
             return response()->json([
-                'message' => 'Siswa sukses ditambahkan',
-                'data' => $student
-            ], 201);
+                    'message' => 'Registrasi Berhasil',
+                    'data' => $student
+                ]);
+            
+            
         } catch (\Exception $e) {
             return response()->json([
                 'message' => 'Siswa gagal ditambahkan',
@@ -99,6 +124,13 @@ class StudentController extends Controller
 
     public function update(Request $request, $id_siswa)
 {
+    $student = auth()->user();
+    if ($student->id_siswa != $id_siswa) {
+        # code...
+        return response()->json([
+            'message' => 'anda tidak bisa update profil orang lain',
+        ], 403);
+    }
     try {
         $student = Student::findOrFail($id_siswa);
 
@@ -106,10 +138,11 @@ class StudentController extends Controller
             'name' => 'nullable|string',
             'email' => 'nullable|email|unique:students,email',
             'no_telepon' => 'nullable|string|min:10|max:13|regex:/^([0-9\s\-\+\(\)]*)$/',
-            'foto_profil' => 'nullable|string',
+            'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'password' => 'nullable|string|min:6',
-            'status' => 'nullable|string|in:pending,approved,rejected'
         ]);
+
+        
 
 
         //cek apakah password sudah digunakan
@@ -126,13 +159,33 @@ class StudentController extends Controller
         }
         $validatedData['password'] = Hash::make($request->password);
     }
-        $student->update($validatedData);
-        $student->name = $request->name ?? $student->name;
-        $student->email = $request->email ?? $student->email;
-        $student->no_telepon = $request->no_telepon ?? $student->no_telepon;
-        $student->foto_profil = $request->foto_profil ?? $student->foto_profil;
-        $student->status = $request->status ?? $student->status;
-        $student->save();
+
+    if ($request->filled('name')) $student->name = $request->name;
+    if ($request->filled('email')) $student->email = $request->email;
+    if ($request->filled('no_telepon')) $student->no_telepon = $request->no_telepon;
+    if ($request->filled('foto_profil')) $student->foto_profil = $request->foto_profil;
+    if ($request->filled('password')) $student->password = bcrypt($request->password);
+    if ($request->filled('status')) $student->status = $request->status;
+
+    if ($request->hasFile('foto_profil')) {
+
+        //hapus foto lama 
+        if ($student->foto_profil && file_exists(storage_path('app/public/' . $student->foto_profil))) {
+            Storage::delete('public/' . $student->foto_profil);
+        }
+
+        $file = $request->file('foto_profil');
+        $fileName = $file->getClientOriginalName();
+        $filePath = $file->storeAs('uploads/foto_profil', $fileName, 'public');
+        $validatedData['foto_profil'] = $filePath;
+        # code...
+    } else{
+        $validatedData['foto_profil'] = $student->foto_profil;
+    }
+
+    $student->save();
+        
+
 
         return response()->json([
             'message' => 'Data Siswa sukses diupdate',
@@ -151,6 +204,34 @@ class StudentController extends Controller
         ], 500);
     }
 }
+
+public function updateStatus(Request $request, $id_siswa)
+{
+    // Validasi request
+    $request->validate([
+        'status' => 'required|string|in:approved,pending,rejected'
+    ]);
+
+    // Mencari siswa berdasarkan ID
+    $student = Student::findOrFail($id_siswa);
+
+    // Update status
+    $student->status = $request->status;
+    $student->save();
+
+   
+
+    return response()->json([
+        'message' => 'Status siswa berhasil diperbarui',
+        'data' => $student,
+        'staff_activity' => Activity_Staff::create([
+            'id_staff' => auth()->user()->id_staff,
+            'id_siswa' => $id_siswa,
+            'aktivitas' => 'update status siswa',
+        ])
+    ], 200);
+}
+
 
 
 public function destroy($id_siswa)
@@ -182,7 +263,6 @@ public function search($search)
         ->get();
 
     return response()->json($students);
-    
 }
 
 }

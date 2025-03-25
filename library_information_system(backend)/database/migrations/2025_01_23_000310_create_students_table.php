@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('foto_profil')->nullable();
             $table->date('tanggal_daftar');
             $table->string('password');
+            $table->timestamp('email_verified_at')->nullable();
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending')->nullable();
             $table->timestamps();
         });

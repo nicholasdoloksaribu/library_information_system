@@ -1,104 +1,315 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Borrowing;
 use Illuminate\Http\Request;
+use App\Models\Book;
 
 class BorrowingController extends Controller
 {
-    //
-    public function index(){
+    // Menampilkan semua peminjaman
+
+    public function index()
+    {
         $borrowings = Borrowing::all();
-        if($borrowings){
+        if ($borrowings->isEmpty()) {
             return response()->json([
-                'message' => 'Berhasil menampilkan data',
-                'data' => $borrowings
-            ],200);
+                'message' => 'Data Kosong',
+            ], 404);
         }
-       return response()->json([
-        'message' => 'Data tidak ditemukan',
-       ],400);
+
+        return response()->json([
+            'message' => 'Berhasil menampilkan data',
+            'data' => $borrowings
+        ], 200);
     }
 
-    public function store(Request $request){
+    // Menambahkan peminjaman baru
+    public function store(Request $request)
+    {
+        $user = auth()->user();
+
+        // Validasi request
         $request->validate([
-            'id_siswa' => 'required|integer',
-            'id_buku' => 'required|integer',
+            'kode_buku' => 'required|string|exists:books,kode_buku',
             'tanggal_pinjam' => 'required|date',
-            'tanggal_kembali' => 'required|date',
-            'status' => 'required|string',
-            'kode_buku' => 'required|exists:books,kode_buku'
+            'tanggal_pengembalian' => 'required|date|after:tanggal_pinjam',  // Pastikan tanggal pengembalian setelah tanggal pinjam
         ]);
 
-        $borrowing = Borrowing::create($request->all());
-        return response()->json([
-            'message' => 'Peminjaman sukses ditambahkan',
-            'data' => $borrowing
-        ], 201);
+        try {
+            
+            $existingBorrowingPinjam = Borrowing::where('id_siswa', $user->id_siswa)->where('kode_buku', $request->kode_buku)->where('status', 'dipinjam')->first();
+            $existingBorrowingPending = Borrowing::where('id_siswa', $user->id_siswa)->where('kode_buku', $request->kode_buku)->where('status', 'pending')->first();
+
+            if ($existingBorrowingPinjam) {
+                # code...
+                return response()->json([
+                    'message'=> 'Anda Sudah meminjam buku ini, harap kembalikan sebelum meminjam lagi',
+                ], 400);
+            }
+
+            if ($existingBorrowingPending) {
+                # code...
+                return response()->json([
+                    'message' => 'Anda Sudah meminjam buku ini, harap menunggu peminjaman anda di setujui oleh staff',
+                ], 400);
+            }
+            // Menyimpan peminjaman
+            $borrowing = Borrowing::create([
+                'id_siswa' => $user->id_siswa,
+                'tanggal_pinjam' => $request->tanggal_pinjam,
+                'tanggal_pengembalian' => $request->tanggal_pengembalian,
+                'status' => 'pending',
+                'kode_buku' => $request->kode_buku
+            ]);
+                # code...
+               return response()->json([
+                    'message' => 'Peminjaman Berhasil Diajukan tunggu disetujui oleh staff',
+                    'data' => $borrowing
+             ],200);
+            
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Peminjaman gagal ditambahkan',
+                'error' => $e->getMessage()
+            ], 500);
+        }
     }
 
-    public function show($id_peminjaman){
-        $borrowing = Borrowing::where('id_peminjaman', $id_peminjaman)->first();
-        if($borrowing){
+    // Menampilkan detail peminjaman
+    public function show($id_peminjaman, $kode_buku)
+    {
+        $borrowing = Borrowing::where('id_peminjaman', $id_peminjaman)->where('kode_buku', $kode_buku)->first();
+
+        if (!$borrowing) {
             return response()->json([
+                'message' => 'Peminjaman tidak ditemukan'
+            ], 404);
+        }
+
+        return response()->json([
             'message' => 'Peminjaman ditemukan',
             'data' => $borrowing
         ], 200);
-        }
-        return response()->json([
-            'message' => 'Peminjaman tidak ditemukan'
-        ], 404);
     }
 
-    public function update(Request $request, $id_peminjaman){
-        $borrowing = Borrowing::findOrFail($id_peminjaman);
-        if($borrowing){
-            $borrowing->update($request->all());
+    // Mengupdate peminjaman
+    public function update(Request $request, $id_peminjaman, $kode_buku)
+    {
+
+        $request->validate([
+            'tanggal_pinjam' => 'nullable|date',
+            'tanggal_pengembalian' => 'nullable|date',
+        ]);
+
+        // Mencari peminjaman berdasarkan ID dan kode buku
+        $borrowing = Borrowing::where('id_peminjaman', $id_peminjaman)->where('kode_buku', $kode_buku)->first();
+
+       
+
+        // Jika peminjaman tidak ditemukan
+        if (!$borrowing) {
             return response()->json([
-                'message' => 'Peminjaman sukses diupdate',
-                'data' => $borrowing
-            ], 200);
+                'message' => 'Peminjaman tidak ditemukan'
+            ], 404);
         }
+
+        // Mengupdate data peminjaman
+        $borrowing->status = $request->status;
+        $borrowing->tanggal_pinjam = $request->tanggal_pinjam;
+        $borrowing->tanggal_pengembalian = $request->tanggal_pengembalian;
+
+        
+        $borrowing->save();
+
+
+
         return response()->json([
-            'message' => 'Peminjaman tidak ditemukan'
-        ], 404);
+            'message' => 'Peminjaman sukses diupdate',
+            'data' => $borrowing,
+        ], 200);
     }
 
+    // Menghapus peminjaman
+    public function destroy($id_peminjaman)
+    {
+        // Mencari peminjaman berdasarkan ID
+        $borrowing = Borrowing::find($id_peminjaman);
 
-    public function destroy($id_peminjaman){
-        $borrowing = Borrowing::findOrFail($id_peminjaman);
-        if($borrowing){
-            $borrowing->delete();
+        // Jika peminjaman tidak ditemukan
+        if (!$borrowing) {
             return response()->json([
-                'message' => 'Peminjaman berhasil dihapus'
-            ], 200);
+                'message' => 'Peminjaman tidak ditemukan'
+            ], 404);
         }
+
+        // Menghapus peminjaman
+        $borrowing->delete();
+
         return response()->json([
-            'message' => 'Peminjaman tidak ditemukan'
-        ], 404);
+            'message' => 'Peminjaman berhasil dihapus'
+        ], 200);
     }
 
-    public function search($id_siswa){
+    // Mencari peminjaman berdasarkan id_siswa
+    public function search($id_siswa)
+    {
         $borrowings = Borrowing::where('id_siswa', $id_siswa)->get();
-        if($borrowings){
+
+        if ($borrowings->isEmpty()) {
             return response()->json([
-                'message' => 'Peminjaman ditemukan',
-                'data' => $borrowings
-            ],200);
+                'message' => 'Peminjaman tidak ditemukan'
+            ], 404);
         }
+
         return response()->json([
-            'message' => 'Peminjaman tidak ditemukan'
-        ], 404);
+            'message' => 'Peminjaman ditemukan',
+            'data' => $borrowings
+        ], 200);
     }
 
-    public function filter($status){
-        $borrowings = Borrowing::where('status', $status)->get();
-        if($borrowings){
-            return response()->json($borrowings);
+    // Menampilkan peminjaman berdasarkan status
+    public function filter($status)
+    {
+        // Validasi status
+        $validStatuses = ['pending', 'approved', 'returned'];
+        if (!in_array($status, $validStatuses)) {
+            return response()->json([
+                'message' => 'Status tidak valid'
+            ], 400);
         }
+
+        $borrowings = Borrowing::where('status', $status)->get();
+
+        if ($borrowings->isEmpty()) {
+            return response()->json([
+                'message' => 'Peminjaman tidak ditemukan'
+            ], 404);
+        }
+
         return response()->json([
-            'message' => 'Peminjaman tidak ditemukan'
-        ], 404);
+            'message' => 'Data ditemukan',
+            'data' => $borrowings
+        ], 200);
     }
-    
+
+    public function updateStatus(Request $request, $id_peminjaman, $kode_buku){
+        $request->validate([
+            'status' => 'required|in:dipinjam,pending,dikembalikan,ditolak'
+        ]);
+
+        $borrowing = Borrowing::where('id_peminjaman', $id_peminjaman)->where('kode_buku', $kode_buku)->first();
+        $book = Book::where('kode_buku', $borrowing->kode_buku)->first();
+
+        if (!$borrowing) {
+            return response()->json([
+                'message' => 'Peminjaman tidak ditemukan'
+            ], 404);
+        }
+
+
+        if ($request->status == 'dipinjam' && $borrowing->status == 'dipinjam') {
+            # code...
+            return response()->json([
+                'message'=>'Buku ini sudah diset ke dipinjam, tidak bisa diset ke dipinjam lagi kecuali dikembalikan terlebih dahulu.'
+            ], 400);
+        }
+
+        if ($request->status == 'pending' && $borrowing->status == 'pending') {
+            # code...
+            return response()->json([
+                'message'=>'Buku ini sudah diset ke pending, tidak bisa diset ke pending lagi'
+            ], 400);
+        }
+
+        if ($request->status == 'dikembalikan' && $borrowing->status == 'dikembalikan') {
+            # code...
+            return response()->json([
+                'message'=>'Buku ini sudah diset ke dikembalikan, tidak bisa diset'
+            ], 400);
+        }
+
+        if ($request->status == 'ditolak' && $borrowing->status == 'ditolak') {
+            # code...
+            return response()->json([
+                'message'=>'Buku ini sudah diset ke ditolak, tidak bisa diset'
+            ], 400);
+        }
+        
+          
+
+
+        if ($request->status == 'dikembalikan') {
+            # code...
+            $book->increment('stok', 1);
+            $borrowing->status = $request->status;
+            $borrowing->save();
+            return response()->json([
+                'message' => 'oke buku sudah dikembalikan',
+                'data' => $borrowing,
+                'stok'=> $book->stok
+            ]);
+        }
+
+        if ($request->status == 'ditolak') {
+            # code...
+            $borrowing->status = $request->status;
+            $borrowing->save();
+            return response()->json([
+                'message' => 'status Peminjaman Berhasil ditolak',
+                'data' => $borrowing,
+            ]);
+        }
+
+        $borrowing->status = $request->status;
+        $borrowing->save();
+        $book->decrement('stok', 1);
+        $book->save();
+
+        return response()->json([
+            'message' => 'status Peminjaman Berhasil disetujui sekarang user sudah bisa pinjam buku nya',
+            'data' => $borrowing,
+            'stok' => $book->stok
+        ],200);
+    }
+
+    public function showPeminjaman($id_siswa){
+        $id_user = auth()->user()->id_siswa;
+        $borrowings = Borrowing::where('id_siswa', $id_siswa)->get();
+
+        if ($id_user != $id_siswa) {
+            # code...
+            return response()->json([
+                'message' => 'Anda tidak boleh mengakses peminjaman lain'
+            ], 404);
+        }
+
+        return response()->json([
+            'message' => 'Data ditemukan',
+            'data' => $borrowings
+        ], 200);
+    }
+
+    public function filterPeminjaman(Request $request){
+        $startDate = $request->query('start_date');
+    $endDate = $request->query('end_date');
+
+    $query = Borrowing::query();
+
+    if ($startDate && $endDate) {
+        $query->whereBetween('tanggal_pinjam', [$startDate, $endDate]);
+    } elseif ($startDate) {
+        $query->whereDate('tanggal_pinjam', '>=', $startDate);
+    } elseif ($endDate) {
+        $query->whereDate('tanggal_pinjam', '<=', $endDate);
+    }
+
+    $peminjaman = $query->get();
+
+    return response()->json([
+        'message' => 'Data peminjaman berhasil difilter',
+        'data' => $peminjaman
+    ], 200);
+    }
 }

@@ -29,6 +29,7 @@ class BookFactory extends Factory
             "Sistem Informasi Manajemen",
             "Strategi Digital Marketing"
         ];
+        
 
 
         $judul =  $this->faker->randomElement($judulIndonesia);
@@ -44,7 +45,7 @@ class BookFactory extends Factory
             'stok' => $this->faker->numberBetween(1, 20),
             'lantai' => $this->faker->randomElement(['1', '2', '3']),
             'rak' => $this->faker->randomLetter() . $this->faker->numberBetween(1, 10),
-            'kategori' => $this->faker->word(),
+            'kategori' => 'Teknologi',
         ];
     }
 }

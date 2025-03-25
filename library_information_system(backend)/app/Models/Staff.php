@@ -3,17 +3,19 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Staff extends Model
+class Staff extends Authenticatable
 {
-    use HasFactory;
+    use HasFactory, HasApiTokens;
 
     protected $table = 'staff';
+    protected $primaryKey = 'id_staff';
 
 
     protected $fillable = [
-        'nama',
+        'name',
         'email',
         'no_telepon',
         'foto_profil',
@@ -25,6 +27,16 @@ class Staff extends Model
     {
         return $this->hasMany(Activity_Staff::class);
     }
+
+    protected $casts = [
+        'tanggal_daftar' => 'datetime',
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
 
 
 

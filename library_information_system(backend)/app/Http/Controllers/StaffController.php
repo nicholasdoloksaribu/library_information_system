@@ -18,10 +18,10 @@ class StaffController extends Controller
 
     public function register(Request $request){
         $request->validate([
-            'nama' => 'required|string',
+            'name' => 'required|string',
             'email' => 'required|unique:staff,email|string',
             'no_telepon' => 'required|string',
-            'foto_profil' => 'nullable|string|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'foto_profil' => 'nullable|string|image|mimes:jpeg,png,jpg|max:2048',
             'tanggal_daftar' => 'nullable|date',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -59,19 +59,31 @@ class StaffController extends Controller
             ], 400);
         }
 
+
+        if ($request->filled('foto_profil')) {
+            $foto_profil = $request->file('foto_profil');
+            $fileName = time() . '.' . $foto_profil->getClientOriginalExtension();
+            $filePath = $foto_profil->storeAs('uploads/staff/foto_profil', $fileName, 'public');
+            # code...
+        }else {
+            return response()->json([
+                'message' => 'Foto profil harus diisi'
+            ], 400);
+        }
+
         try {
             //code...
             $staff = new Staff();
             $staff->tanggal_daftar = now();
-            $staff->nama = $request->nama;
+            $staff->name = $request->name;
             $staff->email = $request->email;
             $staff->no_telepon = $request->no_telepon;
-            $staff->foto_profil = $request->foto_profil;
+            $staff->foto_profil = $filePath;
             $staff->password = Hash::make($request->password);
             $staff->save();
     
             return response()->json([
-                'message' => 'Staff sukses ditambahkan',
+                'message' => 'Staff berhasil mendaftar tunggu konfirmasi dari kepala perpustakaan',
                 'data' => $staff
             ], 201);
         }
@@ -99,35 +111,49 @@ class StaffController extends Controller
 
     public function update(Request $request, $id_staff){
         $staff = Staff::findOrFail($id_staff);
-
+    
         $request->validate([
-            'name' => 'nullable|required|string',
-            'email' => 'nullable|required|string',
-            'no_telepon' => 'nullbale|required|string',
-            'foto_profil' => 'nullable|string|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'password' => 'nullable|required|string', 
+            'name' => 'nullable|string',
+            'email' => 'nullable|string|email',
+            'no_telepon' => 'nullable|string',
+            'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'password' => 'nullable|string',
+            'status' => 'nullable|string|in:pending,approved,rejected',
+            'hak_akses_CRUD' => 'nullable|boolean',
+            'hak_akses_approve' => 'nullable|boolean',
         ]);
-
-        //cek apakah password sudah digunakan 
-        $passwordSudahDigunakan = Staff::get()->contains(function ($staff) use ($request) {
-            return Hash::check($request->password, $staff->password);
-        });
-        if ($passwordSudahDigunakan) {
-            return response()->json([
-                'message' => 'Password sudah digunakan silahkan gunakan password lain'
-            ], 400);
+    
+        // Cek apakah password sudah digunakan oleh staff lain
+        if ($request->filled('password')) {
+            $passwordSudahDigunakan = Staff::where('id', '!=', $id_staff)->get()->contains(function ($staff) use ($request) {
+                return Hash::check($request->password, $staff->password);
+            });
+    
+            if ($passwordSudahDigunakan) {
+                return response()->json([
+                    'message' => 'Password sudah digunakan, silahkan gunakan password lain'
+                ], 400);
+            }
         }
-        if($staff){
-            $staff->update($request->all());
-            return response()->json([
-                'message' => 'Staff sukses diupdate',
-                'data' => $staff
-            ], 200);
-        }
+    
+        // Update data staff jika ada perubahan
+        if ($request->filled('name')) $staff->name = $request->name;
+        if ($request->filled('email')) $staff->email = $request->email;
+        if ($request->filled('no_telepon')) $staff->no_telepon = $request->no_telepon;
+        if ($request->filled('foto_profil')) $staff->foto_profil = $request->foto_profil;
+        if ($request->filled('password')) $staff->password = bcrypt($request->password);
+        if ($request->filled('status')) $staff->status = $request->status;
+        if ($request->filled('hak_akses_CRUD')) $staff->hak_akses_CRUD = $request->hak_akses_CRUD;
+        if ($request->filled('hak_akses_approve')) $staff->hak_akses_approve = $request->hak_akses_approve;
+    
+        $staff->save(); // Simpan perubahan ke database
+    
         return response()->json([
-            'message' => 'Staff tidak ditemukan'
-        ], 404);
+            'message' => 'Staff sukses diupdate',
+            'data' => $staff
+        ], 200);
     }
+    
 
     public function destroy($id_staff){
         $staff = Staff::findOrFail($id_staff);

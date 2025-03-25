@@ -63,13 +63,40 @@ class BookController extends Controller
 
     public function update(Request $request, $kode_buku){
         $book = Book::where('kode_buku', $kode_buku)->first();
-        if($book){
+        
+        $request->validate([
+            'judul' => 'nullable|required|string',
+            'pengarang' => 'nullable|required|string',
+            'penerbit' => 'nullable|required|string',
+            'tahun_terbit' => 'nullable|required|integer',
+            'deskripsi' => 'nullable|string',
+            'foto_buku' => 'nullable|string',
+            'stok' => 'nullable|required|integer',
+            'lantai' => 'nullable|required|string',
+            'rak' => 'nullable|required|string',
+            'kategori' => 'nullable|required|string'
+        ]);
+
+        try {
+       
             $book->update($request->all());
             return response()->json([
                 'message' => 'Buku sukses diupdate',
-                'data' => $book
+                'data' => $book,
+                ActivityStaff::create([
+                    'id_staff' => auth()->user()->id_staff,
+                    'kode_buku' => $book->kode_buku,
+                    'aktivitas'=> 'Mengupdate buku',
+                    'timestamp' => now()
+                ])
             ], 200);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Buku gagal diupdate',
+                'error' => $e->getMessage()
+            ], 500);
         }
+        
         return response()->json([
             'message' => 'Buku tidak ditemukan'
         ], 404);
@@ -82,6 +109,13 @@ class BookController extends Controller
             return response()->json([
                 'message' => 'Buku sukses dihapus'
             ], 200);
+
+            ActivityStaff::create([
+                'id_staff' => auth()->user()->id_staff,
+                'kode_buku' => $book->kode_buku,
+                'aktivitas'=> 'Menghapus buku',
+                'timestamp' => now()
+            ]);
         }
         return response()->json([
             'message' => 'Buku tidak ditemukan'

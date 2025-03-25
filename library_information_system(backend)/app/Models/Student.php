@@ -3,17 +3,20 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\contracts\Auth\MustVerifyEmail;
+use Illuminate\Notifications\Notifiable;
 
-class Student extends Model
+class Student extends Authenticatable implements MustVerifyEmail 
 {
-    use HasFactory;
+    use HasFactory, HasApiTokens, Notifiable;
 
     protected $table = 'students';
     protected $primaryKey = 'id_siswa';
 
     protected $fillable = [
-        'nama',
+        'name',
         'email',
         'no_telepon',
         'foto_profil',
@@ -41,5 +44,15 @@ class Student extends Model
     {
         return $this->hasMany(Rating::class, 'id_siswa', 'id_siswa');
     }
+
+    protected $casts = [
+        'tanggal_daftar' => 'datetime',
+        'email_verified_at' => 'datetime',
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
     
 }
