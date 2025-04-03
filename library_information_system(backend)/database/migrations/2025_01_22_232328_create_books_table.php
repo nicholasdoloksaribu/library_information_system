@@ -18,10 +18,11 @@ return new class extends Migration
             $table->string('pengarang');
             $table->string('penerbit');
             $table->year('tahun_terbit');
+            $table->string('call_number')->nullable();
             $table->string('deskripsi')->nullable();
+            $table->string('isbn')->nullable();
             $table->string('foto_buku')->nullable();
             $table->integer('stok')->default(1);
-            $table->string('lantai')->nullable();
             $table->string('rak')->nullable();
             $table->string('kategori')->nullable(); 
             $table->timestamps();
