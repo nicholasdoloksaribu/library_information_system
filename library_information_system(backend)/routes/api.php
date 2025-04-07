@@ -111,16 +111,11 @@ Route::middleware(['auth:sanctum', 'abilities:staff', 'staff.access:approve'])->
     //Update Status Peminjaman
     Route::put('/updateStatus/{id_peminjaman}/{kode_buku}', [BorrowingController::class, 'updateStatus']);
 
-    // ⚖️ **Manajemen Denda**
-    Route::get('/fines', [FineController::class, 'index']);
-    Route::post('/fines', [FineController::class, 'store']);
-    Route::get('/fines/{id_denda}', [FineController::class, 'show']);
-    Route::put('/fines/{id_denda}', [FineController::class, 'update']);
-    Route::delete('/fines/{id_denda}', [FineController::class, 'destroy']);
 
     // 🚪 **Logout Staff**
     Route::post('/logoutStaff', [AuthController::class, 'logoutStaff']);
 });
+
 
 // 🟢 **Route yang hanya bisa diakses oleh Head Perpustakaan**
 Route::middleware(['auth:sanctum', 'abilities:headperpustakaan'])->prefix('headperpustakaan')->group(function () {
