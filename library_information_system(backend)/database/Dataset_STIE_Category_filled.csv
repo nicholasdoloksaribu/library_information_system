@@ -18,8 +18,8 @@ Nomor,Acc No,Pengarang,Judul,COPY,PENERBIT,TAHUN,Call Number,Tempat,ISBN,Kategor
 54,98-025,LARRY W.BOWMAN,MAURITIUS,C.4,westview press,1991,969.82 BO,LONDON,1-85521-248-X,Sejarah
 56,96-669,GARY C. JACOBSON,THE ELECTORAL ORIGINS OF DIVIDED GOVERNMENT,C.2,westview press,1990,324.9 JA,oxford,0-8133-0907-7,Politik
 58,698-148,GUY SEGUIER,POWER ELECTRONIK CONVERTERS,C.2,McGRAW-HILL BOOK COMPANY,1986,621.31 SE,New york,0-07-056081-1,Teknologi
-60,98-210,PAUL HOLM-PEDERSEN&HARALD LOE,GERIATRIC DENTISTRY,C.2,THE C.V. MOSBY COMPANY,1986,617.6 PE,washington,0-8016-2557-2,Kedokteran Gigi
-81,69-7251,LAWRENCE E. WILLIAMS,NUCLEAR MEDICAL PHYSICS,V.1,"CRC PRESS,INC",1987,616.0 WI,USA,0-8493-4678-9,Kedokteran Nuklir
+60,98-210,PAUL HOLM-PEDERSEN&HARALD LOE,GERIATRIC DENTISTRY,C.2,THE C.V. MOSBY COMPANY,1986,617.6 PE,washington,0-8016-2557-2,Kedokteran
+81,69-7251,LAWRENCE E. WILLIAMS,NUCLEAR MEDICAL PHYSICS,V.1,"CRC PRESS,INC",1987,616.0 WI,USA,0-8493-4678-9,Kedokteran
 85,18-137,DONALD E. KIESO,INTERMEDIATE ACCOUNTING IFRS EDITION,C.6,JOHN WILEY & SONS,2018,657 KIWE,SINGAPORE,978-1-119-37300-1,Akuntansi
 86,18-180,DONALD E. KIESO,INTERMEDIATE ACCOUNTING IFRS EDITION,C.16,JOHN WILEY & SONS,2018,657 KIWE,SINGAPORE,978-1-119-37300-1,Akuntansi
 87,18-182,DONALD E. KIESO,INTERMEDIATE ACCOUNTING IFRS EDITION,C.18,JOHN WILEY & SONS,2018,657 KIWE,SINGAPORE,978-1-119-37300-1,Akuntansi
@@ -592,3 +592,123 @@ Nomor,Acc No,Pengarang,Judul,COPY,PENERBIT,TAHUN,Call Number,Tempat,ISBN,Kategor
 ,18-217,Pdt. Nathan Sipayung,Injil Sinoptik: Perspektif dan Harmonisasi,V.1,Kanisius,2015,217 NS,Surabaya,978-602-0001-18-9,Agama
 ,19-218,Pdt. Debora Lumbantobing,Doa dan Kehidupan Rohani Kristen,V.1,BPK Gunung Mulia,2019,218 DL,Medan,978-602-0001-19-6,Agama
 ,20-219,Pdt. Jonathan Manalu,Roh Kudus dan Pelayanan Kristen,V.1,Gloria Press,2020,219 JM,Jakarta,978-602-0001-20-2,Agama
+,01-340,Prof. Dr. Budi Santosa,Hukum Perdata Indonesia,V.1,Sinar Grafika,2018,340 BS,Jakarta,978-602-1234-100-1,Hukum
+,02-341,Maria A. Simanjuntak,Hukum Tata Negara,V.2,Mitra Wacana Media,2020,341 MS,Bandung,978-602-1234-101-8,Hukum
+,03-342,Prof. Dr. Dedi Firmansyah,Pengantar Ilmu Hukum,V.3,Ghalia Indonesia,2017,342 DF,Jakarta,978-602-1234-102-5,Hukum
+,04-343,T. R. Situmorang,Hukum dan Masyarakat,V.1,Rajawali Pers,2021,343 TR,Surabaya,978-602-1234-103-2,Hukum
+,05-344,D. A. Manulang,Hukum Pidana Umum,V.2,Prenadamedia Group,2019,344 DA,Jakarta,978-602-1234-104-9,Hukum
+,06-345,R. S. Nugroho,Hukum Internasional Dasar,V.1,Salemba Humanika,2018,345 RS,Yogyakarta,978-602-1234-105-6,Hukum
+,07-346,L. H. Tambunan,Hukum Acara Perdata,V.2,Pustaka Bangsa,2022,346 LT,Medan,978-602-1234-106-3,Hukum
+,08-347,M. S. Harefa,Hukum Agraria dan Pertanahan,V.1,Andi Publisher,2020,347 MS,Jakarta,978-602-1234-107-0,Hukum
+,09-348,R. G. Sidabutar,Hukum Perlindungan Konsumen,V.1,Elex Media,2019,348 RG,Bandung,978-602-1234-108-7,Hukum
+,10-349,Frans Manurung,Hukum Lingkungan Hidup,V.1,UGM Press,2017,349 FM,Yogyakarta,978-602-1234-109-4,Hukum
+,11-350,Dr. Anita Tumbur,Etika dan Hukum Profesi,V.1,Kencana,2021,350 AT,Jakarta,978-602-1234-110-0,Hukum
+,12-351,A. Y. Sitohang,Hukum Acara Pidana,V.1,Graha Ilmu,2016,351 AYS,Bandung,978-602-1234-111-7,Hukum
+,13-352,S. H. Manik,Hukum dan HAM,V.1,Deepublish,2018,352 SHM,Jakarta,978-602-1234-112-4,Hukum
+,14-353,J. Siregar,Hukum Perusahaan Indonesia,V.1,Salemba Empat,2022,353 JS,Medan,978-602-1234-113-1,Hukum
+,15-354,L. Tobing,Hukum Adat Nusantara,V.1,Rajagrafindo Persada,2020,354 LT,Jakarta,978-602-1234-114-8,Hukum
+,16-355,M. Tambunan,Studi Kasus Hukum Perdata,V.2,Graha Ilmu,2021,355 MT,Bandung,978-602-1234-115-5,Hukum
+,17-356,R. Tobing,Hukum Perburuhan,V.1,UII Press,2019,356 RT,Yogyakarta,978-602-1234-116-2,Hukum
+,18-357,Frans Pardede,Hukum Pajak Dasar,V.1,Mitra Media,2022,357 FP,Jakarta,978-602-1234-117-9,Hukum
+,19-358,D. R. Hutapea,Hukum Waris di Indonesia,V.1,Sinar Grafika,2018,358 DRH,Medan,978-602-1234-118-6,Hukum
+,20-359,R. L. Marpaung,Pengantar Hukum Ekonomi,V.1,Salemba Humanika,2020,359 RLM,Jakarta,978-602-1234-119-3,Hukum
+,01-510,Dr. Ahmad Santoso,Aljabar Linear dan Matriks,V.1,Salemba Empat,2015,510 AS,Jakarta,978-602-3456-01-1,Matematika
+,02-510,Yulianto Wijaya,Matematika Dasar untuk Ekonomi,V.2,Andi Publisher,2018,510 YW,Yogyakarta,978-602-3456-02-8,Matematika
+,03-510,Diah Retno,Kalkulus Diferensial & Integral,V.1,Erlangga,2016,510 DR,Jakarta,978-602-3456-03-5,Matematika
+,04-510,Thomas Hadiwijaya,Statistika Dasar,V.3,Graha Ilmu,2019,510 TH,Bandung,978-602-3456-04-2,Matematika
+,05-510,Slamet Riyadi,Teori Peluang dan Aplikasinya,V.1,Deepublish,2020,510 SR,Malang,978-602-3456-05-9,Matematika
+,06-510,Ratna Lestari,Matematika Diskrit,V.1,Informatika,2017,510 RL,Bandung,978-602-3456-06-6,Matematika
+,07-510,Handoko Wibowo,Logika Matematika,V.1,UGM Press,2021,510 HW,Yogyakarta,978-602-3456-07-3,Matematika
+,08-510,Candra Dewi,Matematika Terapan,V.1,Unpad Press,2018,510 CD,Bandung,978-602-3456-08-0,Matematika
+,09-510,Budi Satrio,Matriks dan Transformasi Linier,V.2,Andi Publisher,2020,510 BS,Yogyakarta,978-602-3456-09-7,Matematika
+,10-510,Nani Hartati,Persamaan Diferensial Biasa,V.1,Salemba Empat,2016,510 NH,Jakarta,978-602-3456-10-3,Matematika
+,11-510,Aulia Pramudya,Statistik Lanjut,V.1,Graha Ilmu,2022,510 AP,Bandung,978-602-3456-11-0,Matematika
+,12-510,Sukma Dewi,Matematika Keuangan,V.2,Deepublish,2017,510 SD,Jakarta,978-602-3456-12-7,Matematika
+,13-510,Rio Nurdiansyah,Pengantar Kalkulus,V.1,Erlangga,2019,510 RN,Jakarta,978-602-3456-13-4,Matematika
+,14-510,Wulan Maharani,Matematika Ekonomi,V.1,UGM Press,2015,510 WM,Yogyakarta,978-602-3456-14-1,Matematika
+,15-510,Tegar Pambudi,Metode Numerik,V.1,Andi Publisher,2020,510 TP,Yogyakarta,978-602-3456-15-8,Matematika
+,16-510,Yohana Sari,Aritmatika Sosial,V.1,LPPM Press,2018,510 YS,Bandung,978-602-3456-16-5,Matematika
+,17-510,Agung Prasetyo,Kalkulus Multivariat,V.2,Salemba Empat,2022,510 AG,Jakarta,978-602-3456-17-2,Matematika
+,18-510,Euis Andriyani,Trigonometri Dasar,V.1,Graha Ilmu,2017,510 EA,Bandung,978-602-3456-18-9,Matematika
+,19-510,Luki Nugroho,Teori Bilangan,V.1,Deepublish,2021,510 LN,Jakarta,978-602-3456-19-6,Matematika
+,20-510,Dani Firmansyah,Matematika Statistik,V.1,Informatika,2016,510 DF,Bandung,978-602-3456-20-2,Matematika
+,01-600,Arif Susanto,Teknologi Komunikasi Modern,V.1,Andi Publisher,2020,600 AS,Yogyakarta,978-602-1234-01-1,Teknologi
+,02-600,Budi Santoso,Revolusi Industri 4.0,V.1,Salemba Empat,2019,600 BS,Jakarta,978-623-02-1234-2,Teknologi
+,03-600,Clara Wijaya,Pengantar Teknologi Informasi,V.2,Graha Ilmu,2021,600 CW,Bandung,978-602-9876-12-3,Teknologi
+,04-600,Dimas Prasetya,Internet of Things dalam Kehidupan Sehari-hari,V.1,EGC,2022,600 DP,Surabaya,978-623-4567-45-4,Teknologi
+,05-600,Endang Lestari,Sistem Komputer Dasar,V.3,Deepublish,2018,600 EL,Jakarta,978-602-7654-33-2,Teknologi
+,06-600,Fajar Maulana,Teknologi dan Masyarakat Digital,V.1,Erlangga,2019,600 FM,Bandung,978-623-02-8765-0,Teknologi
+,07-600,Gita Putri,Aplikasi Mobile dan Masa Depan,V.1,Andi Publisher,2020,600 GP,Yogyakarta,978-602-1234-22-2,Teknologi
+,08-600,Hendra Saputra,Jaringan Komputer dan Keamanan Siber,V.2,Salemba Medika,2021,600 HS,Jakarta,978-623-02-9999-8,Teknologi
+,09-600,Irwan Kurniawan,Teknologi Cloud Computing,V.1,Graha Ilmu,2023,600 IK,Bandung,978-602-1111-90-3,Teknologi
+,10-600,Jenny Aditya,Dasar-Dasar Artificial Intelligence,V.1,Deepublish,2022,600 JA,Jakarta,978-623-02-3456-9,Teknologi
+,11-600,Kevin Santoso,Robotika Dasar,V.1,Erlangga,2021,600 KS,Surabaya,978-602-7654-88-8,Teknologi
+,12-600,Lanny Susanti,Pemrograman Python untuk Pemula,V.1,Andi Publisher,2020,600 LS,Yogyakarta,978-602-7654-99-9,Teknologi
+,13-600,M. Rizal,Big Data dan Analisis Data Modern,V.1,Salemba Empat,2021,600 MR,Jakarta,978-623-1234-65-0,Teknologi
+,14-600,Nadia Fauziah,Teknologi Biometrik,V.1,Graha Ilmu,2019,600 NF,Bandung,978-602-9999-34-4,Teknologi
+,15-600,Oka Pratama,Sistem Informasi Manajemen,V.1,Deepublish,2018,600 OP,Jakarta,978-623-02-1111-0,Teknologi
+,16-600,Putri Anggraeni,Teknologi Augmented Reality,V.1,Erlangga,2020,600 PA,Bandung,978-602-1234-78-5,Teknologi
+,17-600,Qori Rahmawati,Etika Teknologi Digital,V.1,Salemba Medika,2021,600 QR,Jakarta,978-623-02-7532-6,Teknologi
+,18-600,Raka Widodo,Blockchain dan Aplikasinya,V.1,Andi Publisher,2022,600 RW,Yogyakarta,978-602-2345-12-4,Teknologi
+,19-600,Siska Damayanti,Teknologi Multimedia,V.2,Graha Ilmu,2020,600 SD,Surabaya,978-623-4567-22-1,Teknologi
+,20-600,Taufik Hidayat,Sistem Operasi Komputer,V.1,Deepublish,2021,600 TH,Jakarta,978-602-7654-90-1,Teknologi
+,21-600,Umi Kalsum,Keamanan Informasi dan Enkripsi Data,V.1,Salemba Empat,2022,600 UK,Jakarta,978-623-02-8412-0,Teknologi
+,22-600,Vino Ramadhan,Teknologi Pertanian Presisi,V.1,Deepublish,2020,600 VR,Bandung,978-602-9999-56-5,Teknologi
+,23-600,Wahyu D. Santika,Mobile Computing dan Aplikasinya,V.2,Erlangga,2021,600 WS,Surabaya,978-602-8888-45-3,Teknologi
+,24-600,Yenny Marlina,Teknologi Energi Terbarukan,V.1,Andi Publisher,2019,600 YM,Yogyakarta,978-602-1234-99-6,Teknologi
+,25-600,Zaki Haris,Otomasi Rumah dengan IoT,V.1,Graha Ilmu,2021,600 ZH,Jakarta,978-623-4567-91-7,Teknologi
+,26-600,Alvin Kurniawan,Pengantar Teknologi Nirkabel,V.1,Deepublish,2023,600 AK,Bandung,978-602-7654-23-3,Teknologi
+,27-600,Bella Fitria,Teknologi GPS dan Navigasi Digital,V.1,Salemba Medika,2020,600 BF,Jakarta,978-623-02-9832-2,Teknologi
+,28-600,Chandra Hidayat,Teknologi Virtualisasi,V.1,Erlangga,2021,600 CH,Surabaya,978-602-1234-34-1,Teknologi
+,29-600,Devi Larasati,Smart City: Konsep dan Implementasi,V.1,Andi Publisher,2022,600 DL,Yogyakarta,978-602-1111-76-0,Teknologi
+,30-600,Edo Purnomo,Pengantar Sistem Embedded,V.2,Graha Ilmu,2019,600 EP,Jakarta,978-623-02-1100-0,Teknologi
+,31-600,Farah Nabila,Teknologi Wearable Devices,V.1,Deepublish,2020,600 FN,Bandung,978-602-8730-67-5,Teknologi
+,32-600,Galih Kuncoro,Teknologi 5G dan Jaringan Masa Depan,V.1,Salemba Empat,2021,600 GK,Jakarta,978-623-02-2111-3,Teknologi
+,33-600,Haniyah Ayu,Pemrograman IoT dengan Arduino,V.1,Erlangga,2022,600 HA,Surabaya,978-602-8888-76-2,Teknologi
+,34-600,Iqbal Prasetyo,Smart Farming dengan Sensor Digital,V.1,Andi Publisher,2023,600 IP,Yogyakarta,978-602-1234-12-9,Teknologi
+,35-600,Jihan Nurul,Teknologi Pengolahan Citra Digital,V.1,Graha Ilmu,2021,600 JN,Jakarta,978-623-02-9312-7,Teknologi
+,36-600,Kiki Hermansyah,Teknologi dalam Pendidikan,V.1,Deepublish,2020,600 KH,Bandung,978-602-7654-71-4,Teknologi
+,37-600,Luthfi Hakim,Komputasi Awan dan Layanan Web,V.2,Salemba Medika,2022,600 LH,Jakarta,978-623-02-2022-0,Teknologi
+,38-600,Marsha Agustin,Mengenal Kecerdasan Buatan,V.1,Erlangga,2019,600 MA,Surabaya,978-602-1234-03-7,Teknologi
+,39-600,Nadia Syifa,Teknologi Digital untuk Bisnis,V.1,Andi Publisher,2021,600 NS,Yogyakarta,978-602-7654-35-7,Teknologi
+,40-600,Oktaviano Lazuardi,Teknologi Blockchain untuk Pemula,V.1,Graha Ilmu,2020,600 OL,Jakarta,978-623-4567-93-1,Teknologi
+,41-600,Prima Hapsari,Sensor dan Aktuator dalam Otomatisasi,V.1,Deepublish,2023,600 PH,Bandung,978-602-1234-88-3,Teknologi
+,42-600,Qomarul Zaman,Teknologi Drone dan Aplikasinya,V.1,Salemba Empat,2020,600 QZ,Jakarta,978-623-02-0009-5,Teknologi
+,43-600,Rani Wulandari,Teknologi Big Data dalam Pemerintahan,V.1,Erlangga,2022,600 RW,Surabaya,978-602-8888-97-7,Teknologi
+,44-600,Steven Lie,Digitalisasi Sistem Keuangan,V.1,Andi Publisher,2023,600 SL,Yogyakarta,978-602-1111-89-0,Teknologi
+,45-600,Triana Aulia,Teknologi Manufaktur Digital,V.1,Graha Ilmu,2021,600 TA,Jakarta,978-623-02-6754-8,Teknologi
+,46-600,Ulfa Suryani,Perangkat Lunak dan Rekayasa Perangkat,V.1,Deepublish,2022,600 US,Bandung,978-602-8730-69-9,Teknologi
+,47-600,Victor Hadi,Teknologi Virtual Reality,V.1,Salemba Medika,2020,600 VH,Jakarta,978-623-02-4567-2,Teknologi
+,48-600,Wina Kartika,Teknologi dalam Layanan Kesehatan Digital,V.1,Erlangga,2021,600 WK,Surabaya,978-602-1234-09-4,Teknologi
+,49-600,Yasin Faizal,Sistem Digital dan Elektronika Dasar,V.1,Andi Publisher,2019,600 YF,Yogyakarta,978-602-7654-11-1,Teknologi
+,50-600,Zulaikha Arif,Teknologi Kamera Pintar,V.1,Graha Ilmu,2022,600 ZA,Jakarta,978-623-4567-04-5,Teknologi
+,51-600,Rendi Prayoga,Pengantar Machine Learning,V.1,Deepublish,2022,600 RP,Bandung,978-602-7654-91-4,Teknologi
+,52-600,Sinta Dewi,Data Mining: Teknik dan Aplikasi,V.1,Andi Publisher,2021,600 SD,Yogyakarta,978-602-1234-78-0,Teknologi
+,53-600,Firman Fadli,Artificial Intelligence untuk Pemula,V.1,Graha Ilmu,2020,600 FF,Jakarta,978-623-4567-88-7,Teknologi
+,54-600,Dina Lestari,Deep Learning: Konsep dan Implementasi,V.1,Salemba Empat,2023,600 DL,Jakarta,978-623-02-4432-1,Teknologi
+,55-600,Hendri Kurniawan,Machine Learning dengan Python,V.2,Erlangga,2022,600 HK,Surabaya,978-602-8888-44-3,Teknologi
+,56-600,Ajeng Larasati,Big Data: Arsitektur dan Pemanfaatannya,V.1,Deepublish,2020,600 AL,Bandung,978-602-8730-78-1,Teknologi
+,57-600,Riko Ananta,Natural Language Processing untuk Pemula,V.1,Andi Publisher,2021,600 RA,Yogyakarta,978-602-7654-28-0,Teknologi
+,58-600,Tika Nurhaliza,Reinforcement Learning: Teori dan Praktik,V.1,Graha Ilmu,2022,600 TN,Jakarta,978-623-4567-97-9,Teknologi
+,59-600,Wahyu Saputra,Vision AI: Pemrosesan Citra dan Aplikasinya,V.1,Erlangga,2021,600 WS,Surabaya,978-602-1234-58-2,Teknologi
+,60-600,Yoseph Immanuel,Machine Learning untuk Sistem Rekomendasi,V.1,Deepublish,2023,600 YI,Bandung,978-602-8730-99-6,Teknologi
+,01-910,Rina Wijayanti,Geografi Dasar untuk SMA,V.1,Grafindo,2018,910 RW,Jakarta,978-602-1142-01-3,Geografi
+,02-910,Budi Santosa,Geografi Fisik: Bumi dan Lingkungannya,V.2,Erlangga,2019,910 BS,Bandung,978-602-1214-05-4,Geografi
+,03-910,Luki Pratama,Pengantar Geografi Manusia,V.1,Andi Publisher,2020,910 LP,Yogyakarta,978-602-2345-08-9,Geografi
+,04-910,Yuliana Sari,Sistem Informasi Geografis,V.1,Deepublish,2021,910 YS,Surabaya,978-623-4567-45-6,Geografi
+,05-910,Dimas Riyadi,Dinamika Iklim dan Perubahan Global,V.1,Salemba Empat,2022,910 DR,Jakarta,978-602-7654-77-1,Geografi
+,06-910,Ari Wibowo,Pemetaan Digital dan Geospasial,V.2,Graha Ilmu,2020,910 AW,Bandung,978-623-02-3344-9,Geografi
+,07-910,Fadli Akbar,Lingkungan Hidup dan Sumber Daya Alam,V.1,Bumi Aksara,2018,910 FA,Jakarta,978-602-8730-33-1,Geografi
+,08-910,Siska Lestari,Geografi Regional Indonesia,V.2,Andi Publisher,2021,910 SL,Yogyakarta,978-602-1234-77-8,Geografi
+,09-910,Hendra Yulian,Hidrologi dan Pengelolaan Air,V.1,Deepublish,2022,910 HY,Bandung,978-623-4567-19-7,Geografi
+,10-910,Rafi Dwi,Tata Ruang Wilayah dan Perkotaan,V.1,Grafindo,2020,910 RD,Jakarta,978-602-1142-12-1,Geografi
+,11-910,Meutia Hapsari,Geografi dan Ketahanan Bencana,V.1,Graha Ilmu,2021,910 MH,Bandung,978-623-8888-61-5,Geografi
+,12-910,Arif Fajar,Kartografi Dasar,V.1,Erlangga,2019,910 AF,Surabaya,978-602-1214-99-3,Geografi
+,13-910,Dian Mayasari,Geografi Penduduk,V.1,Salemba Empat,2018,910 DM,Jakarta,978-602-7654-31-3,Geografi
+,14-910,Rendy Hidayat,Geografi Pariwisata,V.1,Deepublish,2022,910 RH,Bandung,978-623-4567-13-5,Geografi
+,15-910,Melati Larasati,Geografi Ekonomi dan Globalisasi,V.1,Grafindo,2021,910 ML,Jakarta,978-602-1142-35-0,Geografi
+,16-910,Dedi Prakoso,Lingkungan Tropis dan Perubahan Iklim,V.1,Andi Publisher,2020,910 DP,Yogyakarta,978-602-1234-66-2,Geografi
+,17-910,Yana Fitriani,Geografi Perkotaan Modern,V.2,Salemba Empat,2021,910 YF,Jakarta,978-623-4567-51-7,Geografi
+,18-910,Tommy Saputra,Ekosistem dan Kehidupan Manusia,V.1,Graha Ilmu,2020,910 TS,Surabaya,978-623-02-7766-5,Geografi
+,19-910,Ratna Herlina,Geografi dan Ketahanan Pangan,V.1,Deepublish,2021,910 RH,Bandung,978-602-7654-91-2,Geografi
+,20-910,Agus Pratama,Pengantar Geografi Lingkungan,V.1,Erlangga,2022,910 AP,Jakarta,978-602-8730-11-0,Geografi
