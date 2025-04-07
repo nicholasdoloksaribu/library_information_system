@@ -1,7 +1,7 @@
 Nomor,Acc No,Pengarang,Judul,COPY,PENERBIT,TAHUN,Call Number,Tempat,ISBN,Kategori
 3,96-256,fred Zlotnick,The POSIX.1 Standard A Programmer's Guide,C.1,"CUMINGS PUBLISHING COMPANY, Ins",1991,621.39 zlo,california,0-8053-9605-5,Teknologi
 4,96-257,fred Zlotnick,The POSIX.1 Standard A Programmer's Guide,C.2,"CUMINGS PUBLISHING COMPANY, Ins",1991,621.39 zlo,california,0-8056-9605-5,Teknologi
-5,97-663,dep P&K,Bahaya Laten Komunisme di indonesia,C.2,PUSAT SEJARAH DAN TRADISI ABRI,1995,320 Dep v.1,jakarta,979-8816-02-1,Ilmu Politik
+5,97-663,dep P&K,Bahaya Laten Komunisme di indonesia,C.2,PUSAT SEJARAH DAN TRADISI ABRI,1995,320 Dep v.1,jakarta,979-8816-02-1,Politik
 9,497-181,Charles LaBelle,"Finding,Selecting,developing anf retaining data professionals through effective human resources management",C.2,VAN NOSTRAND REINHOLD COMPANY,1983,458.3 La,New york,0-442-26012-1,Manajemen
 11,97-315,anne labastille,MAMA POC,C.2,W.W. NORTON&COMPANY,1990,598 LA,New york,0-393-02830-5,Zoologi
 14,22-523,mellgren & michael,new horizons in,4,V.4 ADDISON-WESLEY PUBLISHING COMPANY,1974,825 Me,california,0-201-04424-2,Sastra
@@ -447,7 +447,7 @@ Nomor,Acc No,Pengarang,Judul,COPY,PENERBIT,TAHUN,Call Number,Tempat,ISBN,Kategor
 738,15-052,SULISTIOWATI,Tanggung jawab hukum pada perusahaan grup di Indonesia,C.1,PENERBIT ERLANGGA,2013,343.0 Su,JAKARTA,978-602-241-752-1,Hukum
 744,07-539,SISWANTO SUTOJO,THE MANAGEMEN OF COMMERCIALBAN,C.2,PT DAMAR MULIA PUSTAKA,2007,432 SU,JAKARTA,978-979-9365-18-7,Manajemen
 746,07-620,INDRA BASTIAN SUHARDJONO,AKUNTANSI PERBANKAN,V.1,PENERBIT SALEMBA EMPAT,2006,457.4 SU,JAKARTA,979-691-292-9,Akuntansi
-,01-320,Budi Santosa,Dinamika Politik Indonesia Kontemporer,V.1,RajaGrafindo Persada,2012,320.9598 BS,Jakarta,978-602-425-111-5,Politik
+747,01-320,Budi Santosa,Dinamika Politik Indonesia Kontemporer,V.1,RajaGrafindo Persada,2012,320.9598 BS,Jakarta,978-602-425-111-5,Politik
 ,02-320,Dewi Lestari,Teori Politik Modern,V.2,Salemba Humanika,2010,320.01 DL,Bandung,978-979-076-012-7,Politik
 ,03-321,Ahmad Fauzi,Sistem Pemerintahan dan Demokrasi,V.1,Prenadamedia Group,2016,321.8 AF,Yogyakarta,978-602-8730-92-7,Politik
 ,04-327,Indah Pratiwi,Politik Luar Negeri Indonesia Pasca-Reformasi,V.1,Andi Offset,2018,327.598 IP,Jakarta,978-602-401-422-9,Politik
@@ -512,3 +512,83 @@ Nomor,Acc No,Pengarang,Judul,COPY,PENERBIT,TAHUN,Call Number,Tempat,ISBN,Kategor
 ,08-627,dr. Eva Yunita,Patologi Anatomi,V.1,Erlangga,2018,627 EY,Jakarta,978-623-02-1234-0,Kedokteran
 ,09-628,dr. Tommy Wijaya,Diagnostik Laboratorium Medis,V.1,Salemba Medika,2022,628 TW,Jakarta,978-602-8730-90-0,Kedokteran
 ,10-629,dr. Intan Lestari,Imunologi Dasar,V.1,Andi Publisher,2023,629 IL,Bandung,978-623-231-889-5,Kedokteran
+,01-100,Prof. S. Hadiwijoyo,Pengantar Ilmu Filsafat,V.1,Pustaka Pelajar,2014,100 SH,Jakarta,978-602-8730-10-4,Filsafat
+,02-101,Dr. H. Suryadi,Filsafat Barat Klasik,V.1,Kanisius,2016,101 HS,Yogyakarta,978-602-412-150-9,Filsafat
+,03-102,R. Kartini Sinaga,Etika dan Filsafat Moral,V.2,Salemba Empat,2017,102 KS,Jakarta,978-602-1234-54-6,Filsafat
+,04-103,J. Sudrajat,Filsafat Timur,V.1,Graha Ilmu,2015,103 JS,Bandung,978-623-02-1122-3,Filsafat
+,05-104,D. Yulianto,Logika dan Penalaran,V.1,Deepublish,2019,104 DY,Jakarta,978-623-231-298-6,Filsafat
+,06-105,A. Manullang,Filsafat Manusia,V.1,LKiS,2016,105 AM,Bandung,978-602-8730-66-1,Filsafat
+,07-106,Dr. R. Triyono,Teori Pengetahuan,V.1,Andi Publisher,2018,106 RT,Yogyakarta,978-602-8570-19-8,Filsafat
+,08-107,N. Lestari,Filsafat Pendidikan,V.2,Erlangga,2020,107 NL,Jakarta,978-623-231-567-4,Filsafat
+,09-108,Prof. M. Darwis,Filsafat Ilmu,V.1,Salemba Empat,2021,108 MD,Jakarta,978-602-8730-45-6,Filsafat
+,10-109,S. Dewantara,Nilai-Nilai Hidup dalam Filsafat,V.1,Kanisius,2019,109 SD,Yogyakarta,978-623-02-3333-1,Filsafat
+,11-110,T. Wibowo,Filsafat Eksistensialisme,V.1,Pustaka Setia,2017,110 TW,Bandung,978-602-412-321-3,Filsafat
+,12-111,J. Napitupulu,Filsafat Hukum,V.1,Deepublish,2016,111 JN,Medan,978-623-231-678-2,Filsafat
+,13-112,L. Agustinus,Filsafat Kehidupan dan Realita,V.1,BPK Gunung Mulia,2021,112 LA,Bandung,978-602-02-8543-1,Filsafat
+,14-113,D. Herlina,Filsafat Analitik,V.1,Graha Ilmu,2022,113 DH,Surabaya,978-623-231-334-2,Filsafat
+,15-114,R. Sitorus,Pemikiran Filsafat Plato dan Aristoteles,V.1,Andi Publisher,2015,114 RS,Yogyakarta,978-602-8730-33-9,Filsafat
+,16-115,E. Soekarno,Dasar-dasar Etika,V.1,LKiS,2019,115 ES,Jakarta,978-602-412-222-3,Filsafat
+,17-116,P. Wahyuni,Logika Praktis,V.2,Erlangga,2018,116 PW,Bandung,978-602-8730-90-2,Filsafat
+,18-117,S. Marbun,Sejarah Pemikiran Filsafat,V.1,Kanisius,2017,117 SM,Jakarta,978-623-231-223-5,Filsafat
+,19-118,T. Putra,Filsafat Modern,V.1,Deepublish,2020,118 TP,Bandung,978-623-02-6780-0,Filsafat
+,20-119,H. Sinaga,Refleksi Filsafat dan Spiritualitas,V.1,Salemba Empat,2022,119 HS,Medan,978-623-02-4567-1,Filsafat
+,01-100,Prof. S. Hadiwijoyo,Pengantar Ilmu Filsafat,V.1,Pustaka Pelajar,2014,100 SH,Jakarta,978-602-8730-10-4,Filsafat
+,02-101,Dr. H. Suryadi,Filsafat Barat Klasik,V.1,Kanisius,2016,101 HS,Yogyakarta,978-602-412-150-9,Filsafat
+,03-102,R. Kartini Sinaga,Etika dan Filsafat Moral,V.2,Salemba Empat,2017,102 KS,Jakarta,978-602-1234-54-6,Filsafat
+,04-103,J. Sudrajat,Filsafat Timur,V.1,Graha Ilmu,2015,103 JS,Bandung,978-623-02-1122-3,Filsafat
+,05-104,D. Yulianto,Logika dan Penalaran,V.1,Deepublish,2019,104 DY,Jakarta,978-623-231-298-6,Filsafat
+,06-105,A. Manullang,Filsafat Manusia,V.1,LKiS,2016,105 AM,Bandung,978-602-8730-66-1,Filsafat
+,07-106,Dr. R. Triyono,Teori Pengetahuan,V.1,Andi Publisher,2018,106 RT,Yogyakarta,978-602-8570-19-8,Filsafat
+,08-107,N. Lestari,Filsafat Pendidikan,V.2,Erlangga,2020,107 NL,Jakarta,978-623-231-567-4,Filsafat
+,09-108,Prof. M. Darwis,Filsafat Ilmu,V.1,Salemba Empat,2021,108 MD,Jakarta,978-602-8730-45-6,Filsafat
+,10-109,S. Dewantara,Nilai-Nilai Hidup dalam Filsafat,V.1,Kanisius,2019,109 SD,Yogyakarta,978-623-02-3333-1,Filsafat
+,11-110,T. Wibowo,Filsafat Eksistensialisme,V.1,Pustaka Setia,2017,110 TW,Bandung,978-602-412-321-3,Filsafat
+,12-111,J. Napitupulu,Filsafat Hukum,V.1,Deepublish,2016,111 JN,Medan,978-623-231-678-2,Filsafat
+,13-112,L. Agustinus,Filsafat Kehidupan dan Realita,V.1,BPK Gunung Mulia,2021,112 LA,Bandung,978-602-02-8543-1,Filsafat
+,14-113,D. Herlina,Filsafat Analitik,V.1,Graha Ilmu,2022,113 DH,Surabaya,978-623-231-334-2,Filsafat
+,15-114,R. Sitorus,Pemikiran Filsafat Plato dan Aristoteles,V.1,Andi Publisher,2015,114 RS,Yogyakarta,978-602-8730-33-9,Filsafat
+,16-115,E. Soekarno,Dasar-dasar Etika,V.1,LKiS,2019,115 ES,Jakarta,978-602-412-222-3,Filsafat
+,17-116,P. Wahyuni,Logika Praktis,V.2,Erlangga,2018,116 PW,Bandung,978-602-8730-90-2,Filsafat
+,18-117,S. Marbun,Sejarah Pemikiran Filsafat,V.1,Kanisius,2017,117 SM,Jakarta,978-623-231-223-5,Filsafat
+,19-118,T. Putra,Filsafat Modern,V.1,Deepublish,2020,118 TP,Bandung,978-623-02-6780-0,Filsafat
+,20-119,H. Sinaga,Refleksi Filsafat dan Spiritualitas,V.1,Salemba Empat,2022,119 HS,Medan,978-623-02-4567-1,Filsafat
+,01-900,John Smith,Sejarah Dunia Kuno,V.1,Gramedia,2010,900 JS,Jakarta,978-602-0000-01-1,Sejarah
+,02-901,Maria Dewi,Perang Dunia II: Dampak dan Akibatnya,V.1,Erlangga,2014,901 MD,Bandung,978-602-0000-02-8,Sejarah
+,03-902,David Arnold,Revolusi Industri di Eropa,V.2,Andi Publisher,2016,902 DA,Yogyakarta,978-602-0000-03-5,Sejarah
+,04-903,Fransiska Ardi,Perjalanan Sejarah Indonesia Pra-Kolonial,V.1,Salemba Humanika,2018,903 FA,Surabaya,978-602-0000-04-2,Sejarah
+,05-904,Hendra Lie,Sejarah Dunia Modern,V.3,Graha Ilmu,2021,904 HL,Jakarta,978-602-0000-05-9,Sejarah
+,06-905,Linda Harapan,Sejarah Benua Amerika,V.1,Kanisius,2015,905 LH,Yogyakarta,978-602-0000-06-6,Sejarah
+,07-906,Charles Tan,Kolonialisme dan Perlawanan Rakyat,V.2,Deepublish,2013,906 CT,Bandung,978-602-0000-07-3,Sejarah
+,08-907,Monica Lestari,Sejarah Zaman Penjelajahan Samudera,V.1,EGC,2019,907 ML,Jakarta,978-602-0000-08-0,Sejarah
+,09-908,Arman Setiawan,Gerakan Kemerdekaan Asia-Afrika,V.2,LKiS,2017,908 AS,Surakarta,978-602-0000-09-7,Sejarah
+,10-909,Veronica Aditya,Sejarah Peradaban Mesir Kuno,V.1,Salemba Empat,2020,909 VA,Jakarta,978-602-0000-10-3,Sejarah
+,11-910,William Tanuwijaya,Penjajahan dan Perubahan Sosial,V.1,Gadjah Mada Press,2011,910 WT,Yogyakarta,978-602-0000-11-0,Sejarah
+,12-911,Edwin Satria,Perang Dunia I: Latar dan Akibat,V.2,Gramedia,2016,911 ES,Bandung,978-602-0000-12-7,Sejarah
+,13-912,Clara Kusuma,Renaisans dan Revolusi Ilmiah,V.1,Erlangga,2013,912 CK,Jakarta,978-602-0000-13-4,Sejarah
+,14-913,Ronald A. Limbong,Sejarah Asia Timur,V.2,Andi Publisher,2018,913 RL,Surabaya,978-602-0000-14-1,Sejarah
+,15-914,Jefri Adrian,Sejarah Papua: Zaman Kolonial Hingga Kini,V.1,LKiS,2022,914 JA,Jakarta,978-602-0000-15-8,Sejarah
+,16-915,Lina Rachman,Sejarah Revolusi Prancis,V.1,Graha Ilmu,2014,915 LR,Yogyakarta,978-602-0000-16-5,Sejarah
+,17-916,Benny Setyo,Perkembangan Sistem Politik Dunia,V.1,Kanisius,2015,916 BS,Bandung,978-602-0000-17-2,Sejarah
+,18-917,Arifin Haris,Sejarah Politik Amerika Latin,V.1,Deepublish,2019,917 AH,Jakarta,978-602-0000-18-9,Sejarah
+,19-918,Henry William,Peradaban Yunani dan Romawi,V.1,Andi Publisher,2021,918 HW,Surabaya,978-602-0000-19-6,Sejarah
+,20-919,Elsa Margaretha,Perkembangan Sejarah Pendidikan Dunia,V.1,Salemba Humanika,2017,919 EM,Jakarta,978-602-0000-20-2,Sejarah
+,01-200,Pdt. Budi Siregar,Teologi Perjanjian Lama,V.1,BPK Gunung Mulia,2012,200 BS,Jakarta,978-602-0001-01-1,Agama
+,02-201,Pdt. Hendra Tanu,Yesus dalam Sejarah dan Iman,V.1,Kanisius,2015,201 HT,Yogyakarta,978-602-0001-02-8,Agama
+,03-202,Pdt. Thomas J. Sihombing,Pengantar Perjanjian Baru,V.1,Gloria Press,2014,202 TS,Surabaya,978-602-0001-03-5,Agama
+,04-203,Pdt. Maria Panggabean,Sejarah Gereja Mula-Mula,V.1,Kalam Hidup,2017,203 MP,Bandung,978-602-0001-04-2,Agama
+,05-204,Pdt. Yakub Saragih,Dogmatika Kristen Dasar,V.2,BPK Gunung Mulia,2020,204 YS,Jakarta,978-602-0001-05-9,Agama
+,06-205,Pdt. Siska Manalu,Etika Kristen dalam Dunia Modern,V.1,Lembaga SABDA,2016,205 SM,Salatiga,978-602-0001-06-6,Agama
+,07-206,Pdt. Ronald Aritonang,Pengantar Teologi Sistematik,V.1,Kanisius,2018,206 RA,Yogyakarta,978-602-0001-07-3,Agama
+,08-207,Pdt. Frans Lumban Gaol,Kristologi: Studi tentang Kristus,V.1,Gloria Press,2013,207 FL,Jakarta,978-602-0001-08-0,Agama
+,09-208,Pdt. Ester Sitompul,Kitab Wahyu dan Akhir Zaman,V.2,Kalam Hidup,2019,208 ES,Surabaya,978-602-0001-09-7,Agama
+,10-209,Pdt. Jonathan Sitanggang,Bimbingan Rohani Kristen,V.1,BPK Gunung Mulia,2021,209 JS,Bandung,978-602-0001-10-3,Agama
+,11-210,Pdt. Agnes Tobing,Sejarah Misi Kristen Dunia,V.1,Kanisius,2011,210 AT,Jakarta,978-602-0001-11-0,Agama
+,12-211,Pdt. Daniel Naibaho,Teologi Paulus dan Surat-Suratnya,V.1,Kalam Hidup,2016,211 DN,Surabaya,978-602-0001-12-7,Agama
+,13-212,Pdt. Roy Situmeang,Apologetika Kristen Modern,V.1,Gloria Press,2014,212 RS,Medan,978-602-0001-13-4,Agama
+,14-213,Pdt. Melisa Siahaan,Teologi Praktis dan Pelayanan Gereja,V.1,Lembaga SABDA,2017,213 MS,Jakarta,978-602-0001-14-1,Agama
+,15-214,Pdt. Lukas Tamba,Kitab Kejadian: Tafsir dan Aplikasi,V.1,BPK Gunung Mulia,2018,214 LT,Yogyakarta,978-602-0001-15-8,Agama
+,16-215,Pdt. Christine Sitorus,Dasar-Dasar Iman Kristen,V.1,Gloria Press,2013,215 CS,Bandung,978-602-0001-16-5,Agama
+,17-216,Pdt. Yosua Manik,Panduan Sekolah Sabat Remaja,V.1,Kalam Hidup,2022,216 YM,Jakarta,978-602-0001-17-2,Agama
+,18-217,Pdt. Nathan Sipayung,Injil Sinoptik: Perspektif dan Harmonisasi,V.1,Kanisius,2015,217 NS,Surabaya,978-602-0001-18-9,Agama
+,19-218,Pdt. Debora Lumbantobing,Doa dan Kehidupan Rohani Kristen,V.1,BPK Gunung Mulia,2019,218 DL,Medan,978-602-0001-19-6,Agama
+,20-219,Pdt. Jonathan Manalu,Roh Kudus dan Pelayanan Kristen,V.1,Gloria Press,2020,219 JM,Jakarta,978-602-0001-20-2,Agama
