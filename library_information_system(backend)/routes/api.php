@@ -138,6 +138,9 @@ Route::middleware(['auth:sanctum', 'abilities:headperpustakaan'])->prefix('headp
     Route::put('/students/{id_siswa}', [StudentController::class, 'update']);
     Route::delete('/students/{id_siswa}', [StudentController::class, 'destroy']);
     Route::get('/students/search/{nama}', [StudentController::class, 'search']);
+    
+    //update status siswa
+    Route::put('/updateStatus/{id_siswa}', [StudentController::class, 'updateStatus']);
 
     //Manajemen Staff
     Route::get('/staffs', [StaffController::class, 'index']);
