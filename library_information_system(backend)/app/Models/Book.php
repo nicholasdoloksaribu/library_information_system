@@ -31,6 +31,19 @@ class Book extends Model
     {
         return $this->hasMany(Borrowing::class);
     }
+
+    public function ratings() : HasMany
+    {
+        return $this->hasMany(Rating::class,'kode_buku','kode_buku');
+    }
+
+    public function getAverageRatingAttribute()
+{
+    $total = $this->ratings->sum('rating');
+    $count = $this->ratings->count();
+
+    return $count > 0 ? round($total / $count, 2) : 0;
+}
     
 
 

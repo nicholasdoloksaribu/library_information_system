@@ -52,9 +52,16 @@ class BookController extends Controller
 
     public function show($kode_buku)
     {
-        $book = Book::where('kode_buku', $kode_buku)->first();
+        $book = Book::with('ratings')->where('kode_buku', $kode_buku)->first();
         if($book){
-            return response()->json($book);
+            $totalRating = $book->ratings->sum('rating');
+            $jumlahOrang = $book->ratings->count();
+            $averageRating = $jumlahOrang > 0 ? round($totalRating / $jumlahOrang, 2) : 0;
+            return response()->json(
+                [
+                   'Book' => $book,
+                   'Rata-Rata rating' => $averageRating
+                ]);
         }
         return response()->json([
             'message' => 'Buku tidak ditemukan'

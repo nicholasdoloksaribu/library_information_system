@@ -68,4 +68,21 @@ class RatingController extends Controller
             ], 500);
         }
     }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'rating' => 'required|integer|min:1|max:5',
+        ]);
+
+        $rating = Rating::find($id);
+
+        if (!$rating) {
+            return response()->json(['message' => 'Rating not found'], 404);
+        }
+
+        $rating->update($request->all());
+
+        return response()->json(['message' => 'Rating updated successfully', 'data' => $rating]);
+    }
 }

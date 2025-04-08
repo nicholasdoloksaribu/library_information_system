@@ -26,7 +26,10 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 Route::post('/loginStudent', [AuthController::class, 'loginStudent']);
 Route::post('/students', [StudentController::class, 'register']);
 
-Route::get('/books', [BookController::class, 'index']);
+// Route::get('/books', [BookController::class, 'index']);
+  // 🌟 **Rating Buku**
+  Route::get('/ratings', [RatingController::class, 'index']);
+  Route::post('/ratings', [RatingController::class, 'store']);
 
 
 
@@ -48,15 +51,16 @@ Route::get('/activity_staffs/search/{aktivitas}', [ActivityStaffController::clas
 // 🟢 **Route yang hanya bisa diakses oleh Student**
 Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->group(function () {
     
-    // 📘 **Profil Student**
-    Route::get('/{id_siswa}', [StudentController::class, 'show']);
-    Route::put('/{id_siswa}', [StudentController::class, 'update']);
-
     // 📚 **Buku**
     Route::get('/books', [BookController::class, 'index']);
     Route::get('/books/{kode_buku}', [BookController::class, 'show']);
     Route::get('/books/search/{judul}', [BookController::class, 'search']);
     Route::get('/books/filter/{kategori}', [BookController::class, 'filter']);
+
+    // 📘 **Profil Student**
+    Route::get('/{id_siswa}', [StudentController::class, 'show']);
+    Route::put('/{id_siswa}', [StudentController::class, 'update']);
+
 
     // 📌 **Peminjaman (Student hanya bisa melihat peminjamannya sendiri & meminjam buku)**
     Route::get('/borrowings/{id_siswa}', [BorrowingController::class, 'showPeminjaman']);
@@ -65,6 +69,7 @@ Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->gr
     // 🌟 **Rating Buku**
     Route::get('/ratings', [RatingController::class, 'index']);
     Route::post('/ratings', [RatingController::class, 'store']);
+    Route::put('/ratings/{kode_buku}', [StudentController::class, 'updateRatings']);
 
     // 🚪 **Logout Student**
     Route::post('/logoutStudent', [AuthController::class, 'logoutStudent']);

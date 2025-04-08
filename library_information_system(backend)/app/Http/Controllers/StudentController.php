@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Rating;
 
 class StudentController extends Controller
 {
@@ -29,7 +30,7 @@ class StudentController extends Controller
     if ($student->id_siswa != $id_siswa) {
         # code...
         return response()->json([
-            'message' => 'anda tidak bisa lihat profil orang lain',
+            'message' => 'anda tidak bisa lihat profil orang lain ya',
         ], 403);
     }
 
@@ -80,13 +81,13 @@ class StudentController extends Controller
         });
 
 
-        if ($passwordSudahDigunakan) {
+        if ($passwordSudahDigunakan){
             return response()->json([
                 'message' => 'Password sudah digunakan silahkan gunakan password lain'
             ], 400);
-        }
-
+    }
         $filePath = null;
+
         if ($request->hasFile('foto_profil')) {
             $file = $request->file('foto_profil');
             $fileName = $file->getClientOriginalName();
@@ -263,6 +264,29 @@ public function search($search)
         ->get();
 
     return response()->json($students);
+}
+
+public function updateRatings(Request $request, $kode_buku)
+{
+    $request->validate([
+        'rating' => 'required|integer|min:1|max:5',
+    ]);
+
+    $id_siswa = auth()->user()->id_siswa;
+
+    $student = Student::find($id_siswa);
+    if (!$student) {
+        return response()->json(['message' => 'Siswa tidak ditemukan'], 404);
+    }
+
+    $rating = Rating::where('kode_buku', $kode_buku)->where('id_siswa', $id_siswa)->first();
+    if ($rating) {
+        $rating->update($request->all());
+        return response()->json(['message' => 'Rating updated successfully', 'data' => $rating]);
+    } else {
+        return response()->json(['message' => 'Rating not found'], 404);
+    }
+
 }
 
 }
