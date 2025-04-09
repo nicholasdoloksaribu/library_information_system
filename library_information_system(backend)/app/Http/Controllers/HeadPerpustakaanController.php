@@ -8,6 +8,14 @@ use Illuminate\Support\Facades\Hash;
 
 class HeadPerpustakaanController extends Controller
 {
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Display a listing of the Head Perpustakaan records.
+ *
+ * @return \Illuminate\Http\JsonResponse
+ */
+
+/*******  e9443bb8-ac38-4254-96c4-96e64bff5c46  *******/
     //
     public function index()
     {
