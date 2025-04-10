@@ -1705,3 +1705,43 @@ Nomor,Acc No,Pengarang,Judul,COPY,PENERBIT,TAHUN,Call Number,Tempat,ISBN,Kategor
 ,07-001,"White,Ellen G",SEJARAH PARA NABI,C.4,INDONESIA PUBLISHING HOUSE,1994,209 Wh C.4,Bandung,979-504-042-1,Agama
 ,98-047,"White,Ellen G",SEJARAH PARA NABI,C.5,INDONESIA PUBLISHING HOUSE,1994,209 Wh C.5,Bandung,979-504-042-1,Agama
 ,00-004,"White,Ellen G",SEJARAH PARA NABI,V.1,INDONESIA PUBLISHING HOUSE,1999,15X W V.1,Bandung,979-504-116-9,Agama
+,00-101,"Azhar, Reza",Belajar Coding Dasar,V.1,Tekno Media Press,2021,15X T V.1,Jakarta,978-602-1234-56-7,Teknologi
+,00-102,"Sari, Linda",Belajar C++ untuk Pemula,V.1,Digital Press,2020,15X T V.1,Bandung,978-602-7890-12-3,Teknologi
+,00-103,"Yusuf, Amin",Belajar JavaScript Interaktif,V.1,NextGen Publisher,2022,15X T V.1,Surabaya,978-602-3456-78-9,Teknologi
+,00-104,"Wijaya, Budi",Panduan Python Lengkap,V.1,Modern Tekno,2023,15X T V.1,Yogyakarta,978-602-1111-22-4,Teknologi
+,00-105,"Hartati, Rina",Algoritma dan Struktur Data,V.1,Inovasi Digital,2021,15X T V.1,Medan,978-602-9876-54-3,Teknologi
+,00-106,"Hakim, Fahmi",Pemrograman Web dengan HTML & CSS,V.1,Creative Media,2022,15X T V.1,Bogor,978-602-5432-10-8,Teknologi
+,00-107,"Amalia, Dewi",Dasar-dasar SQL dan Database,V.1,Smart Tech Press,2020,15X T V.1,Depok,978-602-6543-21-9,Teknologi
+,00-108,"Nugroho, Andi",Machine Learning untuk Pemula,V.1,Tekno Literasi,2023,15X T V.1,Jakarta,978-602-1122-33-4,Teknologi
+,00-109,"Lestari, Sinta",Memahami Artificial Intelligence,V.1,AI Press Indonesia,2022,15X T V.1,Bandung,978-602-9988-44-5,Teknologi
+,00-110,"Fadli, Wahyu",Data Science dengan Python,V.1,DataLab Publisher,2021,15X T V.1,Jakarta,978-602-7788-66-6,Teknologi
+,00-111,"Rudi, Santosa",Cloud Computing untuk Semua,V.1,Komputindo,2020,15X T V.1,Semarang,978-602-3344-55-4,Teknologi
+,00-112,"Irma, Natalia",Jaringan Komputer Praktis,V.1,NextLevel Tech,2019,15X T V.1,Malang,978-602-9981-77-9,Teknologi
+,00-113,"Putra, Anwar",Teknologi Blockchain,V.1,CryptoMedia,2021,15X T V.1,Bandung,978-602-4533-88-8,Teknologi
+,00-114,"Aditya, Bayu",Belajar React untuk Frontend Developer,V.1,Frontend Press,2023,15X T V.1,Jakarta,978-602-9999-12-2,Teknologi
+,00-115,"Marlina, Fitri",Flutter untuk Pengembang Mobile,V.1,MobileTek Publishing,2022,15X T V.1,Yogyakarta,978-602-5678-43-3,Teknologi
+,00-116,"Hendra, Faris",UI/UX Design untuk Aplikasi Digital,V.1,DesignMedia,2020,15X T V.1,Jakarta,978-602-7777-65-5,Teknologi
+,00-117,"Novita, Ayu",Panduan Git & GitHub Lengkap,V.1,VersionControl Books,2021,15X T V.1,Bogor,978-602-1111-90-1,Teknologi
+,00-118,"Ikhsan, Dani",Linux Dasar hingga Mahir,V.1,OpenSource Publisher,2022,15X T V.1,Medan,978-602-8888-55-7,Teknologi
+,00-119,"Zahra, Melati",Belajar PHP dan MySQL,V.1,WebDev Press,2020,15X T V.1,Jakarta,978-602-4321-34-8,Teknologi
+,00-120,"Naufal, Raka",Keamanan Siber untuk Pemula,V.1,CyberSafe Publisher,2021,15X T V.1,Surabaya,978-602-1414-29-0,Teknologi
+,00-121,"Surya, Riko",Panduan Lengkap Microsoft Excel,V.1,OfficeLab,2021,15X T V.1,Jakarta,978-602-9000-01-1,Teknologi
+,00-122,"Wulan, Adisti",Internet of Things (IoT) untuk Pemula,V.1,SmartTech,2022,15X T V.1,Bandung,978-602-1000-02-2,Teknologi
+,00-123,"Adnan, Irfan",Panduan Unity 3D untuk Game Developer,V.1,GameDev Publisher,2023,15X T V.1,Surabaya,978-602-2000-03-3,Teknologi
+,00-124,"Amelia, Fitria",Belajar Internet Aman untuk Anak,V.1,Tekno Ceria,2021,15X T V.1,Yogyakarta,978-602-3000-04-4,Teknologi
+,00-125,"Dani, Rizki",Mikroprosesor dan Mikrokontroler,V.1,Elektronik Press,2020,15X T V.1,Jakarta,978-602-4000-05-5,Teknologi
+,00-126,"Ayunda, Sarah",Teknologi 5G: Masa Depan Komunikasi,V.1,NextWave Media,2023,15X T V.1,Depok,978-602-5000-06-6,Teknologi
+,00-127,"Prasetyo, Dika",Desain Grafis dengan Canva,V.1,Digital Kreatif,2021,15X T V.1,Bandung,978-602-6000-07-7,Teknologi
+,00-128,"Salsabila, Nia",Panduan Aplikasi Android dengan Kotlin,V.1,MobileDev Publisher,2022,15X T V.1,Bogor,978-602-7000-08-8,Teknologi
+,00-129,"Rendra, Arya",Pengenalan Robotika untuk Pelajar,V.1,RoboPress,2020,15X T V.1,Surabaya,978-602-8000-09-9,Teknologi
+,00-130,"Hidayat, Taufik",E-commerce: Cara Bangun Toko Online,V.1,Startup Media,2023,15X T V.1,Jakarta,978-602-9000-10-5,Teknologi
+,00-131,"Putri, Elok",Pemrograman Java OOP,V.1,JavaPress,2022,15X T V.1,Yogyakarta,978-602-1010-11-1,Teknologi
+,00-132,"Bastian, Rangga",Belajar SEO dan Digital Marketing,V.1,WebStrategi,2020,15X T V.1,Jakarta,978-602-2020-12-2,Teknologi
+,00-133,"Hafiz, Dimas",ChatGPT dan AI Generatif,V.1,AI Research Media,2023,15X T V.1,Bandung,978-602-3030-13-3,Teknologi
+,00-134,"Nadya, Rani",Statistik untuk Data Scientist,V.1,DataSains Publishing,2022,15X T V.1,Semarang,978-602-4040-14-4,Teknologi
+,00-135,"Ramadhan, Ilham",Cybersecurity: Perlindungan Data,V.1,SecureNet,2021,15X T V.1,Bogor,978-602-5050-15-5,Teknologi
+,00-136,"Lutfiah, Mita",Augmented Reality dalam Pendidikan,V.1,EduTech Media,2020,15X T V.1,Bandung,978-602-6060-16-6,Teknologi
+,00-137,"Arifin, Yuda",Belajar TensorFlow & Keras,V.1,AI Starter,2022,15X T V.1,Jakarta,978-602-7070-17-7,Teknologi
+,00-138,"Citra, Liana",Pengantar Komputer Grafis,V.1,Grafika Press,2021,15X T V.1,Yogyakarta,978-602-8080-18-8,Teknologi
+,00-139,"Fikri, Salman",Smart City: Konsep dan Teknologi,V.1,UrbanTech Publisher,2023,15X T V.1,Bandung,978-602-9090-19-9,Teknologi
+,00-140,"Anisa, Laras",Teknologi Virtual Reality,V.1,Immersive Media,2021,15X T V.1,Jakarta,978-602-1112-20-2,Teknologi
