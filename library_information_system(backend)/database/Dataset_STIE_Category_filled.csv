@@ -713,3 +713,995 @@ Nomor,Acc No,Pengarang,Judul,COPY,PENERBIT,TAHUN,Call Number,Tempat,ISBN,Kategor
 ,19-910,Ratna Herlina,Geografi dan Ketahanan Pangan,V.1,Deepublish,2021,910 RH,Bandung,978-602-7654-91-2,Geografi
 ,20-910,Agus Pratama,Pengantar Geografi Lingkungan,V.1,Erlangga,2022,910 AP,Jakarta,978-602-8730-11-0,Geografi
 ,20-911,Alan Turing,Can A Machine Think,V.1,English Article,1950,910 AB,Inggris,978-602-8830-11-0,Teknologi
+,2-423,LOUISE CLARKE,"CAN'T REAAAAD,CAN'T WRITE CAN'T TALK TOO GOOD EITHER",,WALKEL AND COMPANY,1973,614.58 CL,USA,,Kesehatan
+,96-1840,"WALTER G. WOLFE,M.D.",COMPLICATIONS IN THORACIC SYRGERY,,MOSBY YEAR BOOK,1992,617.5 WOL,USA,1-55664-175-3,Kesehatan
+,96-1748,"WILLIAM M.THOMPSON,.M.D",COMMON PROBLEMS IN GASTROINTINAL RADIOLOGI,,"YEAR BOOK MEDICAL PUBLISHERS,INC",1989,616.3 TH,USA,0-8151-8799-8,Kesehatan
+,69-7270,HIRO IMURA.M.D,COMPREHENSIVE ENDOCRINOLOGY THE PITUITARY GLAND,C.1,RAVEN PRESS,1985,616.4 IM,USA,0-88167-058-8,Kesehatan
+,97-164,ROBERT K. VANDER MEER,APPLIED MYRMECOLOGY AWORLD PERSPECTIVE,,WESTVIEW PRSS,1990,595.7 ME,USA,0-8133-7785-4,Kesehatan
+,96-1423,RICHARD B.KEMP,MATRICES AND CELL DIFFERENRIRION,,"ALAN R. LISS,INC",1984,591.8 KE,USA,0-8451-5001-4,Kesehatan
+,69-7275,GIUSEPPE DE ROSSI,RADIOISOTOPE STUDY OF SALIVARY GLANDS,C.1,"CRC PRESS,INC",1987,616.3 RO,USA,0-8493-6072-2,Kesehatan
+,597-037,WALKER .R.T,NUCLEIC ACIDS RESEARCH,"V.15,N 15",IRL PRESS,1987,574 WA,WASHINGTON,,Kesehatan
+,97-039,WALKER .R.T,NUCLEIC ACIDS RESEARCH,"V.15,N 19",IRL PRESS,1987,574 WA,WASHINGTON,,Kesehatan
+,97-038,WALKER .R.T,NUCLEIC ACIDS RESEARCH,"V.15,N 17",IRL PRESS,1987,574 WA,WASHINGTON,,Kesehatan
+,597-035,WALKER .R.T,NUCLEIC ACIDS RESEARCH,V.15.N11,IRL PRESS,1987,574 WA,WASHINGTON,,Kesehatan
+,97-036,WALKER .R.T,NUCLEIC ACIDS RESEARCH,"V.15., N 13",IRL PRESS,1987,574 WA,WASHINGTON,,Kesehatan
+,597-041,WALKER .R.T,NUCLEIC ACIDS RESEARCH,"V.15, N 23",IRL PRESS,1987,574 WA,WASHINGTON,,Kesehatan
+,97-042,WALKER .R.T,NUCLEIC ACIDS RESEARCH,"V.15, N 1",IRL PRESS,1987,574 WA,WASHINGTON,,Kesehatan
+,698-093,RICHARD D. LIECHTY,FUNDAMENTALS OF SURGERY,C.4,THE C.V. MOSBY COMPANY,1989,617 LI,USA,0-8016-2962-4,Kesehatan
+,698-092,RICHARD D. LIECHTY,FUNDAMENTALS OF SURGERY,C.3,THE C.V. MOSBY COMPANY,1989,617 LI,USA,0-8016-2962-4,Kesehatan
+,97-261,RICHARD D. LIECHTY,FUNDAMENTALS OF SURGERY,,THE C.V. MOSBY COMPANY,1989,617 LI,USA,0-8016-2962-4,Kesehatan
+,698-094,RICHARD D. LIECHTY,FUNDAMENTALS OF SURGERY,C.5,THE C.V. MOSBY COMPANY,1989,617 LI,USA,0-8016-2962-4,Kesehatan
+,24-2011,LOMA LINDA UNIVERSITY,THE BIG LITTLE BOOK ON TRANSPLANTATION,,LOMA LONDA UNIVERSITY MEDICAL CENTER,1988,300 UN,CALIFORNIA,,Kesehatan
+,07-750,MARILY M FRIEDMAN,KEPERAWATAN KELUARGA,C.2,PENERBIT BUKU KEDOKTERAN,1992,913 FR,JAKARTA,979-448-389-3,Kesehatan
+,26-031,JOHN L.VOGEL,THINGKING ABOUT PSYCHOLOGY,C.2,NELSON-HALL,1986,157 VO,USA,0-8304-1153-4,Kesehatan
+,698-200,GARY GINTNICK,DEBATES IN MEDICINE,C.2,"YEAR BOOK MEDICAL PUBLISHERS,INC",1988,610 GI,CHICAGO,0-8151-3600-5,Kesehatan
+,25-978,GARY GINTNICK,DEBATES IN MEDICINE,,"YEAR BOOK MEDICAL PUBLISHERS,INC",1988,610 GI,CHICAGO,0-8151-3600-5,Kesehatan
+,97-168,GERALD P. BODEY,CANDIDIASIS,,RAVEN PRESS,1985,616.9 BO,NEW YORK,0-88167-046-4,Kesehatan
+,96-1813,J.B. DUBOIS,IMMUNOPHARMACOLOGIC EFFECTS OF RADIATION THERAPY,,RAVEN PRESS,1981,616.9 DU,NEW YORK,0-89004-531-3,Kesehatan
+,96-1406,BIBUDHENDRA SARKAR,BIOLOGICAL ASPECTS OF METALS AND METAL-RELATED DISEASES,,RAVEN PRESS,1983,616.3 SA,NEW YORK,0-89004-807-X,Kesehatan
+,97-298,MICHEL HERSEN,PROGRESS IN BEHAVIOR MODIFICATION,,SAGE PUBLICATIONS,1989,308 HE,USA,0-8039-3212-X,Kesehatan
+,697-241,MARY CASTLE & ELIZABETH AJEMIAN,HOSPITAL INFECTION CONTROL,C.2,A WILEY MEDICAL PUBLICATION,1980,614.4 CA,USA,0-471-83681-8,Kesehatan
+,697-238,MARY CASTLE & ELIZABETH AJEMIAN,HOSPITAL INFECTION CONTROL,C.3,A WILEY MEDICAL PUBLICATION,1980,614.4 CA,USA,0-471-83681-8,Kesehatan
+,26-037,ROBERT M. KAPLAN,PSYCHOLOGICAL TESTING ,C.4,BROOKS/COLE PUBLISHING COMPANY,1982,157 KA,USA,0-8185-0494-3,Kesehatan
+,27-162,PATRICIA A. MCCLUNG,"SELECTION OF LIBRARY MATERIALS IN THE HUMANITIES, SOCIAL SCIENCES AND SCIENCES",,AMERICAN LIBRARY ASSOCIATION,1985,025.21 MC,USA,0-8389-3305-X,Kesehatan
+,97-003,JAMES L. HALL,ONLINE BIBLIOGRAPHIC DATABASES,,GALE RESEARCH COMPANY,1969,025.0 HA,USA,0-8103-2080-0,Kesehatan
+,697-299,WILLIAM J. ZWIEBEL,INTRODUCTION TO VASCULAR ULTRASONOGRAPHY,,W.B. SAUNDERS COMPANY,1986,616.1 ZW,USA,0-8089-1781-1,Kesehatan
+,96-1731,JAMES E. MONTIE,CLINICAL MANAGEMENT OF RENAL CELL CANCER,,"YEAR BOOK MEDICAL PUBLISHERS,INC",1990,616.9 MO,CHICAGO,0-8151-5942-0,Kesehatan
+,298-236,PSYCHOPATHOLOGY,PROGRESS IN EXPERIMENTAL PERSONALITY RESEARCH,V.12,ACADEMIC PRESS,1983,616.8 MA,NEW YORK,0-12-541412-9,Kesehatan
+,69-7280,CONSTANTIN A. BONA,BIOLOGICAL APPLICATIONS OF ANTI-IDIOTYPES,V.1,"CRC PRESS, INC",1988,616.0 BO,US,0-8493-6940-1,Kesehatan
+,,EDWARD K. CHUNG,ECG DIAGNOSIS SELF ASSESSMENT VOLUME II,,"HAPPER & ROW, PUBLISHERS",1977,611.1 CH,NEW YORK,0-06-140638-4,Kesehatan
+,96-1727,NORMAN C. DELARUE ,INTERNATIONAL TRENDS IN GENERAL THORACIC SURGERY,,C.V. MOSBY COMPANY,1988,616.9 DE,USA,0-8016-2048-1,Kesehatan
+,697-295,VAL M. RUNGE,ENHANCED MAGNETIC RESONANCE IMAGING,,C.V. MOSBY COMPANY,1989,616.0 RU,USA,0-8016-4261-2,Kesehatan
+,19-100,E.OSWARI,PENYAKIT DAN PENANGGULANGANNYA,,PT GRAMEDIA,1985,613.3 OS,JAKARTA,,Kesehatan
+,599-013,ALBERT M. HUTAPEA,HISTOLOGI II,V.2,UNIVERSITAS ADVENT INDONESIA BANDUNG,1991,574.4 HU,BANDUNG,,Kesehatan
+,3-990,ELLSWORTH S. OBOURN,MY WORLD OF SCIENCE,V.2,"MCCORMICK-MATHERS PUBLISHING COMPANY,INC",1968,507 OB,PHILIPPINES,,Kesehatan
+,3-931,TEACHER'S MANUAL,MY WORLD OF SCIENCE,"V.2,C.2","MCCORMICK-MATHERS PUBLISHING COMPANY,INC",1968,507 OB,PHILIPPINES,,Kesehatan
+,,RUSSELL C. SWANSBURG,MANAGEMENT AND LEADERSHIP FOR NURSE MANAGERS,,JONES AND BARTLETT PUBLISHERS,1990,,USA,0-86720-439-7,Kesehatan
+,,Ellen G.White,Spirit Of Prophecy Library Volume 1,,R&H Graphics,,40.1 Wh ,U.S.A,,Agama
+,,Ellen G.White,Spirit Of Prophecy Library Volume 1,,R&H Graphics,,,U.S.A,,Agama
+,20-001,Ellen G.White,Spirit Of Prophecy Library Volume 1,C.1,R&H Graphics,,1227 wh C.1,U.S.A,,Agama
+,,Ellen G.White,Spirit Of Prophecy Library Volume 1,C.2,R&H Graphics,,W 40.1 C.2,U.S.A,,Agama
+,06-007,Ellen G.White,Spirit Of Prophecy Library Volume 1,C.3,R&H Graphics,,40.1 Wh V.1 C.3,U.S.A,,Agama
+,,Ellen G.White,spirit Of Prophecy Library Volume 2,,R&H Graphics,,W 40.2 C.2,U.S.A,,Agama
+,,Ellen G.White,spirit Of prophecy Library Volume 2,,R&H Graphics,,,U.S.A,,Agama
+,20-002,Ellen G.White,Spirit Of Prophecy Library Volume 2,C.2,R&H Graphics,,1227 Wh C.2,U.S.A,,Agama
+,06-006,Ellen G.White,Spirit Of Prophecy Library Volume 2,C.3,R&H Graphics,,40.2 Wh V.2 C.3,U.S.A,,Agama
+,,Ellen G.White,Spirit Of Prophecy Library Volume 3,,R&H Graphics,,,U.S.A,,Agama
+,,Ellen G.White,Spirit Of Prophecy Library Volume 3,,R&H Graphics,,W 40.3,U.S.A,,Agama
+,,Ellen G.White,Spirit Of Prophecy Library Volume 3 ,C.2,R&H Graphics,,W 40.3 C.2,U.S.A,,Agama
+,20-003,Ellen G.White,Spirit Of Prophecy Library Volume 3,,R&H Graphics,,1227 Wh C.3,U.S.A,,Agama
+,06-009,Ellen G.White,Spirit Of Prophecy Library Volume 3,C.3,R&H Graphics,,40.3 Wh V.3 C.3,U.S.A,,Agama
+,,Jhon Caffey ,Pediatric X-Ray Diaknosis,,Inc,1961,615.7 Ca ,U.S.A,,
+,897-014,Barnhart,The world book dictionary ,,Chicago,1993,823 Ba V.1,London,0-7166-0293-8,
+,897-016,Barnhart,The world book dictionary ,,Chicago,1993,823 Ba V.2,London,0-7166-0293-8,
+,897-015,Barnhart,The world book dictionary ,C.1,Chicago,1993,823 Ba V.1 C.2,London,0-7166-0293-8,
+,897-017,Barnhart,The world book dictionary ,C.2,Chicago,1993,823 Ba V.2 C.2,London,0-7166-0293-8,
+,96-072,David L.Sills,International Encyclopedia of the social sciences 1&2,,Collerier-Macmillan Pub,1972,300.03 Si V.1&2,London,,Ensiklopedia
+,96-073,David L.Sills,International Encyclopedia of the social sciences 3 &4,,Collerier-Macmillan Pub,1972,300.02 Si V.3&4,London,,Ensiklopedia
+,96-075,David L.Sills,International Encyclopedia of The Social Sciences 5&6,,Collerier-Macmillan Pub,1972,300.03 si V.7&8,London,,Ensiklopedia
+,96-076,David L.Sills,International Encylopedia Of The Sosial Sciences 9 &10 ,,Collerier-Macmillan Pub,1972,300.03 Si V.9&10,London,,Ensiklopedia
+,96-077,David L.Sills,international Encyclopedia Of the sosial sciences 11 &12,,Collerier-Macmillan Pub,1972,300.03 Si 11&12,London,,Ensiklopedia
+,96-079,David L.Sills,"International Encyclopedia Of The Sosial Sciences 15,16&17",,Collerier-Macmillan Pub,1972,300.03 Si 15.16 &17,London,,Ensiklopedia
+,17-015,Nichol,Seventy-day Adventist Bible Commentary Vol.1,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,95-24873,Nichol,Seventy-day Adventist Bible Commentary Vol.1,C.3,Washington Review And Herland ,1953,220.7 Ni V.1 C.3,U.S.A,,Agama
+,17-016,Nichol,seventy-day Adventist Bible Commentary Vol.2,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,95-24874,Nichol,Seventy-day Adventist Bible Commentary Vol.2,C.4,Washington Review And Herland ,1953,220.7 Ni V.2 C.4,U.S.A,,Agama
+,24-875,Nichol,Seventy-day Adventist Bible Commentary Vol.3,,Washington Review And Herland ,1953,220.7 Ni V.3 C.4,U.S.A,,Agama
+,17-017,Nichol,Seventy-day Adventist Bible Commentary Vol.3,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,24-876,Nichol,Seventy-day Adventist Bible Commentary Vol.4,,Washington Review And Herland ,1953,220.7 Ni V.C.3,U.S.A,,Agama
+,17-018,Nichol,Seventy-day Adventist Bible Commentary Vol.4,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,17-019,Nichol,Seventy-day Adventist Bible Commentary Vol.5,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,24-878,Nichol,Seventy-day Adventist Bible CommentaryVol.6,C.3,Washington Review And Herland ,1953,220.7 Ni V.6 C.3,U.S.A,,Agama
+,17-020,Nichol,Seventy-day Adventist Bible Commentary Vol.6,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,24-878,Nichol,Seventy-day Adventist Bible Commentary Vol.7,C.3,Washington Review And Herland ,1953,220.7 Ni V.7 C.3,U.S.A,,Agama
+,17-021,Nichol,Seventy-day Adventist Bible Commentary Vol.7,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,95-24879,Nichol,Seventy-day Adventist Bible Commentary Vol.8,C.3,Washington Review And Herland ,1953,220.7 Ho V.8 C.3,U.S.A,,Agama
+,17-024,Nichol,Seventy-day Adventist Bible Commentary Vol.8,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,17-023,Nichol,Seventy-day Adventist Bible Commentary Vol.9,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,17-022,Nichol,Seventy-day Adventist Bible Commentary Vol10,,Washington Review And Herland ,1953,220.7 Ni 1962,U.S.A,,Agama
+,06-022,Nichol,Seventy-day Adventist Bible Commentary (Genesis To Deuteronomy) Vol 1,C.5,Washington Review And Herland ,1953,220.7 Ni V.1 C.5,U.S.A,,Agama
+,60-61,Nichol,Seventy-Day Adventist Bible Commentary (Josua To 2 Kings) Vol2,C.3,Washington Review And Herland ,1953,220.7 Ni V.2 C.3,U.S.A,,Agama
+,06-005,Nichol,Seventy-Day Adventist Bible Commentary (Josua To 2 Kings) Vol2,C.5,Washington Review And Herland ,1953,220.7 Ni V.2 C.3,U.S.A,,Agama
+,60-62,Nichol,Seventy-Day Adventist Bible Commentary(1 Chronicles To Song Of Solomon) Vol 3,C.2,Washington Review And Herland ,1953,220.7 Ni V.3 C.2,U.S.A,,Agama
+,06-004,Nichol,Seventy-day Adventist Bible Commentary (1 Chroncles To Song Of Solomon) Vol 3,C.5,Washington Review And Herland ,1953,220.7 Ni V.3 C.5,U.S.A,,Agama
+,41-30,Nichol,Seventy-day Adventist Bible Commentary (Isaiah To Malachi) Vol 4,C.2,Washington Review And Herland ,1953,220.7 Ni V.4 C.2,U.S.A,,Agama
+,06-005,Nichol,Seventy-day Adventist Bible Commentary (Isaiah To Malachi) Vol 4,C.5,Washington Review And Herland ,1953,220.7 Ni V.4 C.5 ,U.S.A,,Agama
+,41-31,Nichol,Seventy-Day Adventist Bible Commentary (Mattew To John) Vol 5,C.2,Washington Review And Herland ,1953,220.7 Ni V.5 C.2,U.S.A,,Agama
+,60-64,Nichol,Seventy Day Adventist Bible Commentary (Mattew To John ) Vol 5,C.2,Washington Review And Herland ,1953,220.7 Ni V.5 C.2,U.S.A,,Agama
+,06-006,Nichol,Seventy-Day Adventist Bible Commentary (Mattew To John) Vol 5,C.5,Washington Review And Herland ,1953,220.7 Ni V.5 C.5,U.S.A,,Agama
+,06-007,Nichol,Seventy-Day Adventist Bible Commentary (Acts To Ephesians) Vol 6,C.5,Washington Review And Herland ,1953,220.7 Ni V.5 C.5,U.S.A,,Agama
+,06-023,Nichol,Seventy-Day Adventist Bible Commentary (Acts To Ephesians) Vol 6,C.6,Washington Review And Herland ,1953,220.7 Ni C.6,U.S.A,,Agama
+,95-24880,Nichol,Seventy-Day Adventist Bible Commentary (Philippans To Revelation) Vol 7 ,,Washington Review And Herland ,1953,220.7 Ni V.7 ,U.S.A,,Agama
+,06-008,Nichol,Seventy-Day Adventist Bible Commentary (Philippans To Revelation) Vol 7 ,C.5,Washington Review And Herland ,1953,220.7 Ni V.7 C.5,U.S.A,,Agama
+,06-024,Nichol,Seventy-Day Adventist Bible Commentary (Philippans To Revelation) Vol 7 ,C.6,Washington Review And Herland ,1953,220.7 Ni V.7 C.6,U.S.A,,Agama
+,60-67,Neufeld,Seventy-Day Adventist Bible Dictionary (Commentary Reference Series ) Vol.8,C.2,Washington Review And Herland ,1960,220.7 Ho V.8 C.2,U.S.A,,Agama
+,08-009,Neufeld,Seventy-Day Adventist Bible Dictionary (Commentary Reference Series) vol.8,C.5,Washington Review And Herland ,1960,220.7 H0 V.8 C.5 ,U.S.A,,Agama
+,06-010,"Horn,siegfried H ",Seventy-Day Adventist Bible Dictionary (Commentary Reference Series ) Vol.8,C.5,washington Review And Herland,1960,220.7 Ho V.8 C.5,U.S.A,,Agama
+,06-012,"neufeld,Don F",Seventy-Day Adventist Bible Students Source Book Vol.9,,Washington Review And Heralnd ,1962,220.7 Ne V.9,U.S.A,,Agama
+,06-011,Neufeld,Seventy-Day Adventist Encyclopedia Vol.10,,Washington Review And Herland ,1962,220.7 Ne V.10,U.S.A,,Agama
+,13-035,Arthur L.White,Elleng.White :The Early Years Vol 1,,Review And Herald,1985,2867 Wh V.1 ,U.S.A,,Agama
+,20-618,Arthur L.White,Elleng.White:The Early Years Vol 1,,Review And Herald,1985,288 Wh V.1 ,U.S.A,,Agama
+,13-037,Arthur L.White,Elleng.White:The Early Years Vol 3,,Review And Herald,1985,288 Wh V.3,U.S.A,,Agama
+,13-038,Arthur L.White,Elleng.White:The Early Years Vol 4   ,,Review And Herald,1985,288 Wh V.4,U.S.A,,Agama
+,17-645,Arthur L.White,Elleng.White:The Early Years Vol 5,,Review And Herald,1985,2867 Wh V.5,U.S.A,,Agama
+,13-039,Arthur L.White,Elleng.white:The Early Years Vol 5,,Review And Herald,1985,288 Wh V.5,U.S.A,,Agama
+,26-182,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 1,,Adi Pustaka ,1990,030 Nu V.1,jakarta ,979-8265-12-2,
+,26-185,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 4,,Adi Pustaka ,1990,030 Nu V.4,jakarta ,979-8265-15-7,
+,26-187,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 6,,Adi Pustaka ,1990,030 Nu V.6,jakarta ,979-8265-17-3,
+,26-190,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 9,,Adi Pustaka ,1990,030 Nu V.9,jakarta ,979-8265-20-2,
+,26-192,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 11,,Adi Pustaka ,1990,030 Nu V.11,jakarta ,979-8265-22-x,
+,26-193,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 12,,Adi Pustaka ,1990,030 Nu V.12,jakarta ,979-8265-23-8,
+,26-194,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 13,,Adi Pustaka ,1990,030 Nu V.13,jakarta ,979-8265-24-6,
+,26-195,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 14,,Adi Pustaka ,1990,030 Nu V.14,jakarta ,979-8265-25-4,
+,26-197,"Nugroho,Dr.E.",Ensiklopedi Nasional Indonesia Jilid 16,,Adi Pustaka ,1990,030 Nu V.16,jakarta ,979-8265-27-0,
+,26-672,Humberto M.Rasi ,Chirist In The Clasroom Vol 12,,Institute For Christian Teaching,1994,268 Ra V.12,U.S.A,,Agama
+,26-554,Humberto M.Rasi ,Chirist In The Clasroom Vol 13,,Institute For Christian Teaching,1994,268 Ra V.13,U.S.A,,Agama
+,26-552,Humberto M.Rasi ,Chirist In The Clasroom Vol 14,,Institute For Christian Teaching,1994,268 Ra V.14,U.S.A,,Agama
+,26-553,Humberto M.Rasi ,Chirist In The Clasroom Vol 15,,Institute For Christian Teaching,1994,268 Ra V.15,U.S.A,,Agama
+,298-123,Humberto M.Rasi ,Chirist In The Clasroom Vol 19,,Institute For Christian Teaching,1994,288 Ra V.19 ,U.S.A,,Agama
+,000-44,Humberto M.Rasi ,Chirist In The Clasroom Vol 25,,Institute For Christian Teaching,1994,268 Be V.25,U.S.A,,Agama
+,02-013,Humberto M.Rasi ,Chirist In The Clasroom Vol 26-B,,Institute For Christian Teaching,1994,268 Ra V.26-B,U.S.A,,Agama
+,02-002,Humberto M.Rasi ,Chirist In The Clasroom Vol 27,,Institute For Christian Teaching,1994,268 Ra V.27,U.S.A,,Agama
+,02-003,Humberto M.Rasi ,Chirist In The Clasroom Vol 28,,Institute For Christian Teaching,1994,268 Ra V.28,U.S.A,,Agama
+,03-016,Humberto M.Rasi ,Chirist In The Clasroom Vol 29,,Institute For Christian Teaching,1994,268 Ra V.29,U.S.A,,Agama
+,03-018,Humberto M.Rasi ,Chirist In The Clasroom Vol 30,,Institute For Christian Teaching,1994,268 Ra V.30,U.S.A,,Agama
+,,Humberto M.Rasi ,Chirist In The Clasroom Vol 31-A,,Institute For Christian Teaching,1994,268 Ra V.31 A,U.S.A,,Agama
+,06-037,Humberto M.Rasi ,Chirist In The Clasroom Vol 31-B,,Institute For Christian Teaching,1994,268 Ra V.31 B,U.S.A,,Agama
+,05-012,Humberto M.Rasi ,Chirist In The Clasroom Vol 32,,Institute For Christian Teaching,1994,268 Ra V.32,U.S.A,,Agama
+,06-036,Humberto M.Rasi ,Chirist In The Clasroom Vol 33,,Institute For Christian Teaching,1994,268 Ra V.33,U.S.A,,Agama
+,,Humberto M.Rasi ,Chirist In The Clasroom Vol 34-A,,Institute For Christian Teaching,1994,082 Ra V.34-A,U.S.A,,Agama
+,08-003,Humberto M.Rasi ,Chirist In The Clasroom Vol 34-B,,Institute For Christian Teaching,1994,082 Ra V.34-B,U.S.A,,Agama
+,,Humberto M.Rasi ,Chirist In The Clasroom Vol 35-B,,Institute For Christian Teaching,1994,268 Ra V 35-B,U.S.A,,Agama
+,10-375,Humberto M.Rasi ,Chirist In The Clasroom Vol 36,,Institute For Christian Teaching,1994,082 Ra V.36,U.S.A,,Agama
+,10-376,Humberto M.Rasi ,Chirist In The Clasroom Vol 37-A,,Institute For Christian Teaching,1994,082 Ra V.37-A,U.S.A,,Agama
+,12-183,Humberto M.Rasi ,Chirist In The Clasroom Vol 37-B,,Institute For Christian Teaching,1994,082 Ra V.37 B,U.S.A,,Agama
+,,Humberto M.Rasi ,Chirist In The Clasroom Vol 38,,Institute For Christian Teaching,1994,082 Fa V.38,U.S.A,,Agama
+,,Humberto M.Rasi ,Chirist In The Clasroom Vol 39,,Institute For Christian Teaching,1994,082 Ra V.39,U.S.A,,Agama
+,,Humberto M.Rasi ,Chirist In The Clasroom Vol  40,,Institute For Christian Teaching,1994,268 Ra V.40,U.S.A,,Agama
+,96-1211,A.Heuken Sj,Ensiklopedi Gereja ,,Loka Caraka,1992,250.3 He V.11,jakarta ,,
+,98-001,Spence H.D.M,The Pulpit Commentary Vol 1,,Hendrickson,1990,220.7 Sp V.1,London,0-917006-32-1,Agama
+,98-002,Spence H.D.M,The Pulpit Commentary Vol 2,,Hendrickson,1990,220.7 Sp V.2,London,0-917006-32-1,Agama
+,98-004,Spence H.D.M,The Pulpit Commentary Vol 4,,Hendrickson,1990,220.7 Sp V.4,London,0-917006-32-1,Agama
+,98-005,Spence H.D.M,The Pulpit Commentary Vol 5,,Hendrickson,1990,220.7 Sp V.5,London,0-917006-32-1,Agama
+,98-006,Spence H.D.M,The Pulpit Commentary Vol 6,,Hendrickson,1990,220.7 Sp V.6,London,0-917006-32-1,Agama
+,98-007,Spence H.D.M,The Pulpit Commentary Vol 7,,Hendrickson,1990,220.7 Sp V.7,London,0-917006-32-1,Agama
+,98-008,Spence H.D.M,The Pulpit Commentary Vol 8,,Hendrickson,1990,220.7 Sp V.8,London,0-917006-32-1,Agama
+,98-009,Spence H.D.M,The Pulpit Commentary Vol 9,,Hendrickson,1990,220.7 Sp V.9,London,0-917006-32-1,Agama
+,98-010,Spence H.D.M,the pulpit Commentary Vol 10,,Hendrickson,1990,220.7 Sp V.10,London,0-917006-32-1,Agama
+,98-011,Spence H.D.M,The Pulpit Commentary Vol 11,,Hendrickson,1990,220.7 Sp V.11,London,0-917006-32-1,Agama
+,98-012,Spence H.D.M,The Pulpit Commentary Vol 12,,Hendrickson,1990,220.7 Sp V.12,London,0-917006-32-1,Agama
+,98-013,Spence H.D.M, The Pulpit Commentary Vol 13,,Hendrickson,1990,220.7 Sp V.13,London,0-917006-32-1,Agama
+,98-014,Spence H.D.M,The Pulpit Commentary Vol 14,,Hendrickson,1990,220.7 Sp V.14,London,0-917006-32-1,Agama
+,98-015,Spence H.D.M,The Pulpit Commentary Vol 15,,Hendrickson,1990,220.7 Sp V.15,London,0-917006-32-1,Agama
+,98-016,Spence H.D.M,The Pulpit Commentary Vol 16,,Hendrickson,1990,220.7 Sp V.16,London,0-917006-32-1,Agama
+,98-017,Spence H.D.M,The Pulpit Commentary Vol 17,,Hendrickson,1990,220.7 Sp V.17,London,0-917006-32-1,Agama
+,98-018,Spence H.D.M,The Pulpit Commentary Vol 18,,Hendrickson,1990,220.7 Sp V.18,London,0-917006-32-1,Agama
+,98-019,Spence H.D.M,The Pulpit Commentary Vol 19,,Hendrickson,1990,220.7 Sp V.19,London,0-917006-32-1,Agama
+,98-020,Spence H.D.M,The Pulpit Commentary Vol 20 ,,Hendrickson,1990,220.7  Sp V.20,London,0-917006-32-1,Agama
+,98-021,Spence H.D.M,The Pulpit Commentary Vol 21,,Hendrickson,1990,220.7 Sp V.21,London,0-917006-32-1,Agama
+,98-022,Spence H.D.M,The Pulpit Commentary Vol 22,,Hendrickson,1990,220.7 Sp V.22,London,0-917006-32-1,Agama
+,98-023,Spence H.D.M,The Pulpit Commentary Vol 23,,Hendrickson,1990,220.7 Sp V.23,London,0-917006-32-1,Agama
+,10-342,Nichol,Seventh-day Adventist Bible Commentary Vol 1,,Review And Herald,1976,220.7 Ni V.1,U.S.A,,Agama
+,10-343,Nichol,Seventy-Day Adventist Bible Commentary Vol 2,,Review And Herald,1976,220.7 Ni V.3,U.S.A,,Agama
+,10-344,Nichol,Seventy-Day Adventist Bible Commentary Vol 3,,Review And Herald,1976,220.7 Ni V.3,U.S.A,,Agama
+,10-345,Nichol,Seventy-Day Adventist Bible Commentary Vol 4,,Review And Herald,1976,220.7 Ni V.4,U.S.A,,Agama
+,10-346,Nichol,Seventy-Day Adventist Bible Commentary Vol 5,,Review And Herald,1976,220.7 Ni V.5,U.S.A,,Agama
+,10-348,Nichol,Seventy Day Adventist Bible Commentary Vol 7,,Review And Herald,1976,220.7 Ni V.7,U.S.A,,Agama
+,10-349,Nichol,Seventy Day Adventist Bible Commentary Vol 8,,Review And Herald,1976,220.Ho,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",,Review And Herald,1969,75x W V.1,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",,Review And Herald,1969,75x W V.1,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.2,Review And Herald,1969,75x W V.3 C.2,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.2,Review And Herald,1969,75x W V.2,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.2,Review And Herald,1969,24x W V.2 C.2,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.2,Review And Herald,1969,75x W V.2,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.2,Review And Herald,1969,75x W V.2,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.2,Review And Herald,1969,75x W V.4 C.2,U.S.A,,Agama
+,X98-068,"White,Ellen G","""The Spirit Of Prophecy""",C.3,Review And Herald,1969,75x W V.1 C.3,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.3 ,Review And Herald,1969,75x W V.2 C.3,U.S.A,,Agama
+,X98-075,"White,Ellen G","""The Spirit Of Prophecy""",C.3,Review And Herald,1969,75x W V.3 C.3,U.S.A,,Agama
+,X98-094,"White,Ellen G","""The Spirit Of Prophecy""",C.3,Review And Herald,1969,75x W V.4 C.3,U.S.A,,Agama
+,X98-060,"White,Ellen G","""The Spirit Of Prophecy""",C.3,Review And Herald,1969,75x W C.3,U.S.A,,Agama
+,X98-073,"White,Ellen G","""The Spirit Of Prophecy""",C.3,Review And Herald,1969,75x W C.3,U.S.A,,Agama
+,,"White,Ellen G","""The Spirit Of Prophecy""",C.4,Review And Herald,1969,75x W V.1 C.4,U.S.A,,Agama
+,X98-069,"White,Ellen G","""The Spirit Of Prophecy""",C.4,Review And Herald,1969,75x W V.2 C.4,U.S.A,,Agama
+,X98-076,"White,Ellen G","""The Spirit Of Prophecy""",C.4,Review And Herald,1969,75x W V.3 C.4,U.S.A,,Agama
+,X98-095,"White,Ellen G","""The Spirit Of Prophecy""",C.4,Review And Herald,1969,75x W V.4 C.4,U.S.A,,Agama
+,X98-092,"White,Ellen G","""The Spirit Of Prophecy""",,Review And Herald,1969,75x W V.4,U.S.A,,Agama
+,X98-070,"White,Ellen G","""The Spirit Of Prophecy""",C.5,Review And Herald,1969,75x W V.2 C.5,U.S.A,,Agama
+,X98-077,"White,Ellen G","""The Spirit Of Prophecy""",C.5,Review And Herald,1969,75x W V.3 C.5,U.S.A,,Agama
+,X98-096,"White,Ellen G","""The Spirit Of Prophecy""",C.5,Review And Herald,1969,75x W V.4 C.5,U.S.A,,Agama
+,X98-071,"White,Ellen G","""The Spirit Of Prophecy""",C.6,Review And Herald,1969,75x W V.2 C.6,U.S.A,,Agama
+,X98-078,"White,Ellen G","""The Spirit Of Prophecy""",C.6,Review And Herald,1969,75x W V.3 C.6,U.S.A,,Agama
+,X98-097,"White,Ellen G","""The Spirit Of Prophecy""",C.6,Review And Herald,1969,75x W V.4 C.6,U.S.A,,Agama
+,98-072,"White,Ellen G","""The Spirit Of Prophecy""",C.7,Review And Herald,1969,75x W V.2 C.7,U.S.A,,Agama
+,X98-098,"White,Ellen G","""The Spirit Of Prophecy""",C.7,Review And Herald,1969,75x W V.4 C.7,U.S.A,,Agama
+,X98-087,"White,Ellen G",Spiritual Gifts VOLS.lll-lV,C.1,Review And Herald,1945,209 WH V.3.4 C.1,U.S.A,,Agama
+,x98-080,"White,Ellen G",Spiritual Gifts VOLS.l-ll,C.1,Review And Herald,1945,209 WH V.1.2 C.1,U.S.A,,Agama
+,X98-088,"White,Ellen G",Spiritual Gifts VOLS.lll-lV,C.2,Review And Herald,1945,209 WH V.3.4 C.2,U.S.A,,Agama
+,x98-081,"White,Ellen G",Spiritual Gifts VOLS.l-ll,C.2,Review And Herald,1945,209 WH V.1.2 C.2,U.S.A,,Agama
+,x98-082,"White,Ellen G",Spiritual Gifts VOLS.l-ll,C.3,Review And Herald,1945,209 WH V.1.2 C.3,U.S.A,,Agama
+,x98-089,"White,Ellen G",Spiritual Gifts VOLS.lll-lV,C.3,Review And Herald,1945,209 WH V.3.4 C.3,U.S.A,,Agama
+,x98-090,"White,Ellen G",Spiritual Gifts VOLS.lll-lV,C.4,Review And Herald,1945,209 WH V.3.4 C.4,U.S.A,,Agama
+,x98-083,"White,Ellen G",Spiritual Gifts VOLS.l-ll,C.4,Review And Herald,1945,209 WH V.1.2.C.4,U.S.A,,Agama
+,x98-091,"White,Ellen G",Spiritual Gifts VOLS.lll-lV,C.5,Review And Herald,1945,209 WH V.3.4.C.5,U.S.A,,Agama
+,x98-084,"White,Ellen G",Spiritual Gifts VOLS.I-ll,C.5,Review And Herald,1945,209 WH V.1.2.C.5,U.S.A,,Agama
+,x98-085,"White,Ellen G",Spiritual GiftsVOLS. l-ll,C.6,Review And Herald,1945,209 WH V.1.2.C.6,U.S.A,,Agama
+,x98-086,"White,Ellen G",Spiritual Gifts VOLS l-ll,C.7,Review And Herald,1945,209 WH V.1.2 C.7,U.S.A,,Agama
+,12-170,,Kitab Suci Taurat,C.1,The Grovers Center,2010,221 Gr C.1,U.S.A,978-602-96769-0-7,Agama
+,13-001,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.1-2,THE MACMILLAN COMPANY,1957,032 Se V.1-2,NEW YORK,,
+,13-002,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.3-4,THE MACMILLAN COMPANY,1957,032 Se V.3-4,NEW YORK,,
+,13-003,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.5-6,THE MACMILLAN COMPANY,1957,032 Se V.5-6,NEW YORK,,
+,13-004,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.7-8,THE MACMILLAN COMPANY,1957,032 Se V.7-8,NEW YORK,,
+,13-005,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.9-10,THE MACMILLAN COMPANY,1957,032 Se V.9-10,NEW YORK,,
+,13-006,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.11-12,THE MACMILLAN COMPANY,1957,032 Se V.11-12,NEW YORK,,
+,13-007,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.13-14,THE MACMILLAN COMPANY,1957,032 Se V.13-14,NEW YORK,,
+,13-008,"Seligman,Edwin R.A",Encyclopaedia of the SOSIAL SCIENCES,V.15,THE MACMILLAN COMPANY,1957,032 Se V.15,NEW YORK,,
+,x98-079,"White,Ellen G","""The Spirit Of Prophecy""",C.7,Review And Herald,1969,75x W V.3 C.7,U.S.A,,Agama
+,6208,"White,Ellen G",The Great Controversy,,PACIFIC PRESS,1950,15 X W,U.S.A,,Agama
+,3566,"White,Ellen G",Counsels on Stewardship,,Review And Herald,1940,22 X W,U.S.A,,Agama
+,6420,"White,Ellen G",TEMPERANCE,,PACIFIC PRESS,1949,45X W,U.S.A,,Agama
+,6210,"White,Ellen G",Education,,PACIFIC PRESS,1952,35X,U.S.A,,Agama
+,6415,"White,Ellen G",Life Sketches of Ellen G. White,C.2,PACIFIC PRESS,1943,62X W C.2,U.S.A,,Agama
+,9167,"White,Ellen G",The Great Controversy,C.7,PACIFIC PRESS,1971,15X W C.7,U.S.A,,Agama
+,705,"White,Ellen G",Gospel Workers,,Review And Herald,1948,56X,U.S.A,,Agama
+,17-002,"White,Ellen G",Intruction for Effective Christian Service,,Review And Herald,1947,253 Wh 1948,U.S.A,,Agama
+,6125,"White,Ellen G",Counsels on Stewardship,C.2,Review And Herald,1940,22X W C.2,U.S.A,,Agama
+,6129,"White,Ellen G",The Story of Redemption,,Review And Herald,1947,66X W,U.S.A,,Agama
+,2372,"White,Ellen G",Scriptural and Subject INDEX to the WRITINGS,C.3,PACIFIC PRESS,1942,T.HDEX C.3,U.S.A,,Agama
+,6070,"White,Ellen G",Gospel Workers,,Review And Herald,1948,56X W,U.S.A,,Agama
+,16-048,"White,Ellen G",Selected Messages Book Three,,Review And Herald,1980,204 Wh,U.S.A,,Agama
+,06-002,"White,Ellen G",Selected Messages Book Two,,Review And Herald,1958,65X W,U.S.A,,Agama
+,,"White,Ellen G",Selected Messages Book Two,,Review And Herald,1958,204 Wh,U.S.A,,Agama
+,16-022,"White,Ellen G",Selected Messages Book One,,Review And Herald,1958,204 Wh,U.S.A,,Agama
+,660,"White,Ellen G",Counsels on Diet and Foods,,Review And Herald,1946,41X W,U.S.A,,Agama
+,4055,"White,Ellen G",Fundamentals of Christian EDUCATION,,SOUTHERN ,1923,32X W,U.S.A,,Agama
+,6146,"White,Ellen G",WELFARE MINISTRY,,Review And Herald,1952,59X W,U.S.A,,Agama
+,x98-058,"White,Ellen G",Sketches From the Life of Paul,,Review And Herald,1974,74X W,U.S.A,,Agama
+,6417,"White,Ellen G",Medical Ministry,,PACIFIC PRESS,1963,44X W,U.S.A,,Agama
+,16-055,"White,Ellen G",CHILD GUIDANCE,,SOUTHERN ,1954,33x,U.S.A,,Agama
+,,"White,Ellen G",THE DESIRE OF AGES,,Inspiration Books,1979,01x w,U.S.A,,Agama
+,17-268,"White,Ellen G",Counsels on Stewardship,,Review And Herald,1940,204.242 We/1940,U.S.A,,Agama
+,17-003,"White,Ellen G",EVANGELISM,,Review And Herald,1946,253 Wh 1946,U.S.A,,Agama
+,6126,"White,Ellen G",Christ's Object Lessons,C.2,Review And Herald,1941,21X W C.2,U.S.A,,Agama
+,6143,"White,Ellen G",CHRISTIAN SERVICE,,Home Missionary,1947,51X W,U.S.A,,Agama
+,6414,"White,Ellen G",TESTIMONY TREASURES,,PACIFIC PRESS,1949,69X W,U.S.A,,Agama
+,96-078,"Sills,David L",International Encylopedia Of The Sosial Sciences,,Collier-Macmillan,1968,300.03 SI V.13 & 14,London,,Agama
+,638,,BIJBEL,,Nederlandsch Bijbelgenootschap,1951,225 Ve,Amsterdam,,Agama
+,20-004,,Holy Bible,,Tyndale House,2007,221 B,China,978-1-4143-0172-3,Agama
+,16-014,"White,Ellen G",The Story of Redemption,,Review And Herald,1947,209 Wh,U.S.A,,Agama
+,17-004,"White,Ellen G",Gospel Workers,,Review And Herald,1948,253 Wh 1947,U.S.A,,Agama
+,12-171,,Kitab Suci Injil,,Lembaga Alkitab Indonesia,2011,225 La,jakarta ,,Agama
+,4076,"White,Ellen G",  Testimonies For The Church,V.1,PACIFIC PRESS,1948,68X W V.1,U.S.A,,Agama
+,4039,"White,Ellen G",Counsels on STEWARDSHIP,C.2,Review And Herald,1940,22X W C.2,U.S.A,,Agama
+,17-001,"White,Ellen G",Counsels on Diet and Foods,,Review And Herald,1946,41 X Wh 1946,U.S.A,,Agama
+,17-014,"White,Ellen G",Selected Messages ,,Review And Herald,1958,65 X Wh,U.S.A,,Agama
+,6127,"White,Ellen G",Counsels on Diet and Foods,C.3,Review And Herald,1946,41 X C.3,U.S.A,,Agama
+,6144,"White,Ellen G",Life Sketches of Ellen G. White,,PACIFIC PRESS,1943,62X W ,U.S.A,,Agama
+,6128,"White,Ellen G",EVANGELISM,,Review And Herald,1970,55X W,U.S.A,,Agama
+,17-286,"White,Ellen G",Thoughts From The Mount Of Blessing,,PACIFIC PRESS,1956,092 Wh,U.S.A,,Agama
+,17-012,"White,Ellen G",The Adventist Home,,SOUTHERN ,1952,31 X Wh,U.S.A,,Agama
+,16-009,"White,Ellen G",  Testimonies For The Church,,PACIFIC PRESS,1902,57 X,U.S.A,,Agama
+,651,"White,Ellen G",Spiritual Gifts Volos 1-2,C.2,Review And Herald,1944,64X W C.2,U.S.A,,Agama
+,650,"White,Ellen G",Spiritual Gifts Volos 3-4,,Review And Herald,1945,64X W  ,U.S.A,,Agama
+,10-1068,,Peraturan Jemaat,C.3,INDONESIA PUBLISHING HOUSE,2005,262 Ad C.3,Bandung,979-504-170-3,Agama
+,10-1066,,Peraturan Jemaat,C.1,INDONESIA PUBLISHING HOUSE,2005,262 Ad C.1,Bandung,979-504-170-3,Agama
+,07-238,,Peraturan Jemaat,,INDONESIA PUBLISHING HOUSE,2005,262 Ad,Bandung,979-504-170-3,Agama
+,01-001,,Advent Youth Sing,,Review And Herald,1977,245 GC,U.S.A,979 504 044 8,Agama
+,x98-033,"White,Ellen G",  Testimonies For The Church,V.5-6,PACIFIC PRESS,1948,68X W V.5-6,U.S.A,,Agama
+,16-016,"White,Ellen G",Conflict and Courage,,Review And Herald,1970,207 Wh,U.S.A,,Agama
+,620,"White,Ellen G",The DesIRE OF AGES,C.4,PACIFIC PRESS,1950,13X W C.4,U.S.A,,Agama
+,612,"White,Ellen G",The Acts of The Apostles,C.2,PACIFIC PRESS,1950,14X W C.2,U.S.A,,Agama
+,16-045,"White,Ellen G",MARANATHA The Lord Is Coming,,Review And Herald,1956,204 Wh,U.S.A,,Agama
+,,"White,Ellen G",INDEX TO The Writings,,PACIFIC PRESS,1942,203 Wh,U.S.A,,Agama
+,6082,"White,Ellen G",Prophets and Kings,C.4,PACIFIC PRESS,1943,12X W C.4,U.S.A,,Agama
+,16-031,"White,Ellen G",Patriarchs and Prophets,,PACIFIC PRESS,1958,204 Wh,U.S.A,,Agama
+,4052,"White,Ellen G",Patriarchs and Prophets,,PACIFIC PRESS,1958,11X W,U.S.A,,Agama
+,x97-022,"White,Ellen G",Story Of Jesus,,SOUTHERN ,1949,72X W,U.S.A,,Agama
+,6087,"White,Ellen G",The Acts of The Apostles,C.12,PACIFIC PRESS,1963,14X W C.12,U.S.A,,Agama
+,16-023,"White,Ellen G",Highways to Heaven,,Review And Herald,1952,207 Wh,U.S.A,,Agama
+,6138,"White,Ellen G",COMPREHENSIVE INDEX TO The Writings,C.2,PACIFIC PRESS,1962,02X W V.2 C.2,U.S.A,,Agama
+,6139,"White,Ellen G",COMPREHENSIVE INDEX TO The Writings,,PACIFIC PRESS,1963,02X W V.3,U.S.A,,Agama
+,613,"White,Ellen G",The ACTS of the APOSTLES,C.6,PACIFIC PRESS,1911,14X W C.6,U.S.A,,Agama
+,635,"White,Ellen G",The Adventist Home,C.2,SOUTHERN ,1952,31X W C.2,U.S.A,,Agama
+,3564,"White,Ellen G",SELECTIONS from the TESTIMONIES,,SOUTHERN ,1936,67X W V.2,U.S.A,,Agama
+,6085,"White,Ellen G",The Great Controversy,C.6,PACIFIC PRESS,1950,15X W C.6,U.S.A,,Agama
+,618,"White,Ellen G",THE DESIRE OF AGES,C.3,PACIFIC PRESS,1955,13X W  C.3,U.S.A,,Agama
+,627,"White,Ellen G",The Great Controversy,,PACIFIC PRESS,1911,15X W,U.S.A,,Agama
+,2654,"White,Ellen G",TESTIMONIES for The Church,V.7-9,PACIFIC PRESS,1948,68X W V.7-9,U.S.A,,Agama
+,20-005,,HOLY BIBLE,,NATIONAL PUBLISHING,1978,221 B,,,Agama
+,4066,"White,Ellen G",Counsels on Diet and Foods,C.2,Review And Herald,1946,41X W C.2,U.S.A,,Agama
+,645,"White,Ellen G",Scriptural and Subject INDEX to the WRITINGS,C.2,PACIFIC PRESS,1942,02X W CV.2,U.S.A,,Agama
+,649,"White,Ellen G",TESTIMONIES for The Church,V.7,PACIFIC PRESS,1902,68X W V.7,U.S.A,,Agama
+,5888,"Miller,J.R",Making The Most of Life,,,1891,248 Mi,NEW YORK,,Agama
+,06-006,"White,Ellen G",Sons and Daughters of God,,Review And Herald,1955,29X Wh,U.S.A,,Agama
+,2373,"White,Ellen G",RADIANT RELIGION,,Review And Herald,1946,63X W,U.S.A,,Agama
+,3745,"White,Ellen G",RADIANT RELIGION,C.2,Review And Herald,1946,63X W C.2,U.S.A,,Agama
+,6418,"White,Ellen G",COLPORTEUR,,PACIFIC PRESS,1953,52X W,U.S.A,,Agama
+,656,"White,Ellen G","COUNSELS To Parents, Teachers, and Students",,PACIFIC PRESS,1943,32X W,U.S.A,,Agama
+,6421,"White,Ellen G",Thoughts From The Mount Of Blessing,,PACIFIC PRESS,1956,24X W,U.S.A,,Agama
+,4058,"White,Ellen G",THE DESIRE OF AGES,C.15,PACIFIC PRESS,1940,01X W DA C.15,U.S.A,,Agama
+,4069,"White,Ellen G",That I May Know Him,,Review And Herald,1964,29X W ,U.S.A,,Agama
+,25108,"White,Ellen G",COMPREHENSIVE INDEX TO The Writings,C.2,PACIFIC PRESS,1962,02X W V.1 C.2,U.S.A,,Agama
+,x99-004,,The HOLY BIBLE ,,ZONDERVAN BIBLE,1982,01x w,U.S.A,,Agama
+,16-006,"White,Ellen G",Story Of Jesus,,SOUTHERN ,1949,211 Wh,U.S.A,,Agama
+,,"Ochs,William Benjamin",Happiness in Christian Living,,SOUTHERN ,1957,207 Oc,U.S.A,,Agama
+,634,"White,Ellen G",The Adventist Home,,SOUTHERN ,1952,31X W  ,U.S.A,,Agama
+,98-003,Spence H.D.M,THE PULPIT COMMENTARY,V.3,HENDRICKSON,1990,220.7 Sp V.3,,0-917006-32-1,Agama
+,16-004,"White,Ellen G",The Acts of The Apostles,,PACIFIC PRESS,1947,12X  ,U.S.A,,Agama
+,616,"White,Ellen G",The Acts of The Apostles,C.3,PACIFIC PRESS,1950,14X W C.3,U.S.A,,Agama
+,13-040,"White,Ellen G",THE LATER ELMSHAVEN YEARS,V.6,Review And Herald,1982,288 Wh V.6,U.S.A,,Agama
+,4090,"White,Ellen G",SELECTIONS from the TESTIMONIES,C.2,SOUTHERN ,1936,67X W V.3 C.2,U.S.A,,Agama
+,6078,"White,Ellen G",Patriarchs and Prophets,C.7,PACIFIC PRESS,1958,W PP C.7,U.S.A,,Agama
+,623,"White,Ellen G",Patriarchs and Prophets,C.7,PACIFIC PRESS,1913,13X W C.7,U.S.A,,Agama
+,,"White,Ellen G",Education,,PACIFIC PRESS,1942,35X,U.S.A,,Agama
+,3563,"White,Ellen G",SELECTIONS from the TESTIMONIES,V.3,SOUTHERN ,1936,67X W V.3  ,U.S.A,,Agama
+,6086,"White,Ellen G",The Acts of The Apostles,C.11,PACIFIC PRESS,1963,14X W C.11,U.S.A,,Agama
+,3582,"White,Ellen G",The Acts of The Apostles,C.8,PACIFIC PRESS,1947,14X W C.8,U.S.A,,Agama
+,611,"White,Ellen G",The Acts of The Apostles,,PACIFIC PRESS,1950,14X W,U.S.A,,Agama
+,631,"White,Ellen G",The Acts of The Apostles,C.7,PACIFIC PRESS,1950,14X W C.7,U.S.A,,Agama
+,17-328,"White,Ellen G",SEJARAH PARA NABI,C.6,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.1 C6,Bandung,979-504-116-9,Agama
+,18-059,"White,Ellen G",SEJARAH PARA NABI,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.2,Bandung,979-504-116-9,Agama
+,18-058,"White,Ellen G",SEJARAH PARA NABI,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.1,Bandung,979-504-116-9,Agama
+,18-061,"White,Ellen G",SEJARAH PARA NABI,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.4,Bandung,979-504-116-9,Agama
+,18-057,"White,Ellen G",SEJARAH PARA NABI,C.5,INDONESIA PUBLISHING HOUSE,2015,209 WH V.1 C.5,Bandung,979-504-116-9,Agama
+,18-060,"White,Ellen G",SEJARAH PARA NABI,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.1 C.3,Bandung,979-504-116-9,Agama
+,18-062,"White,Ellen G",SEJARAH PARA NABI,,INDONESIA PUBLISHING HOUSE,2016,209 Wh/2015,Bandung,979-504-119-3,Agama
+,00-006,"White,Ellen G",SEJARAH PARA NABI,C.5,INDONESIA PUBLISHING HOUSE,1999,209 WH V.2 C.5,Bandung,979-504-119-3,Agama
+,00-007,"White,Ellen G",SEJARAH PARA NABI,C.2,INDONESIA PUBLISHING HOUSE,1999,209 WH V.2 C.2,Bandung,979-504-119-3,Agama
+,17-297,"White,Ellen G",SEJARAH PARA NABI,C.4,INDONESIA PUBLISHING HOUSE,2016,209 Wh V.2 C.4,Bandung,979-504-119-3,Agama
+,10-1070,"White,Ellen G",SEJARAH PARA NABI,C.7,INDONESIA PUBLISHING HOUSE,2005,209 Wh V.2 C.7,Bandung,979-504-119-3,Agama
+,11-050,"White,Ellen G",SEJARAH PARA NABI,C1,INDONESIA PUBLISHING HOUSE,2011,209 WH V.2 C.1,Bandung,979-504-119-3,Agama
+,18-065,"White,Ellen G",SEJARAH PARA NABI,C.3,INDONESIA PUBLISHING HOUSE,2016,209 Wh/2015 C.3,Bandung,979-504-119-3,Agama
+,18-064,"White,Ellen G",SEJARAH PARA NABI,C.3,INDONESIA PUBLISHING HOUSE,2016,209 WH V.2 C.3,Bandung,979-504-119-3,Agama
+,18-063,"White,Ellen G",SEJARAH PARA NABI,C.1,INDONESIA PUBLISHING HOUSE,2016,209 Wh/2015 C.1,Bandung,979-504-119-3,Agama
+,18-067,"White,Ellen G",PARA NABI DAN RAJA,,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015,Bandung,979-504-117-7,Agama
+,18-068,"White,Ellen G",PARA NABI DAN RAJA,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.1,Bandung,979-504-117-7,Agama
+,18-070,"White,Ellen G",PARA NABI DAN RAJA,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.3,Bandung,979-504-117-7,Agama
+,10-1071,"White,Ellen G",PARA NABI DAN RAJA,V.3,INDONESIA PUBLISHING HOUSE,2005,15X Wh V.3,Bandung,979-504-117-7,Agama
+,11-051,"White,Ellen G",PARA NABI DAN RAJA,V.3,INDONESIA PUBLISHING HOUSE,2011,209 Wh V.3 C.3,Bandung,979-504-117-7,Agama
+,18-071,"White,Ellen G",PARA NABI DAN RAJA,V.3 ,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.4,Bandung,979-504-117-7,Agama
+,17-296,"White,Ellen G",PARA NABI DAN RAJA,V.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.3 C.4,Bandung,979-504-117-7,Agama
+,17-327,"White,Ellen G",PARA NABI DAN RAJA,V.1,INDONESIA PUBLISHING HOUSE,2015,15X Wh.2015 V.1,Bandung,979-504-118-5,Agama
+,18-054,"White,Ellen G",PARA NABI DAN RAJA,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.2,Bandung,979-504-118-5,Agama
+,18-055,"White,Ellen G",PARA NABI DAN RAJA,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.3,Bandung,979-504-118-5,Agama
+,18-076,"White,Ellen G",PARA NABI DAN RAJA,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.4,Bandung,979-504-118-5,Agama
+,11-052,"White,Ellen G",PARA NABI DAN RAJA,V.4,INDONESIA PUBLISHING HOUSE,2011,12X W V.4,Bandung,979-504-118-5,Agama
+,10-1072,"White,Ellen G",PARA NABI DAN RAJA,V.4,INDONESIA PUBLISHING HOUSE,2005,209 Wh V.4,Bandung,979-504-118-5,Agama
+,18-051,"White,Ellen G",PARA NABI DAN RAJA,,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015,Bandung,979-504-118-5,Agama
+,00-013,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.2,INDONESIA PUBLISHING HOUSE,1999,15X W V.5 C.2,Bandung,979-504-108-8,Agama
+,18-047,"White,Ellen G",KERINDUAN SEGALA ZAMAN,,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015,Bandung,979-504-120-7,Agama
+,18-048,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.1,Bandung,979-504-120-7,Agama
+,18-049,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.2,Bandung,979-504-120-7,Agama
+,18-050,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.3,Bandung,979-504-120-7,Agama
+,18-051,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.4,Bandung,979-504-120-7,Agama
+,,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.6 C.4,Bandung,979-504-120-7,Agama
+,11-054,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.5,INDONESIA PUBLISHING HOUSE,2011,209 Wh V.6 C.5,Bandung,979-504-120-7,Agama
+,19-175,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.5,INDONESIA PUBLISHING HOUSE,2019,209 Wh C.5,Bandung,979-504-108-8,Agama
+,,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.6,INDONESIA PUBLISHING HOUSE,2005,209 WH C.6,Bandung,979-504-120-7,Agama
+,18-092,"White,Ellen G",KISAH PARA RASUL,,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015,Bandung,979-504-110-X,Agama
+,00-016,"White,Ellen G",KISAH PARA RASUL,C.1,INDONESIA PUBLISHING HOUSE,1998,209 Wh V.7 C.1,Bandung,979-504-110-X,Agama
+,11-055,"White,Ellen G",KISAH PARA RASUL,C.1,INDONESIA PUBLISHING HOUSE,2011,209 Wh V.7 C.1,Bandung,979-504-110-X,Agama
+,18-093,"White,Ellen G",KISAH PARA RASUL,C.1,INDONESIA PUBLISHING HOUSE,2011,209 Wh/2015 C.1,Bandung,979-504-110-X,Agama
+,18-094,"White,Ellen G",KISAH PARA RASUL,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.2,Bandung,979-504-110-X,Agama
+,10-1075,"White,Ellen G",KISAH PARA RASUL,C.2,INDONESIA PUBLISHING HOUSE,2005,209 Wh V.7 C.2,Bandung,979-504-110-X,Agama
+,18-095,"White,Ellen G",KISAH PARA RASUL,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.3,Bandung,979-504-110-X,Agama
+,18-096,"White,Ellen G",KISAH PARA RASUL,C.4,INDONESIA PUBLISHING HOUSE,2011,209 Wh/2015 C.4,Bandung,979-504-110-X,Agama
+,17-292,"White,Ellen G",KISAH PARA RASUL,C.4,INDONESIA PUBLISHING HOUSE,2015,209 WH.2015 V.7 C.4,Bandung,979-504-110-X,Agama
+,18-042,"White,Ellen G",KEMENANGAN AKHIR,,INDONESIA PUBLISHING HOUSE,2013,209 Wh/2015,Bandung,979-504-124-X,Agama
+,18-043,"White,Ellen G",KEMENANGAN AKHIR,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.1,Bandung,979-504-124-X,Agama
+,11-056,"White,Ellen G",KEMENANGAN AKHIR,C.1,INDONESIA PUBLISHING HOUSE,2010,209 Wh V.8 C.1,Bandung,979-504-124-X,Agama
+,18-044,"White,Ellen G",KEMENANGAN AKHIR,C.2,INDONESIA PUBLISHING HOUSE,2013,209 Wh/2015 C.2,Bandung,979-504-124-X,Agama
+,10-1076,"White,Ellen G",KEMENANGAN AKHIR,C.2,INDONESIA PUBLISHING HOUSE,2005,209 Wh V.8  ,Bandung,979-504-124-X,Agama
+,18-045,"White,Ellen G",KEMENANGAN AKHIR,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015 C.3,Bandung,979-504-124-X,Agama
+,18-046,"White,Ellen G",KEMENANGAN AKHIR,C.4,INDONESIA PUBLISHING HOUSE,2013,209 Wh/2015 C.4,Bandung,979-504-124-X,Agama
+,17-291,"White,Ellen G",KEMENANGAN AKHIR,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.8 C.4,Bandung,979-504-124-X,Agama
+,,"White,Ellen G",MARANATHA Tuhan Datang,,INDONESIA PUBLISHING HOUSE,2005,209wH,Bandung,979-504-048-0,Agama
+,09-203,"White,Ellen G",MARANATHA Tuhan Datang,C.3,INDONESIA PUBLISHING HOUSE,2005,209 Wh C.3,Bandung,979-504-048-0,Agama
+,09-200,"White,Ellen G",MARANATHA Tuhan Datang,C.4,INDONESIA PUBLISHING HOUSE,2008,209 Wh C.4,Bandung,979-504-048-0,Agama
+,14-342,"White,Ellen G",MARI BERSAKSI,C.2,INDONESIA PUBLISHING HOUSE,2014,209 Wh C.2,Bandung,978-979-504-221-1,Agama
+,14-340,"White,Ellen G",MARI BERSAKSI,,INDONESIA PUBLISHING HOUSE,2014,209 Wh,Bandung,978-979-504-221-1,Agama
+,07-846,"White,Ellen G",Membina Pola Makan dan Diet,,INDONESIA PUBLISHING HOUSE,,209 Wh V.6,Bandung,979-504-153-3,Agama
+,18-098,"White,Ellen G",Membina Pola Makan dan Diet,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.6 C.2,Bandung,979-504-153-3,Agama
+,18-100,"White,Ellen G",Membina Pola Makan dan Diet,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.6 C.3,Bandung,979-504-153-3,Agama
+,18-101,"White,Ellen G",Membina Pola Makan dan Diet,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.6 C.4,Bandung,979-504-153-3,Agama
+,18-099,"White,Ellen G",Membina Pola Makan dan Diet,C.5,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.6 C.5,Bandung,979-504-153-3,Agama
+,18-103,"White,Ellen G",Membina Kehidupan Abadi,C.1,INDONESIA PUBLISHING HOUSE,2015,207 Wh/2016 C.1,Bandung,979-504-154-1,Agama
+,18-030,"White,Ellen G",Membina Kehidupan Abadi,V.5-6,INDONESIA PUBLISHING HOUSE,2004,209 Wh V.5,Bandung,979-504-154-1,Agama
+,18-105,"White,Ellen G",Membina Kehidupan Abadi,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V5C3,Bandung,979-504-154-1,Agama
+,07-845,"White,Ellen G",Membina Kehidupan Abadi,C.4,INDONESIA PUBLISHING HOUSE,2004,209 Wh V5C4,Bandung,979-504-154-1,Agama
+,18-102,"White,Ellen G",Membina Kehidupan Abadi,C.4,INDONESIA PUBLISHING HOUSE,2015,209Wh V5C4,Bandung,979-504-154-1,Agama
+,18-106,"White,Ellen G",Membina Kehidupan Abadi,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh V5C4,Bandung,979-504-154-1,Agama
+,18-108,"White,Ellen G",Membina Keluarga Sehat,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh V4C1,Bandung,979-504-152-5,Agama
+,18-109,"White,Ellen G",Membina Keluarga Sehat,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V4C2,Bandung,979-504-152-5,Agama
+,18-110,"White,Ellen G",Membina Keluarga Sehat,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V4C3,Bandung,979-504-152-5,Agama
+,18-111,"White,Ellen G",Membina Keluarga Sehat,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh V4C4,Bandung,979-504-152-5,Agama
+,18-114,"White,Ellen G",Membina Pendidikan Sejati,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V3C2,Bandung,979-504-156-8,Agama
+,17-025,"White,Ellen G",Membina Anak yang Bertanggung Jawab,V.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V.2,Bandung,979-504-073-1,Agama
+,18-029,"White,Ellen G",Membina Anak yang Bertanggung Jawab,V.2,INDONESIA PUBLISHING HOUSE,2005,209 Wh V.2,Bandung,979-504-073-1,Agama
+,18-120,"White,Ellen G",Membina Anak yang Bertanggung Jawab,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh V2C1,Bandung,979-504-073-1,Agama
+,18-119,"White,Ellen G",Membina Anak yang Bertanggung Jawab,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V2C2,Bandung,979-504-073-1,Agama
+,18-122,"White,Ellen G",Membina Anak yang Bertanggung Jawab,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V2C3,Bandung,979-504-073-1,Agama
+,18-123,"White,Ellen G",Membina Anak yang Bertanggung Jawab,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh V2C4,Bandung,979-504-073-1,Agama
+,18-125,"White,Ellen G",Membina Keluarga Bahagia,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C1,Bandung,979-504-072-3,Agama
+,18-124,"White,Ellen G",Membina Keluarga Bahagia,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C1,Bandung,979-504-072-3,Agama
+,18-027,"White,Ellen G",Membina Keluarga Bahagia,C.2,INDONESIA PUBLISHING HOUSE,2005,209 Wh V1C2,Bandung,979-504-072-3,Agama
+,18-126,"White,Ellen G",Membina Keluarga Bahagia,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C2,Bandung,979-504-072-3,Agama
+,18-127,"White,Ellen G",Membina Keluarga Bahagia,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C3,Bandung,979-504-072-3,Agama
+,18-128,"White,Ellen G",Membina Keluarga Bahagia,C.4,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C4,Bandung,979-504-072-3,Agama
+,07-015,"Drane,John",MEMAHAMI PERJANJIAN BARU,C.2,BPK GUNUNG MULIA,2006,221 Dr C.2,Jakarta ,979-415-905-0,Agama
+,19-179,"Hutabarat,R",PENGANTAR ROH NUBUAT,C.2,INDONESIA PUBLISHING HOUSE,2016,288 HU C.2,Bandung,979-504-104-5,Agama
+,,"Hunt,June",Pastoral Konseling Alkitabiah,,ANDI,2015,220.1 Hu,Yogyakarta,978-979-29-4817-2,Agama
+,07-040,"Jurnawan,Natan",Ikhtisar Khotbah Kisah Para Rasul,C.2,ANDI,2003,226.7 Ju C.2,Yogyakarta,,Agama
+,07-328,"Simpkins,C Alexander",Simple Buddhism,,Bhuana Ilmu Populer,2006,294.3 Si,Jakarta ,979-798-012-X,Agama
+,,Departemen Kependetaan,Apa Yang Anda Perlu Ketahui Tentang,,INDONESIA PUBLISHING HOUSE,1992,230 DE,Bandung,979-504-058-8,Agama
+,07-367,"Tanner,Norman P",Konsili-Konsili Gereja,C.1,KANISIUS,2003,274 Ta C.1,Yogyakarta,979-21-0725-8,Agama
+,20-016,"Cress,James A",Common Sense Ministry Multiplied,,PACIFIC PRESS,2010,243 Cr,U.S.A,978-0-8163-2411-8,Agama
+,08-118,"Smith,Robin L",Mempertahankan Janji Pernikahan,,Gramedia Pustaka Utama,2007,241 Sm,Jakarta ,979-22-2881-0,Agama
+,05-013,"Stefanovic,Ranko",Revelation Of Jesus Christ,C.1,Andrews University Press,2002,232 St C.1,U.S.A,1-883925-32-0,Agama
+,12-034,"Budhi,Hosea K",Discover Your Successful Life,,ANDI,2008,248 Bu,Yogyakarta,979-763-897-9,Agama
+,12-035,"Budhi,Hosea K",Discover Your Successful Life,C.1,ANDI,2008,248 Bu C.1,Yogyakarta,979-763-897-9,Agama
+,02-018,"White,Randy",Gereja Tanpa Tembok,,IMMANUEL,2001,266 WH,Jakarta ,979-8475-77-1,Agama
+,14-030,"End,Th van den",Ragi Carita 2,,BPK GUNUNG MULIA,2012,270.1 En,Jakarta ,978-979-415-606-3,Agama
+,96-912,"Poza,Ernesto J",SMART GROWTH,,Jossey Bass Publishers,1989,458 Po,London,1-55542-170-9,Agama
+,000-024,"Azwar,Saifuddin",Metode Penelitian,,Pustaka Pelajar Offset,1999,0014 Az,Yogyakarta,979-9075-27-0,Agama
+,200-002,"Aritonang,Jan S",Berbagai Aliran Di Dalam Dan Di Sekitar Gereja,C.3,BPK GUNUNG MULIA,1999,280 Ar C.3,Jakarta ,979-415-796-1,Agama
+,14-055,"Schafer,Ruth",Belajar Bahasa Yunani Koine,,BPK GUNUNG MULIA,2013,200.381 Sc,Jakarta ,978-979-687-844-4,Agama
+,12-111,"Mallory,Sue",The Equipping Church,,Gandum Mas,2012,248 Ma,Malang,,Agama
+,98-407,"McDowel,Josh & Don Stewart",Jawaban bagi Pertanyaan Orang yang Belum Percaya,C.2,Gandum Mas,1994,238 Mc C.2,Malang,,Agama
+,14-028,"Walz,Edgar",Bagaimana Mengelola Gereja Anda?,,BPK GUNUNG MULIA,2006,254 Wa,Jakarta ,979-687-023-1,Agama
+,02-025,"Hybels,Bill",Terlalu Sibuk? Justru Harus Berdoa,,Yayasan Komunikasi Bina Kasih,1998,242 Hy,Jakarta ,797-9143-17-9,Agama
+,2021-00036,,Encountering God's Grace,,Review And Herald,2003,00036 Gi,U.S.A,,Agama
+,07-125,"Hadiwijono,Harun",Sari Sejarah Filsafat Barat 2,C.2,Kanisius,1980,100 Ha V2C2,Yogyakarta,979-413-060-5,Agama
+,21-00174,"Reid,G.Edward",Sunday's Coming,,Review And Herald,1996,00174 Gi,U.S.A,1-878951-32-7,Agama
+,14-319,"McIver,Robert K",The Four Faces of Jesus,C.3,PACIFIC PRESS,2000,226.06 Mc C3,U.S.A,0-8163-2118-3,Agama
+,07-136,"Barth,Chr",Theologia Perjanjian Lama,C.1,BPK GUNUNG MULIA,2005,230 Ba V4C1,Jakarta ,979-415-484-9,Agama
+,07-144,"Tony,Daud &",Dunia Malaikat,C.1,Bhetlehem Publisher,2007,235 To C1,Jakarta ,,Agama
+,07-124,"Hadiwijono,Harun",Sari Sejarah Filsafat Barat 2,C.1,KANISIUS,1980,100 Ha V2C1,Yogyakarta,979-413-060-5,Agama
+,07-343,"Div,Sukamto M",Rahasia Keberhasilan Gereja Di Korea,C.2,ANDI,2006,275 Su C2,Yogyakarta,979-763-425-6,Agama
+,07-375,"Jagersma,H",Dari Aleksander Agung Sampai Bar Kokhba,C.1,BPK GUNUNG MULIA,2003,275 Ja C.1,Jakarta ,979-415-634-5,Agama
+,07-376,"Jagersma,H",Dari Aleksander Agung Sampai Bar Kokhba,C.2,BPK GUNUNG MULIA,2003,275 Ja C.2,Jakarta ,979-415-634-5,Agama
+,12-040,"Stefanovic,Ranko",Revelation Of Jesus Christ,,Andrews University Press,2002,232 St  ,U.S.A,1-883925-32-0,Agama
+,99-341,"Heath,W Stanley",Tak Mengambang Tak Meleset,,ANDI,1989,234 He,Yogyakarta,,Agama
+,19-180,"Hutabarat,R",PENGANTAR ROH NUBUAT,C.1,INDONESIA PUBLISHING HOUSE,2016,288 HU C.1,Bandung,979-504-104-5,Agama
+,2021,,Christ in the City,,Advent Source,2018,232 Ga,U.S.A,978-1-62909-547-9,Agama
+,299-846,"Comiskey,Joel",Ledakan Kelompok Sel,C.2,Yayasan Media Buana Indonesia,1998,259 Co C.2,Jakarta ,,Agama
+,298-057,"Barth,Marie-Claire",Tafsiran Kitab Yesaya Pasal 40-55,,BPK GUNUNG MULIA,1996,224 Ba,Jakarta ,979-415-166-1,Agama
+,,"Foskett,Mary F",Menafsirkan Alkitab,,BPK GUNUNG MULIA,2017,220 Fo,Jakarta ,978-602-231-442-4,Agama
+,06-002,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.1,L-SAPA,2006,158.4 Si C.1,P.Siantar,979-99561-4-5,Agama
+,06-003,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.2,L-SAPA,2006,158.4 Si C.2,P.Siantar,979-99561-4-5,Agama
+,06-004,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.3,L-SAPA,2006,158.4 Si C.3,P.Siantar,979-99561-4-5,Agama
+,15-2981,"Sitanggang,Radesman",Memimpin Sesuai Amanah,,L-SAPA,2014,158.4 Si,P.Siantar,979-99561-4-5,Agama
+,15-2982,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.1,L-SAPA,2014,158.4 Si C.1,P.Siantar,979-99561-4-5,Agama
+,,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.1,L-SAPA,2014,158.4 Si/2015 C.1,P.Siantar,979-99561-4-5,Agama
+,,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.2,L-SAPA,2014,158.4 Si/2015 C.2,P.Siantar,979-99561-4-5,Agama
+,15-2984,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.3,L-SAPA,2014,158.4 Si C.3,P.Siantar,979-99561-4-5,Agama
+,,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.4,L-SAPA,2014,158.4 Si/2015 C.4,P.Siantar,979-99561-4-5,Agama
+,02-024,"Gordon,Bob",Visi Seorang Pemimpin,,Nafiri Gabriel,2000,254 Go,Jakarta ,,Agama
+,,"White,Ellen G",Dasar-Dasar Pendidikan,,INDONESIA PUBLISHING HOUSE,2005,35X Wh/2018,Bandung,979-504-161-4,Agama
+,19-166,"White,Ellen G",Dasar-Dasar Pendidikan,C.4,INDONESIA PUBLISHING HOUSE,2017,209 Wh C.4,Bandung,979-504-161-4,Agama
+,19-168,"White,Ellen G",Dasar-Dasar Pendidikan,C.6,INDONESIA PUBLISHING HOUSE,2017,209 Wh C.6,Bandung,979-504-161-4,Agama
+,05-006,"White,Ellen G",Dasar-Dasar Pendidikan,C.6,INDONESIA PUBLISHING HOUSE,2005,209 Wh C.6,Bandung,979-504-161-4,Agama
+,19-169,"White,Ellen G",Dasar-Dasar Pendidikan,C.8,INDONESIA PUBLISHING HOUSE,2017,209 Wh C.8,Bandung,979-504-161-4,Agama
+,,"White,Ellen G",PARA NABI DAN RAJA,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C1,Bandung,979-504-118-5,Agama
+,,"White,Ellen G",SEJARAH PARA NABI,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C1,Bandung,979-504-116-9,Agama
+,,"White,Ellen G",SEJARAH PARA NABI,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C2,Bandung,979-504-116-9,Agama
+,,"White,Ellen G",SEJARAH PARA NABI,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C3,Bandung,979-504-116-9,Agama
+,,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.1,INDONESIA PUBLISHING HOUSE,2015,209 Wh V5C1,Bandung,979-504-120-7,Agama
+,,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V5C2,Bandung,979-504-108-8,Agama
+,,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V5C3,Bandung,979-504-120-7,Agama
+,99-171,"Feinberg,John",Predestinasi dan Kehendak Bebas,C.2,Lembaga Reformed Injili Indonesia,1995,234.9 Fe C.2,Jakarta ,979-8307-35-6,Agama
+,07-133,"Tucker,Mary Evelyn","Agama, Filsafat, & Lingkungan Hidup",C.1,KANISIUS,2003,102 Tu C.1,Yogyakarta,979-672-951-2,Agama
+,300-011,"Land,Gary",Teaching History,,Andrews University Press,2000,371.3 La,U.S.A,1-883925-28-2,Agama
+,X98-055,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.20,INDONESIA PUBLISHING HOUSE,1986,13X W C.20,Bandung,,Agama
+,,"White,Ellen G",Tulisan-Tulisan Permulaan,C.4,INDONESIA PUBLISHING HOUSE,1985,209 Wh C.4,Bandung,,Agama
+,99-648,"Sairin,Weinata",Hubungan Gereja Dan Negara Dan Hak-Hak Asasi Manusia,C.3,BPK GUNUNG MULIA,1996,261 Sa C.3,Jakarta ,979-415-578-0,Agama
+,06-066,"Tennyson,Mack",Church Finances for People Who Count,,Review And Herald,1984,248 Te,U.S.A,,Agama
+,99-443,"Oster,Kenneth",Cosmic Perspective of God And Man,,Colfax,1880,291.1 Os,California,,Agama
+,08-003,"Freeman,Joan",Cerdas Dan Cemerlang,,Gramedia Pustaka Utama,2001,155.4 Fr,Jakarta ,979-655-146-2,Agama
+,07-004,"Leigh,Ronald W",Melayani Dengan Efektif,C.1,BPK GUNUNG MULIA,2004,253 Le C.1,Jakarta ,979-415-340-0,Agama
+,19-012,"Tambunan,Emil H",Bunga Rampai Seabad Pendidikan Advent di Indonesia,C.1,Departemen Pendidikan GMAHK,2000,274 TA C.1,Jakarta ,,Agama
+,17-305,"Mulyasa,E",Menjadi Guru Profesional,,Remaja Rosdakarya,2010,371.3 Mu.2010 ,Bandung,979-692-375-0,Agama
+,12-015,"Ismail,Andar",Selamat Bergereja,C.1,BPK GUNUNG MULIA,2011,248 Is C.1,Jakarta ,978-979-687-579-5,Agama
+,09-175,"Santoso,Magdalena Pranata",Filsafat Agama,,Graha Ilmu,2009,200 Sa,Yogyakarta,978-979-756-476-6,Agama
+,03-006,"Sagala,K.R",Pedoman Acara Pemuda Advent,C.2,Departemen Pemuda Advent,1999,267 Gc V.3 C.2,Jakarta ,,Agama
+,03-028,"Sitanggang,Serepina",Membangun Gereja Yang Diakonal,C.3,HKBP,2004,253 Of C.3,P.Siantar,,Agama
+,20-007,"Williams,Garrie F",Welcome Holy Spirit,,Review And Herald,1994,149 Wi,U.S.A,0-8280-0852-3,Agama
+,,"Dobson,James C",Ketika Tuhan Tidak Dapat Dimengerti,,Originally Published,2005,00017 Gi,U.S.A,,Agama
+,12-108,"Kuiper,B.K",The Churtch in History,,Gandum Mas,2010,270 Ku,Jawa Timur,,Agama
+,05-035,"Shea,William H",DANIEL,C.4,PACIFIC PRESS,2005,224.5 SHE D C.4,U.S.A,0-8163-2077-2,Agama
+,12-159,"Anderson,Neil T",Discipleship Counseling,,Gandum Mas,2011,241 An,Jawa Timur,,Agama
+,13-098,"Sarumpaet,R.I",Etiket Bergaul,C.3,INDONESIA PUBLISHING HOUSE,2006,390 Sa C.3,Bandung,979-504-019-7,Agama
+,07-187,"Shipman,Michael k",Khotbah Alkitabiah,C.1,Lembaga Literatur Baptis,2004,252 Sh C.1,Bandung,979-3224-25-8,Agama
+,299-313,"Hickey,Marilyn",Alkitab Dapat Mengubah Hidup Anda,,IMMANUEL,1995,234 Hi,Jakarta ,,Agama
+,,"Reyburn, William D",Kitab Kejadian,,Lembaga Alkitab Indonesia,2020,221.1 Re,Jakarta ,978-602-287-144-6,Agama
+,99-833,"Bevere,John",Takut Akan Tuhan,C.2,METANOIA,1998,252 Be C.2,Jakarta ,,Agama
+,26-069,"Morriset,Lloyd N",The Public's Use Of Television,,SAGE PUBLICATIONS,1980,384.55 Fr,London,0-8039-1389-3,Agama
+,07-388,"Woga,Edmund",Dasar-Dasar Misiologi,C.1,KANISIUS,2002,260 Wo C.1,Yogyakarta,979-21-0617-0,Agama
+,99-245,Suryananda,Memahami Buddhayana,,Yayasan Penerbit Karaniya,1995,294.3 Su,Bandung,,Agama
+,21-00134,"Knott,Ronald Alan",Over & Over Again 2,,North American Division of SDA,2000,0034 Gi,Maryland,,Agama
+,15-004,"Finley,Mark A",Hari Yang Hampir Dilupakan,C.4,INDONESIA PUBLISHING HOUSE,1992,263 Fi C.4,Bandung,979-504-060-x,Agama
+,12-113,"Labberton,Mark",Bahaya Ibadah Sejati,,Literatur Perkantas,2011,264 La,Jawa Timur,978-979-1338-31-8,Agama
+,,"White,Ellen G",Peristiwa-Peristiwa Akhir Zaman,C.1,INDONESIA PUBLISHING HOUSE,2016,204 Wh C.1,Bandung,979-505-079-4,Agama
+,14-079,"Grant,Robert M",Sejarah Singkat Penafsiran Alkitab,,BPK GUNUNG MULIA,2010,220.1 Gr,Jakarta ,978-979-415-756-5,Agama
+,,"Kloss,Jethro",The Back To Eden Cookbook,,Woodbridge Press,1974,00355 Gi,California,,Agama
+,19-006,"White,Ellen G",PARA NABI DAN RAJA,C.3,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C3,Bandung,979-504-118-5,Agama
+,,"Kwon,Manbok",Penginjilan Sel Hidup Yang Berhasil,C.2,INDONESIA PUBLISHING HOUSE,2010,243 Re C.2,Bandung,,Agama
+,09-218,"Bullon,Allejandro",Tanda-Tanda Hari Kiamat,C.2,INDONESIA PUBLISHING HOUSE,2008,236 Bu C.2,Bandung,978-979-504-202-0,Agama
+,99-725,"Virkler,Patti & Mark",Dialog Dengan Tuhan,C.2,METANOIA,1994,242 Vi C.2,Jakarta ,,Agama
+,02-004,,Pedoman Acara Pemuda Advent,C.2,INDONESIA PUBLISHING HOUSE,1997,267 Gc C.2,Bandung,9797-504-102-9,Agama
+,99-679,"Lotz,Anne Graham",Visi Kemuliaan Allah,,Lembaga Literatur Baptis,1999,252 Lo,Bandung,979-9043-16-6,Agama
+,99-235,"Mernissi,Fatimah",Beyond The Veil,,ALFIKR,1997,297 Me,Surabaya,,Agama
+,98-071,"Tong,Stephen",Allah Tritunggal,,Lembaga Reformed Injili Indonesia,1993,231.0 To,Jakarta ,,Agama
+,299-847,"Hagin,Kenneth E",Tujuh Langkah Menerima Roh Kudus,,IMMANUEL,1998,231 Ha,Jakarta ,,Agama
+,09-202,"White,Ellen G",Maranatha,C.2,INDONESIA PUBLISHING HOUSE,2005,209 Wh C.2,Bandung,979-504-048-0,Agama
+,299-552,"Boehlke,Robert R",Siapakah Yesus Sebenarnya?,C.2,BPK GUNUNG MULIA,1996,232 Bo C.2,Jakarta ,979-415-342-7,Agama
+,99-135,"Kidner,Derek",Pengkhotbah,,Yayasan Komunikasi Bina Kasih,1997,252 Ki,Jakarta ,979-8976-84-3,Agama
+,07-282,"Robirosa,S.Christian",Panduan Praktis Penerapan,C.2,ANDI,2007,248 Ro C.2,Yogyakarta,979-763-477-9,Agama
+,19-120,,Pancasila,,Usaha Nasional,1981,321 I26,Surabaya,,Agama
+,09-233,"Silaban,Rekson",Reposisi Gerakan Buruh,,Pustaka Sinar Harapan,2009,322 Si,Jakarta ,978-979-416-911-7,Agama
+,02-041,"Nolden,Mathias",World Wide Web di Internet,,Elex Media Komputindo,1996,005 No,Jakarta ,3-548-41053-7,Agama
+,21-00160,"White,Ellen G",To Be Like Jesus,,Review And Herald,2004,00160 Gi,U.S.A,0-8280-1835-9,Agama
+,17-005,"White,Ellen G","Bertsaksi, Efektif, & Efisien",,INDONESIA PUBLISHING HOUSE,1994,209 Wh,Bandung,979-504-070-7,Agama
+,17-339,"Kuntaraf,Kathleen H. Liwijaya",Kitab Ajaib,,INDONESIA PUBLISHING HOUSE,2005,220 Ku.2017,Bandung,979-504-103-7,Agama
+,07-337,"Walz,Edgar",Bagaimana Mengelola Gereja Anda?,C.2,BPK GUNUNG MULIA,2006,254 Wa C.2,Jakarta ,979-687-023-1,Agama
+,14-069,"Gibbs,Eddie",Kepemimpinan Gereja Masa Mendatang,C.1,BPK GUNUNG MULIA,2012,291.6 Gi C.1,Jakarta ,978-979-687-735-5,Agama
+,21-00181,"Anto,J",Dokter Penakluk Badai,,Solidaritas Tionghoa Center,2009,00181 Gi,Medan,978-602-95921-0-8,Agama
+,07-203,"Santoso,Benny",Bebas Dari Konsumerisme,,ANDI,2006,248 Sa,Yogyakarta,979-763-236-9,Agama
+,09-231,"Douglass,Herbert Edgar",Kasih Memberikan Jalan,,INDONESIA PUBLISHING HOUSE,2009,242 Do,Bandung,978-979-504-210-5,Agama
+,,"White,Ellen G",Prophets and Kings,C.3,PACIFIC PRESS,1955,12X W C.3,U.S.A,,Agama
+,21-00114,"Finley,Mark ",Solid Ground,,Review And Herald,2003,00114 Gi,U.S.A,0-8280-1731-X,Agama
+,12-115,"Hutabarat,Samuel",Memuliakan Tuhan Dengan Harta,,ANDI,2010,248 Hu,Yogyakarta,978-979-29-1831-1,Agama
+,14-320,"McIver,Robert K",The Four Faces of Jesus,C.1,PACIFIC PRESS,2000,226.06 Mc C.1,U.S.A,0-8163-2118-3,Agama
+,14-319,"McIver,Robert K",The Four Faces of Jesus,,PACIFIC PRESS,2000,226.06 Mc,U.S.A,0-8163-2118-3,Agama
+,21-00198,"White,Ellen G",Daughters of GOD,,Review And Herald,2005,00198 Gi,U.S.A,0-8280-1899-5,Agama
+,,,Khotbah Para Perintis Kekristenan di Tanah Batak,,BPK GUNUNG MULIA,2020,200.5 Na,Jakarta ,978-602-231-834-7,Agama
+,06-059,"Craig,Bryan",Searching For Intimacy in Marriage,,Ministerial Association of SDA,2004,241 Gr,U.S.A,1-57847-035-8,Agama
+,298-174,"Suryanto,Markus T",Hari-Hari Raya Tionghoa Dan Firman Tuhan,,PELKRINDO,1996,261 Su,Jakarta ,,Agama
+,,"Miedearis,Carl",Dua Umat Dan Yesus,,Originally Published,2008,261 Me,U.S.A,978-602-97520-1-4,Agama
+,07-315,"Daulay,Richard m",Mengenal Gereja Methodist Indonesia,C.1,BPK GUNUNG MULIA,2004,287 Da C.1,Jakarta ,979-687-207-2,Agama
+,2021-00011,"Shelton,Danny",Pillars Of The Christian Faith,,Remnant Publicatoins,2010,00011 Gi,U.S.A,978-1-933291-48-2,Agama
+,07-303,"Guthrie,Donald",Teologi Perjanjian Baru 1,C.2,BPK GUNUNG MULIA,2006,230 Gu V.1 C.2,Jakarta ,979-415-562-4,Agama
+,19-095,"Willis,Sofyan S",Konseling Individual Teori dan Praktek,,ALFABETA,2007,158 Wi,Bandung,978-979-8433-61-57-3,Agama
+,21-00063,"Dobson,James C",Emotions,,Hodder And Stoughton,1986,00063 Gi,London,0-340-28196-0,Agama
+,07-148,"Woodhouse,Mark B",Berfilsafat,C.1,KANISIUS,2000,100 Wo C.1,Yogyakarta,979-672-639-4,Agama
+,98-180,"Al-Jabry,Abd. Muta'al M",Perkawinan Antaragama Tinjauan Islam,,Risalah Gusti,1994,291 A1,Surabaya,979-556-01-6,Agama
+,07-373,"Abineno,J.L.Ch",Sekitar Etika Dan Soal-Soal Etis,C.1,BPK GUNUNG MULIA,2003,241 Ab C.1,Jakarta ,979-415-608-1,Agama
+,09-221,"White,Ellen G",Kebahagiaan Sejati,C.2,INDONESIA PUBLISHING HOUSE,2009,26X Wh C.2,Bandung,979-504-059-6,Agama
+,07-146,"Bell,James S",Waktu Teduh ,C.2,Gloria Graffa,2004,252 Sp C.2,Yogyakarta,0-8024-7048-3,Agama
+,09-219,"White,Ellen G",Kebahagiaan Sejati,,INDONESIA PUBLISHING HOUSE,2009,209 wh,Bandung,979-504-059-6,Agama
+,09-222,"White,Ellen G",Kebahagiaan Sejati,C.3,INDONESIA PUBLISHING HOUSE,2009,26X Wh C.3,Bandung,979-504-059-6,Agama
+,15-014,"Pardosi,Milton Thorman",Berjalan Bersama Yesus,C.1,INDONESIA PUBLISHING HOUSE,2014,248 Pa C.1,Bandung,978-979-504-251-8,Agama
+,12-420,"Barclay,William",Doa Muda-Mudi,C.1,BPK GUNUNG MULIA,2011,242 Hi C.1,Jakarta ,978-979-415-112-9,Agama
+,08-006,"Wade,Loron",The Ten Commandments,C.6,INDONESIA PUBLISHING HOUSE,2006,210.2 Wa C.6,Bandung,979-504-172-X,Agama
+,08-011,"Wade,Loron",The Ten Commandments,C11,INDONESIA PUBLISHING HOUSE,2006,210.2 Wa C.11,Bandung,979-504-172-X,Agama
+,09-217,"Bullon,Allejandro",Tanda-Tanda Hari Kiamat,C.1,INDONESIA PUBLISHING HOUSE,2008,236 Bu C.1,Bandung,979-504-172-X,Agama
+,07-184,"Beausay II,William",The Leadership Genius Of Jesus,C.1,Interaksara,1999,261 Be C.1,Batam,,Agama
+,99-315,"Heath,W Stanley",Ilah Zaman Ini,C.2,ANDI,1996,252 He C.2,Yogyakarta,,Agama
+,99-316,"Roni,K.A.M. Jusuf",Membangun Manusia Seutuhnya,,ANDI,1987,234 Ro,Yogyakarta,,Agama
+,99-248,"Chah,Ven. Ajahn",Bodhinyana,,Karaniya,,294.3 Mu,Bandung,,Agama
+,99-395,"Tan,Peter",Tiga Baptisan,,Eternal Glory,1993,234 Ta,Jakarta ,983-9628-06-2,Agama
+,99-642,"Yeakley,Tom",Watak Pekerja Kristus,,Kalam Hidup,1997,254 Ye,Bandung,,Agama
+,99-608,"Njotorahardjo,Niko",Belajar dari Salomo Membangun Rumah Doa bagi Segala Bangsa,,ANDI,1999,254 Nj,Yogyakarta,,Agama
+,17-332,"Sitanggang,Radesman",Insan Berbudaya,,Sekolah Tinggi Diakones HKBP,2016,372.8 Si,Balige,978-602-71613-1-1,Agama
+,07-033,"Manz,Charles C",The Leadership Wisdom Of Jesus,,Bhuana Ilmu Populer,1998,232 Ma,Jakarta ,979-694-335-2,Agama
+,12-016,"Ismail,Andar",Selamat Menabur,C.1,BPK GUNUNG MULIA,2011,248 Is C.1,Jakarta ,978-979-415-948-4,Agama
+,99-023,"White,Ellen G",The Greatest Sermon Ever Preached,,PACIFIC PRESS,1955,24X W,U.S.A,0-8163-0669-9,Agama
+,,"Pickel,Andreas",Radical Transitions,C.4,Westview Press,1992,943.1 Pi C.4,San Francisco,0-8133-8354-4,Agama
+,14-029,"End,Th van den",Ragi Carita 1,C.1,BPK GUNUNG MULIA,2012,270.1 En C.1,Jakarta ,978-979-415-188-4,Agama
+,12-174,"Medearis,Carl",Dua Umat Dan Yesus,C.1,Satu-Satu,2011,261 Me C.1,Bandung,978-602-97520-1-4,Agama
+,19-005,,Pendidikan Agama Budha,,Ristekdikti,2016,294.3 DJPK,Jakarta ,978-602-70089-7-7,Agama
+,21-00082,"Finley,Mark A",Sehat Dan Bugar,,INDONESIA PUBLISHING HOUSE,2015,00082 Gi,Bandung,978-979-504-255-6,Agama
+,99-824,"Cerullo,Morris",Strategi Peperangan Rohani,C.2,GSN INDONESIA,1994,235 Ce V.4 C.2,Bandung,,Agama
+,21-00236,"White,Ellen G",Nasihat Allah untuk Masa Kini,,INDONESIA PUBLISHING HOUSE,2004,236,Bandung,979-509-159-2,Agama
+,19-001,"White,Ellen G",PARA NABI DAN RAJA,C.2,INDONESIA PUBLISHING HOUSE,2015,209 Wh V1C2,Bandung,979-504-118-5,Agama
+,,"Finley,Mark","Ketika Sang Pencipta Berkata ""Ingatlah""",,INDONESIA PUBLISHING HOUSE,2009,00303 Gi,Bandung,978-979-504-211-2,Agama
+,17-333,"White,Ellen G",Jurukabar Pengharapan,,INDONESIA PUBLISHING HOUSE,2013,209 Wh,Bandung,979-504-160-6,Agama
+,17-332,"White,Ellen G",Jurukabar Pengharapan,,INDONESIA PUBLISHING HOUSE,2013,209 Wh,Bandung,979-504-160-6,Agama
+,17-331,"White,Ellen G",Jurukabar Pengharapan,,INDONESIA PUBLISHING HOUSE,2013,209 Wh,Bandung,979-504-160-6,Agama
+,99-309,"Awondatu,J.E",Rahasia Hidup Berkelimpahan,,ANDI,1987,241 Aw,Yogyakarta,,Agama
+,12-008,"Wong,Amy NG",GOD from A to Z,C.1,ANDI,2005,232 Wo C.1,Yogyakarta,979-731-867-2,Agama
+,07-330,"Damazio,Frank",Memimpin Dengan Roh,,ANDI,2004,254 Da,Yogyakarta,,Agama
+,99-372,"Skolfield,Ellis H",Iblis Dalam Gereja,,Fish House,1993,235 Sk,U.S.A,,Agama
+,07-213,"Beyer,Ulrich",Garis-Garis Besar Eskatologi,C.2,BPK GUNUNG MULIA,2003,236 Be C.2,Jakarta ,979-415-518-7,Agama
+,20-009,"Reed,David A",Jehovah's Witnesses,,Baker Books,1986,249 Re,U.S.A,0-8010-7739-7,Agama
+,07-212,"Beyer,Ulrich",Garis-Garis Besar Eskatologi,C.1,BPK GUNUNG MULIA,2003,236 Be C.1,Jakarta ,979-415-518-7,Agama
+,99-328,"Cerullo,Morris",Bagaimana Memenangkan Peperangan Hidup Anda,,Global Satellite Network Indonesia,1998,234 Ce,Surabaya,,Agama
+,21-00157,"Steen,David A",Allahku Yang Ajaib,,INDONESIA PUBLISHING HOUSE,2015,00157 Gi,Bandung,978-979-504-254-9,Agama
+,02-008,"Yin,Robert K",Studi Kasus,C.3,RajaGrafindo,2002,001.4 Yi C.3,Jakarta ,979-412-499-X,Agama
+,21-004,"Criswel,W.A",Great Doctrines Of The Bible,V.1,Zondervan  ,1909,252 Cr V.1,Michigan,0-310-43850,Agama
+,02-006,"Benson,Peter L",Religion On Capitol Hill,,Oxford University Press,1982,261 Be,U.S.A,0-19-504168-2,Agama
+,,"Luppens,John",New York City A Symbol,,Global Mission Centers,2015,200.1 Jo,U.S.A,978-1-943507-00-9,Agama
+,07-362,"Abineno,J.L.Ch",Pelayanan Pastoral Kepada Orang Berduka,C.2,BPK GUNUNG MULIA,2003,253 Ab C.2,Jakarta ,979-415-613-2,Agama
+,99-041,"Amirin,Tatang M",Menyusun Rencana Penelitian,C.2,RajaGrafindo,1995,001.4 Am C.2,Jakarta ,979-421-054-4,Agama
+,25-209,"Dopo,Eduard R",Keprihatinan Sosial Gereja,C.3,KANISIUS,1992,260 Do C.3,Yogyakarta,979-413-711-1,Agama
+,07-153,Surajiyo,Ilmu Filsafat Suatu Pengantar,C.2,Bumi Aksara,2005,100 Su C.2,Jakarta ,979-526-904-6,Agama
+,99-519,"Abineno,J.L.Ch",Pedoman Praktis Untuk Pelayanan Pastoral,,BPK GUNUNG MULIA,1999,253 Ab,Jakarta ,979-415-701-5,Agama
+,06-051,UNI Indonesia Kawasan Barat,Intisari Pemimpin,,UNI Indonesia Kawasan Barat,,251 Ke,Jakarta ,,Agama
+,17-312,"Steen,David A",Allahku Yang Ajaib,,INDONESIA PUBLISHING HOUSE,2015,243 St.2012,Bandung,978-979-504-254-9,Agama
+,09-167,"Smith,Carol",Bible From A to Z,V.2,ANDI,2007,220 Sm V.2,Yogyakarta,978-979-29-1043-8,Agama
+,07-211,"Warren,Rick",The Purpose Driven Life,,Gandum Mas,2002,252 Wa,Malang,,Agama
+,12-031,"Ismail,Andar",Selamat Paskah,C.1,BPK GUNUNG MULIA,2011,248 Is C.1,Jakarta ,978-979-415-369-7,Agama
+,,"Anderson,Leith","Yesus Biografi Lengkap Tentang Pribadi-Nya, Negara-Nya Dan Bangsa-Nya",,Gloria Graffa,2005,232.1 An,Yogyakarta,978-979-173-491-2,Agama
+,07-039,"Jurnawan,Natan",52 Ikhtisar  Khotbah Kisah Para Rasul,C.1,ANDI,2003,226.7 Ju C.1,Yogyakarta,,Agama
+,99-089,"Green,Clifford",Karl Barth: Teolog Kemerdekaan,C.3,BPK GUNUNG MULIA,1997,230 Gr C.3,Jakarta ,979-415-951-4,Agama
+,07-206,"Munroe,Myles",The Purpose And Power of Love & Marriage,,IMMANUEL,2006,241 Mu,Jakarta ,979-3739-43-6,Agama
+,,Herlianto,Teologi Sukses,,BPK GUNUNG MULIA,2016,230 He,Jakarta ,978-979-687-313-5,Agama
+,07-278,"Fllon,Nancy de",The Da Vinci Code & Tradisi Gereja,C.2,KANISIUS,2007,282 Fi C.2,Yogyakarta,978-979-21-1622-9,Agama
+,07-277,"Fllon,Nancy de",The Da Vinci Code & Tradisi Gereja,C.1,KANISIUS,2007,282 Fi C.1,Yogyakarta,978-979-21-1622-9,Agama
+,07-402,"Manurung,Sinta",Mengenal 265 Paus,,Kristisima Media Pustaka,2006,291.6 Ma,Bekasi,,Agama
+,26-055,"Gould,James A",Classic Philosophical Questions,,Merrill Publishing Company,1989,100.01 Go,Ohio,0-675-20849-1,Agama
+,06-062,"Lee,Harris W",Effective Church Leadership,,Ministerial Association of SDA,2003,251 Le,U.S.A,1-57847-031-5,Agama
+,07-389,"Woga,Edmund",Dasar-Dasar Misiologi,C.2,KANISIUS,2002,260 Wo C.2,Yogyakarta,979-21-0617-0,Agama
+,14-078,"Migloire,R Henry",Perencanaan Strategis Dalam Gereja Dan Pelayanan,,BPK GUNUNG MULIA,1994,248 Mi,Jakarta ,978-979-687-736-2,Agama
+,12-018,"Ismail,Andar",Selamat Berbakti,C.1,BPK GUNUNG MULIA,2009,248 Is C.1,Jakarta ,978-979-9290-78-6,Agama
+,12-016,"Ismail,Andar",Selamat Menabur,,BPK GUNUNG MULIA,2011,248 Is,Jakarta ,978-979-415-948-4,Agama
+,12-020,"Ismail,Andar",Selamat Pagi Tuhan,C.1,BPK GUNUNG MULIA,2010,248 Is C.1,Jakarta ,978-979-415-681-0,Agama
+,12-028,"Ismail,Andar",Selamat Berkarunia,,BPK GUNUNG MULIA,2010,248 Is,Jakarta ,978-979-687-458-3,Agama
+,12-029,"Ismail,Andar",Selamat Berkarunia,C.1,BPK GUNUNG MULIA,2010,248 Is C.1,Jakarta ,978-979-687-458-3,Agama
+,07-155,"Achmadi,Asmoro",Filsafat Umum,C.2,RajaGrafindo,1995,100 Ac C.2,Jakarta ,979-421-447-7,Agama
+,02-023,"Eckhardt,John",Bergerak Di Jalur Kerasulan,,Nafiri Gabriel,2001,262 Ec,Jakarta ,,Agama
+,09-173,"Koller,Charles W",Khotbah Memesona Tanpa Catatan,,ANDI,2005,251 Ko,Yogyakarta,979-731-935-0,Agama
+,19-003,,Pendidikan Agama Khatolik,,Ristekdikti,2016,220 PJPK,Jakarta ,978-602-70089-4-6,Agama
+,07-138,"Munroe,Myles",The Spirit of Leadership,C.2,IMMANUEL,2006,248 Mu C.2,Jakarta ,979-3739-45-2,Agama
+,07-313,"Ismail,Andar",Awam & Pendeta,C.1,BPK GUNUNG MULIA,2005,262 Is C.1,Jakarta ,979-415-811-9,Agama
+,09-211,"Peters,Cheri",Bebas Dari Belenggu Narkoba,C.1,INDONESIA PUBLISHING HOUSE,2000,248 Pe C.1,Bandung,979-504-133-9,Agama
+,14-054,"Hagelberg,Dave",Tafsiran Injil Yohanes,C.1,ANDI,2009,220.7 Ha C.1,Yogyakarta,,Agama
+,07-192,"Tomatala,Yakob",Teologi Misi,C.2,YT Leadership Foundation,2005,230 To C.2,Jakarta ,979-3315-08-3,Agama
+,99-314,"Winger,Mell",Mukjizat Kota Almolonga,,METANOIA,1999,234 Wi,Jakarta ,,Agama
+,99-189,"Fernando,Ajith",Pertanyaan-Pertanyaan Penting Seputar Neraka,,ANDI,1991,236 Fe,Yogyakarta,,Agama
+,99-170,"White,Ellen G",The Great Controversy,C.10,PACIFIC PRESS,1939,15X W C.10,U.S.A,,Agama
+,07-836,"White,Ellen G",The Publishing Ministry,C.1,Review And Herald,1991,209 WH C.1,U.S.A,0-8280-0201-0,Agama
+,07-837,"White,Ellen G",The Publishing Ministry,C.2,Review And Herald,1991,209 WH C.2,U.S.A,0-8280-0201-0,Agama
+,07-838,"White,Ellen G",The Publishing Ministry,C.3,Review And Herald,1991,209 WH C.3,U.S.A,0-8280-0201-0,Agama
+,16-003,"White,Ellen G",The Adventist Home,,SOUTHERN ,1952,35X,U.S.A,,Agama
+,19-227,Laporan Konperensi,Harapan Dan Keprihatinan,,Dhyana Pura Kuta,1984,200 La,Bali,,Agama
+,298-238,"Sani,Akmal",Hanya Satu,,Medan Hope Network Ministries,,239 Sa,Medan,,Agama
+,98-050,"White,Ellen G",Pertarakan,,INDONESIA PUBLISHING HOUSE,1979,209 WH,Bandung,,Agama
+,25-094,"White,Ellen G",KEMENANGAN AKHIR,,INDONESIA PUBLISHING HOUSE,1990,209 WH,Bandung,979-504-007-3,Agama
+,99-012,"White,Ellen G",Mendidik Dan Membimbing Anak,,INDONESIA PUBLISHING HOUSE,1994,33X Wh,Bandung,979-504-073-1,Agama
+,96-750,"Messinger,Sheldon L",Criminology Review Yearbook,,SAGE PUBLICATIONS,1979,364 Me,California,0-8039-1062-2,Agama
+,6206,"White,Ellen G",INDEX TO The Writings,C.3,PACIFIC PRESS,1942,02X W C.3,U.S.A,,Agama
+,16-017,"White,Ellen G",Christian Experience And Teachings,,PACIFIC PRESS,1940,207 Wh,U.S.A,,Agama
+,22-511,"White,Ellen G",The Great Controversy,C.7,PACIFIC PRESS,1939,15X W C.7,U.S.A,,Agama
+,4059,"White,Ellen G",The Great Controversy,,PACIFIC PRESS,1950,15X W,U.S.A,,Agama
+,17-270,"White,Ellen G",Testimonies To Ministers And Gospel Workers,,PACIFIC PRESS,1962,202.92 We/1944,U.S.A,,Agama
+,16-020,"White,Ellen G",Pustaka Roh Nubuat,,INDONESIA PUBLISHING HOUSE,,207 Wh,Bandung,,Agama
+,09-272,"White,Ellen G",Petunjuk Diet Dan Makanan Anda,,INDONESIA PUBLISHING HOUSE,1991,209 Wh,Bandung,979-504-023-5,Agama
+,09-269,"White,Ellen G",Petunjuk Diet Dan Makanan Anda,C.2,INDONESIA PUBLISHING HOUSE,1991,209 Wh C.2,Bandung,979-504-023-5,Agama
+,09-270,"White,Ellen G",Petunjuk Diet Dan Makanan Anda,C.3,INDONESIA PUBLISHING HOUSE,1991,41X Wh C.3,Bandung,979-504-023-5,Agama
+,3816,"White,Ellen G",The Great Controversy,C.43,PACIFIC PRESS,1911,15X W C.43,U.S.A,,Agama
+,17-644,"White,Ellen G",The Australian Years,V.4,Review And Herald,1983,286.7 Wh V.4,U.S.A,0-8280-0123-5,Agama
+,16-005,"White,Ellen G",Prophets and Kings,,PACIFIC PRESS,1943,77X,U.S.A,,Agama
+,20-619,"White,Ellen G",The Lonely Years,V.3,Review And Herald,1984,286.7 Wh V.3,U.S.A,0-8280-0121-9,Agama
+,16-010,"White,Ellen G",Patriarchs and Prophets,,PACIFIC PRESS,1913,204 Wh,U.S.A,,Agama
+,,"White,Ellen G",Patriarchs and Prophets,,PACIFIC PRESS,1958,12X Wh,U.S.A,,Agama
+,16-012,"White,Ellen G",Testimonies To Ministers And Gospel Workers,,PACIFIC PRESS,1944,204 Wh,U.S.A,,Agama
+,12-109,"Peters,George W",A Biblical Theology of Missions,,Gandum Mas,1972,243 Pe,Malang,,Agama
+,998-022,"Fisher,Sidney Nettleton",The Middle East,,Alfred A Knopf,1979,956 Fi,NEW YORK,0-394-32098-0,Agama
+,25-109,"White,Ellen G",COMPREHENSIVE INDEX TO The Writings,C.2,PACIFIC PRESS,1962,02X W V.2 C.2,U.S.A,,Agama
+,16-043,"White,Ellen G",TESTIMONIES for The Church,V.6,PACIFIC PRESS,,201X W,U.S.A,,Agama
+,16-053,"Heubach,Paul C",This Is Life,,Review And Herald,1957,249 Wh,U.S.A,,Agama
+,16-027,"White,Ellen G",EVANGELISM,,Review And Herald,1946,209 Wh,U.S.A,,Agama
+,12-172,,Kitab Suci Injil,C.1,LAI,2007,225 La C.1,Jakarta ,978-979-463-918-4,Agama
+,99-025,"White,Ellen G",TESTIMONY TREASURES,V.3,PACIFIC PRESS,1949,209 W V.3,U.S.A,,Agama
+,05-028,,Teaching the Adventist Way Book I:Principles and Practice,C.1,Department Southern Asia-Pacific,2004,288 Gu C.1,Philippines,,Agama
+,05-029,,Teaching the Adventist Way Book I:Principles and Practice,C.2,Department Southern Asia-Pacific,2004,288 Gu C.2,Philippines,,Agama
+,05-030,,Teaching the Adventist Way Book 2: Faith and Heritage,C.3,Department Southern Asia-Pacific,2004,288 Gu C.3,Philippines,,Agama
+,05-031,,Teaching the Adventist Way Book 2: Faith and Heritage,C.4,Department Southern Asia-Pacific,2004,288 Gu C.4,Philippines,,Agama
+,14-326,,Teaching the Adventist Way Book I:Principles and Practice,V.1 C.1,Department Southern Asia-Pacific,2004,082 ED V.1 C.1,Philippines,,Agama
+,14-327,,Teaching the Adventist Way Book 2: Faith and Heritage,V.2,Department Southern Asia-Pacific,2004,082 ED V.2,Philippines,,Agama
+,06-014,"Knott,Ronald Alan",Over & Over Again ,C.1,North American Division of SDA,1998,238 Kn C.1,Maryland,,Agama
+,06-015,"Knott,Ronald Alan",Over & Over Again ,C.2,North American Division of SDA,1998,238 Kn C.2,Maryland,,Agama
+,22-713,"Davidson,Benjamin",The Analytical Hebrew and Chaldee Lexicon,,Zondervan  ,1970,892.4 Da,U.S.A,0-310-20290-6,Agama
+,12-164,"Maxwell,C.Mervyn",GOD CARES Vol.2,V.2,PACIFIC PRESS,1985,221 Ma V.2,U.S.A,0-8163-1418-7,Agama
+,99-874,"Yancey,Philip",Kekecewaan Terhadap Allah,C.2,Gandum Mas,,248 Ya C.2,Malang,,Agama
+,12-026,"Packer,J.I",Knowing GOD,,ANDI,2002,230 Pa,Yogyakarta,979-763-908-8,Agama
+,07-321,"Bell,James S","Tulisan, Khotbah, dan Anekdot yang Memberi Kelegaan",C.1,ANDI,2003,251 Co C.1,Yogyakarta,0-8024-1715-9,Agama
+,99-787,"Barna,George",George Mengejawantahkan Visi ke Dalam Aksi,C.2,METANOIA,1998,254 Ba C.2,Jakarta ,,Agama
+,97-110,"Hommes,Tjaard G",Teologi dan Praksis Pastoral,,BPK GUNUNG MULIA,1992,253 Ho,Jakarta ,979-413-825-8,Agama
+,21-00074,"Douglass,Herbert Edgar",Kasih Memberikan Jalan,,INDONESIA PUBLISHING HOUSE,2009,00074 Gi,Bandung,978-979-504-210-5,Agama
+,21-00167,"White,Ellen G",Hidup Seperti Yesus,,INDONESIA PUBLISHING HOUSE,2004,00167 Gi,Bandung,,Agama
+,05-033,"Shea,William H",DANIEL,C.2,PACIFIC PRESS,2005,224.5 SHE D C.2,U.S.A,0-8163-2077-2,Agama
+,17-278,"Hall,Leigh A",Empowering Struggling Readers,,The Guilford Press,2011,371.3 Ha.2011,NEW YORK,,Agama
+,299-364,"Jeffrey,Grant R",Tanda Tangan Allah,,IMMANUEL,1999,239 Je,Jakarta ,,Agama
+,21-00155,"Knight,George R",Pandanglah Pada Yesus,,INDONESIA PUBLISHING HOUSE,2016,00155 Gi,Bandung,978-979-504-258-7,Agama
+,17-285,"Knight,George R",Pandanglah Pada Yesus,,INDONESIA PUBLISHING HOUSE,2016,232 Kn,Bandung,978-979-504-258-7,Agama
+,21-00071,"White,Ellen G",Nasihat Allah untuk Masa Kini,,INDONESIA PUBLISHING HOUSE,2006,00071 Gi,Bandung,979-504-168-1,Agama
+,21-00110,"Rock,Calvin B",Sesuatu Yang Lebih Baik,,INDONESIA PUBLISHING HOUSE,2017,00110 Gi,Bandung,978-979-504-262-4,Agama
+,25-261,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.19,INDONESIA PUBLISHING HOUSE,1991,13X W C.19,Bandung,979-504-034-0,Agama
+,25-259,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.17,INDONESIA PUBLISHING HOUSE,1991,13X W C.17,Bandung,979-504-034-0,Agama
+,25-268,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.4,INDONESIA PUBLISHING HOUSE,1991,13X W C.4,Bandung,979-504-034-0,Agama
+,,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.1,INDONESIA PUBLISHING HOUSE,1986,13X W C.1,Bandung,979-504-034-0,Agama
+,07-196,"Grant,Bernard",First Class Leaders,C.2,MajestyBooks Publisher,2004,248 Gr C.2,Surabaya,979-25-4365-1,Agama
+,25-262,"White,Ellen G",KERINDUAN SEGALA ZAMAN,,INDONESIA PUBLISHING HOUSE,1991,209 Wh,Bandung,979-504-034-0,Agama
+,25-267,"White,Ellen G",KERINDUAN SEGALA ZAMAN,C.2,INDONESIA PUBLISHING HOUSE,1991,209 Wh C.2,Bandung,979-504-034-0,Agama
+,07-011,"Ford,Betty",Healing & Hope,,G.P. Putnam's Sons,2003,362.2 Fo,NEW YORK,0-399-15138-9,Agama
+,499-291,"Block,Peter",Stewardship Sikap Melayani,,Interaksara,1999,458.4 Bl,Batam,,Agama
+,99-371,"Lea,Larry",Melepaskan Urapan Doa,,IMMANUEL,1999,242 Le,Jakarta ,,Agama
+,07-069,"Klein,Gary",The Power of Intuition,,Bhuana Ilmu Populer,2002,153.4 Kl,Jakarta ,979-694-837-0,Agama
+,99-421,"Selvaraj,Sadhu Sundar",Menyempurnakan Kudus,,Nafiri Gabriel,1999,230 Se,Jakarta ,,Agama
+,02-022,"Piper,John",Jadikan Sekalian Bangsa Bersukacita,,Lembaga Literatur Baptis,1993,266 Pi,Bandung,979-9043-67-0,Agama
+,299-175,"Stuart,Douglas",Eksegese Perjanjian Lama,C.2,Gandum Mas,1994,221.6 St C.2,Malang,,Agama
+,299-781,"Swindoll,Charles R",The Strong Family,,Interaksara,2000,249 Sw,Batam,,Agama
+,99-508,"Tidball,Derek",Menjaring Angin,,BPK GUNUNG MULIA,1996,223 Ti,Jakarta ,979-415-685-X,Agama
+,12-012,"Ismail,Andar",Selamat Mengikut Dia!,C.1,BPK GUNUNG MULIA,2011,248 Is C.1,Jakarta ,978-979-415-102-0,Agama
+,19-124,"Anwar,Marzani",Jejak-Jejak Komunitas Perenial,,Balai Penelitian dan Pengembangan Agama,2007,220 An,Jakarta ,978-979-9099-39-6,Agama
+,14-044,"Baker,D.L",Pengantar Bahasa Ibrani,,BPK GUNUNG MULIA,2013,200.3924 Ba,Jakarta ,978-979-415-328-4,Agama
+,03-005,UNI Indonesia Kawasan Barat,Kepahaman Tentang Alam II,V.2,Departemen Pemuda Advent,,267 Ui V.2,Jakarta ,,Agama
+,02-029,"Andrew,Brother",Rahasia Menghadirkan Kerajaan Allah,,ANDI,1997,269 An,Yogyakarta,,Agama
+,14-026,"Hayes,John H",Pedoman Penafsiran Alkitab,,BPK GUNUNG MULIA,2011,220.7 Ha,Jakarta ,978-979-415-695-7,Agama
+,298-224,"Kendrick,Graham",Alamilah Hidup yang Penuh dengan Penyembahan,,Kingsway Publication Limited,1984,264 Ke,U.S.A,0-86065-274-2,Agama
+,07-316,"Daulay,Richard m",Mengenal Gereja Methodist Indonesia,C.2,BPK GUNUNG MULIA,2004,287 Da C.2,Jakarta ,979-687-207-2,Agama
+,497-408,"Forsyth,Patrick",Everything You Need To Know About Marketing,,Gramedia Pustaka Utama,1997,458.8 Fo,Jakarta ,979-605-585-6,Agama
+,07-162,"Walz,Edgar",Bagaimana Mengelola Gereja Anda?,C.1,BPK GUNUNG MULIA,2006,254 Wa C.1,Jakarta ,979-687-023-1,Agama
+,99-535,"Wongso,Peter",Obrolan Seorang Gembala,,Seminari Alkitab Asia Tenggara,1995,234 Wo,Malang,,Agama
+,18-087,"White,Ellen G",KERINDUAN SEGALA ZAMAN,,INDONESIA PUBLISHING HOUSE,2015,209 Wh/2015,Bandung,979-504-108-8,Agama
+,299-526,"Anderson,Neil T",Siapa Anda Sesungguhnya?,,Lembaga Literatur Baptis,1997,248 An,Bandung,979-9043-04-2,Agama
+,07-080,"Baker,D.L",Mari Mengenal Arkeologi Alkitab,C.2,BPK GUNUNG MULIA,2004,220 Ba C.2,Jakarta ,979-687-213-7,Agama
+,298-182,"Hayes,John H",Pedoman Penafsiran Alkitab,,BPK GUNUNG MULIA,1996,220.6 Ra,Jakarta ,979-415-695-7,Agama
+,07-252,"Ortiz,Juan Carlos",Murid Sejati,C.2,ANDI,1993,242 Ca C.2,Yogyakarta,,Agama
+,98-329,"Clarke,Andrew D",Satu Allah Satu Tuhan,C.3,BPK GUNUNG MULIA,1995,231 Cl C.3,Jakarta ,979-415-795-3,Agama
+,99-541,"Owen,John",Kemuliaan Kristus,,Momentum,1998,234 Ow,Surabaya,979-8307-56-9,Agama
+,98-196,"Leigh,Ronald W",Melayani Dengan Efektif,,BPK GUNUNG MULIA,1996,253 Le,Jakarta ,979-415-340-0,Agama
+,98-029,"White,Ellen G",PARA NABI DAN RAJA,V2C1,INDONESIA PUBLISHING HOUSE,1985,209 Wh V.2C.1,Bandung,,Agama
+,07-384,"Stambaugh,John",Dunia Sosial Kekristenan Mula-Mula,C.1,BPK GUNUNG MULIA,2004,241 St C.1,Jakarta ,979-415-789-9,Agama
+,07-479,"Jasin,Maskoeri",Ilmu Alamiah Dasar,C.2,RajaGrafindo,2005,309 Ta C.2,Jakarta ,979-421-303-9,Agama
+,299-690,"Pfendsack,Werner",Jalan Keselamatan,,BPK GUNUNG MULIA,1995,234 Pf,Jakarta ,979-415-190-4,Agama
+,99-737,"Hinn,Sam",Diubah Dalam Hadirat-Nya,,IMMANUEL,1997,242 Hi,Jakarta ,,Agama
+,07-257,"Sitompul,A.A",Metode Penafsiran Alkitab,C.1,BPK GUNUNG MULIA,2006,220.6 Si C.1,Jakarta ,979-415-556-X,Agama
+,299-763,"Bailey,Brian J",Pilar-Pilar Iman,C.3,Nafiri Gabriel,1996,238 Ba C.3,Jakarta ,,Agama
+,07-385,"Stambaugh,John",Dunia Sosial Kekristenan Mula-Mula,C.2,BPK GUNUNG MULIA,2004,241 St C.2,Jakarta ,979-415-789-9,Agama
+,07-085,"Rogerson,John",Studi Perjanjian Lama Bagi Pemula,C.1,BPK GUNUNG MULIA,1997,221 Ro C.1,Jakarta ,979-415-703-3,Agama
+,12-027,"Ismail,Andar",Selamat Berteman,,BPK GUNUNG MULIA,2011,248 Is,Jakarta ,978-979-687-339-5,Agama
+,08-110,"Newman,Barclay M",Kamus Yunani-Indonesia untuk Perjanjian Baru,,BPK GUNUNG MULIA,2008,225 Ne,Jakarta ,978-979-415-548-6,
+,14-058,"Newman,Barclay M",Kamus Yunani-Indonesia untuk Perjanjian Baru,C.1,BPK GUNUNG MULIA,2013,225.03 Ne C.1,Jakarta ,978-979-415-548-6,
+,97-053,"Sairin,Weinata",Pelaksanaan Undang-Undang Perkawinan Dalam Perspektif Kristen,,BPK GUNUNG MULIA,1994,261 Sa,Jakarta ,979-415-010-X,Agama
+,,"Paulien,Jon",Kabar Baik Dari Patmos,,INDONESIA PUBLISHING HOUSE,2013,00086 Gi,Bandung,978-979-504-229-7,Agama
+,12-122,"Tidball,Derek",Membuat Hidup Menjadi Bermakna,,ANDI,2004,221 Ti,Yogyakarta,979-731-913-X,Agama
+,299-529,"Tong,Stephen",Peta & Teladan Allah,,Lembaga Reformed Injili Indonesia,1994,234 To,Jakarta ,,Agama
+,98-178,"Riyanto,F.X.E. Armada",Dialog Agama,,KANISIUS,1995,261 Ri,Yogyakarta,979-497-470-6,Agama
+,299-739,"Balchin,John",Intisari Alkitab Perjanjian Baru,,Persekutuan Pembaca Alkitab,1997,221 Ba,Jakarta ,,Agama
+,17-338,"Haynes,Dwight Eric",Menjangkau & Memenangkan,,,,220 Ha,,,Agama
+,07-053,"Situmorang,Jonar",Filsafat dalamTerang Iman Kristen,,ANDI,2004,200 Si,Yogyakarta,979-731-908-3,Agama
+,07-065,"Garrison,David",10 Prinsip Penanaman & Pengembangan Gereja,,YWAM Publishing Indonesia,2002,260 Ga,Jakarta ,,Agama
+,299-736,"Smalley,Gary",Alasan Tersembunyi,,METANOIA,1995,241 Sm,Jakarta ,,Agama
+,09-146,"Warren,Rick",Metode Pemahaman Alkitab yang Dinamis,,ANDI,1995,220 Wa,Yogyakarta,979-763-731-X,Agama
+,07-122,"Hadiwijono,Harun",Sari Sejarah Filsafat Barat 1,C.1,KANISIUS,1980,100 Ha V.1 C.1,Yogyakarta,979-413-146-6,Agama
+,07-123,"Hadiwijono,Harun",Sari Sejarah Filsafat Barat 1,C.2,KANISIUS,1980,100 Ha V.1 C.2,Yogyakarta,979-413-146-6,Agama
+,99-239,"Ze,Nabi Lao",Too Tik Keng (Kitab Suci Taoisme),,SASANA,1997,299 Ze,Jakarta ,,Agama
+,99-674,"Sairin,Weinata","Pemilu, GBHN dan Visi Sosial Kemasyarakatan: persefektif Gereja-gereja di Indonesia",C.3,BPK GUNUNG MULIA,1998,261 So C.3,Jakarta ,979-415-542-X,Agama
+,07-232,"Wright,H.Norman",Komunikasi Kunci Pernikahan Harmonis,,Gloria Graffa,2004,241 Wr,Yogyakarta,0-8307-0904-5,Agama
+,,"Cully,Iris V",Dinamika Pendidikan Kristen,,BPK GUNUNG MULIA,2019,275.98 Cu,Jakarta ,978-979-415-444-1,Agama
+,00-020,"Davis,Margaret",What Shall I Do To Inherit Eternal Life?,,Highland Park Place ,,234 Da,Canada,,Agama
+,99-517,"Ismail,Andar",Selamat Berbakti,,BPK GUNUNG MULIA,1999,252 Is,Jakarta ,979-415-557-8,Agama
+,98-336,"Sairin,Weinata","Gereja, Agama-Agama Dan Pembangunan Nasional",,BPK GUNUNG MULIA,1998,261 Sa,Jakarta ,979-415-580-2,Agama
+,07-297,"Newbigin,Lesslie",Injil Dalam Masyarakat Majemuk,C.2,BPK GUNUNG MULIA,2002,261 Ne C.2,Jakarta ,979-415-702-2,Agama
+,2021-0007,"Knight,John F",Jadi Kamu Sudah Remaja?,,INDONESIA PUBLISHING HOUSE,2004,0007 Gi,Bandung,979-505-158-4,Agama
+,21-00153,"Goldstein,Clifford",Hari Naga,,PACIFIC PRESS,1993,00153 Gi,Canada,,Agama
+,14-010,"Hutabarat,R",PENGANTAR ROH NUBUAT,C.6,INDONESIA PUBLISHING HOUSE,2005,288 Hu C.6,Bandung,979-504-104-5,Agama
+,298-410,"Sproul,R.C",Kebenaran-Kebenaran Dasar Iman Kristen,C.2,Seminari Alkitab Asia Tenggara,1997,230 Sp C.2,Malang,,Agama
+,299-492,"Wongso,Peter",Eksposisi Doktrin Alkitab Kitab Wahyu,,Departemen Literatur Saat,1999,228 Wo,Malang,,Agama
+,99-614,"Kennedy,James",Bagaimana Jika Yesus Tidak Pernah Lahir?,,Interaksara,1999,261 Ke,Batam,,Agama
+,09-166,"Smith,Carol",Bible From A to Z,V.1,ANDI,2009,220 Sm V.1,Yogyakarta,978-979-29-1028-5,Agama
+,02-032,"Joyner,Rick",Jemaat Yang Menuai,,Nafiri Gabriel,2001,236 Jo,Jakarta ,979-9428-25-4,Agama
+,99-714,"Wheat,Ed",Cinta Dan Kemesraan,,IMMANUEL,1999,241 Wh,Jakarta ,,Agama
+,298-468,"Lawson,Michael S",Directing Christian Education,C.2,Moody Press Chicago,1992,207 La C.2,U.S.A,0-8024-1702-7,Agama
+,07-186,"Assa,Rudi N",Tokoh-Tokoh Kristen yang Mewarnai Dunia,C.1,ANDI,2002,260 As C.1,Yogyakarta,,Agama
+,07-187,"Assa,Rudi N",Tokoh-Tokoh Kristen yang Mewarnai Dunia,C.1,ANDI,2002,260 As C.2,Yogyakarta,,Agama
+,2021-00047,"Sanidad,Benjamin R",Chosing To Live,,Sarana Panca Karya Nusa,2001,00047 Gi,Indonesia,,Agama
+,14-074,"Hadiwijono,Harun",Religi Suku Murba di Indonesia,,BPK GUNUNG MULIA,2013,200.91 Ha,Jakarta ,978-979-687-002-8,Agama
+,14-075,"Hadiwijono,Harun",Religi Suku Murba di Indonesia,C.1,BPK GUNUNG MULIA,2013,200.91 Ha C.1,Jakarta ,978-979-687-002-8,Agama
+,12-023,"Hermawan,Yusak B",My New Testament,,ANDI,2010,225 He,Yogyakarta,978-979-29-1822-9,Agama
+,02-042,"Hartono,Jogiyanto",Konsep Dasar Pemograman Bahasa C,,ANDI,2000,005 Ha,Yogyakarta,979-533-599-5,Agama
+,07-073,"Hansen,Jane",Rancangan Allah Untuk Keintiman,,IMMANUEL,2000,241 Ha,Jakarta ,979-8475-05-4,Agama
+,19-167,"White,Ellen G",Dasar-Dasar Pendidikan,C.5,INDONESIA PUBLISHING HOUSE,2017,209 Wh C.5,Bandung,979-504-161-4,Agama
+,07-291,"Wilkinson,Bruce",Doa Yabes,C.2,Grapes Literature,2003,264 Wi C.2,,979-95664-85-7,Agama
+,07-079,"Baker,D.L",Mari Mengenal Arkeologi Alkitab,C.1,BPK GUNUNG MULIA,2004,220 Ba C.1,Jakarta ,979-687-213-7,Agama
+,07-138,"Rapar,Jan Hendrik",Pengantar Filsafat,C.2,KANISIUS,1996,101 Ra C.2,Yogyakarta,979-497-675-X,Agama
+,21-00154,"Chaij,Fernando",Persiapan Untuk Krisis Terakhir ,,PACIFIC PRESS,,00154 Gi,California,,Agama
+,98-045,"Eckardt,A.Roy",Menggali Ulang Yesus Sejarah Kristologi Masakini,,BPK GUNUNG MULIA,1996,232 Ec,Jakarta ,979-415-854-2,Agama
+,12-176,"Appel,James",Bani Timur,C.1,Satu-Satu,2012,261 Ap C.1,Bandung,978-602-7653-00-9,Agama
+,08-002,"Wade,Loron",The Ten Commandments,C.2,INDONESIA PUBLISHING HOUSE,2006,210.2 Wa C.2,Bandung,979-504-172-X,Agama
+,08-003,"Wade,Loron",The Ten Commandments,C.3,INDONESIA PUBLISHING HOUSE,2006,210.2 Wa C.3,Bandung,979-504-172-X,Agama
+,08-008,"Wade,Loron",The Ten Commandments,C.8,INDONESIA PUBLISHING HOUSE,2006,210.2 Wa C.8,Bandung,979-504-172-X,Agama
+,08-010,"Wade,Loron",The Ten Commandments,C.10,INDONESIA PUBLISHING HOUSE,2006,210.2 Wa C.10,Bandung,979-504-172-X,Agama
+,,"Wade,Loron",The Ten Commandments,,INDONESIA PUBLISHING HOUSE,2006,210.2 Wa,Bandung,979-504-172-X,Agama
+,09-197,"White,Ellen G",Jurukabar Pengharapan,C.1,INDONESIA PUBLISHING HOUSE,2005,52X Wh C.1,Bandung,979-504-160-6,Agama
+,27-266,"Pynchon,Thomas",Slow Learner,,"Little,Brown & Company",1961,828 Py,Canada,0-316-72442-4,Agama
+,2021-00042,"Finley,Mark",When God Said Remember,,Home Health Education Service,,00042 Gi,Masai,,Agama
+,99-765,"Graham,Billy",MALAIKAT ,C.2,Binarupa Aksara,1997,235 Gr C.2,Jakarta ,,Agama
+,07-471,"McLeod,John",Pengantar Konseling Teori dan Studi Kasus,C.1,Kencana Prenada Media Group,2006,361 Mc C.1,Jakarta ,979-3925-42-6,Agama
+,15-2983,"Sitanggang,Radesman",Memimpin Sesuai Amanah,C.2,L-SAPA,2014,158.4 Si C.2,P.Siantar,979-99561-4-5,Agama
+,06-058,"Rodriguez,Angel Manuel",JewerlyIn The Bible,,PACIFIC PRESS,1999,251 Ro,U.S.A,1-57847-054-4,Agama
+,07-031,"Shaw,Mark",10 Pemikiran Besar Dari Sejarah Gereja,,Momentum,2003,253 Sh,Surabaya,979-8131-00-2,Agama
+,07-060,"Kwi,Katekese Komkat",Peranan Media Dalam Pendidikan Iman Dan Upaya Pendidikan Kesadaran Bermedia,C.2,KANISIUS,1997,302.2 Kw C.2,Yogyakarta,979-497-570-2,Agama
+,99-086,"Siwu,Richard A.D",Misi Dalam Pandangan Ekumenikal Dan Evangelikal Asia,,BPK GUNUNG MULIA,1996,266 Si,Jakarta ,979-415-864-X,Agama
+,07-175,"Iqbal,Muhammad",Ensiklopedi Ringkas Tentang Islam,,Taramedia,2003,297 Iq,Jakarta ,979-3423-05-6,Agama
+,98-079,"Eckardt,A.Roy",Menggali Ulang Yesus Sejarah Kristologi Masakini,C.2,BPK GUNUNG MULIA,1996,232 Ec C.2,Jakarta ,979-415-854-2,Agama
+,07-144,"Schwartz,David J",Berpikir & Berjiwa Besar,,Delapratasa,2007,126 Se,,979-3253-09-6,Agama
+,15-010,"Finley,Mark A",Hari Yang Hampir Dilupakan,C.10,INDONESIA PUBLISHING HOUSE,1992,263 Fi C.10,Bandung,979-504-060-X,Agama
+,21-00211,"White,Ellen G",Suara Hati Nurani,,INDONESIA PUBLISHING HOUSE,2012,00211 Gi,Bandung,978-979-504-224-2,Agama
+,09-187,"Craig,Bryan",Upaya Mencapai Keintiman Dalam Pernikahan,,INDONESIA PUBLISHING HOUSE,2009,241 Cr,Bandung,978-979-504-207-5,Agama
+,,"Boonstra,Shawn",The Appearing,,PACIFIC PRESS,2005,00339 Gi,Canada,0-8163-2116-7,Agama
+,03-035,"Sitanggang,Radesman",Religiositas-Insani Sebuah Paradigma Iman Kristen,C.2,HKBP,2003,254 Si C.2,P.Siantar,,Agama
+,21-00149,"Knott,Ronald Alan",College Faith,,Andrews University Press,2002,00149 Gi,Michigan,1-883925-34-7,Agama
+,,"McMickle,Marvin A",Membentuk Rancangan,C.1,BPK GUNUNG MULIA,2017,200.9 Mc C.1,Jakarta ,978-602-231-433-2,Agama
+,07-154,"Achmadi,Asmoro",Filsafat Umum,C.1,RajaGrafindo,2007,100 Ac C.1,Jakarta ,979-421-447-7,Agama
+,07-049,"Barna,George",Memasarkan Gereja,,Yayasan Kalam Hidup,1993,260 Ba,Bandung,,Agama
+,21-00130,"Stenbakken,Ardis Dick",Blessed,,Review And Herald,2012,00130 Gi,U.S.A,978-0-8280-2654-3,Agama
+,298-176,"Hayford,Jack",Mukjizat Maria,,IMMANUEL,1995,243 Ha,Jakarta ,,Agama
+,07-081,"Noorsena,Bambang",Menuju Dialog Teologis Kristen-Islam,C.1,ANDI,2001,291 No C.1,Yogyakarta,979-763-256-3,Agama
+,99-561,"Napel,Henk ten",Jalan Yang Lebih Utama Lagi,C.3,BPK GUNUNG MULIA,1997,241 Na C.3,Jakarta ,979-415-288-9,Agama
+,08-068,Lembaga Pendidikan Kristen di Indonesia,Pendidikan Kristen di Tengah Kontroversi Peraturan Perundang-undangan di Indonesia,,Majelis Pendidikan Kristen Di Indonesia,2008,200.7 Os,,,Agama
+,98-149,"Abednego,Benyamin",Liku-Liku Kepemimpinan Kristen,,YAKIN,,254 Ab,Surabaya,,Agama
+,07-034,"Gintings,E.P",Gembala Dan Konseling Pastoral,C.1,ANDI,2002,253 Gi C.1,Yogyakarta,,Agama
+,98-367,"Hallesby,O",Di Bawah Naungan Sayapnya,,BPK GUNUNG MULIA,1997,248 Ha,Jakarta ,979-415-312-5,Agama
+,07-351,"Verkuyl,J",Etika Kristen,C.1,BPK GUNUNG MULIA,2007,241 Ve C.1,Jakarta ,978-979-687-292-3,Agama
+,03-031,"Sitanggang,Radesman",Ekklesiologi Dasar-Dasar Pengorganisasian Gereja,,HKBP,2003,254 Si,P.Siantar,,Agama
+,07-280,"Sugiri,L",Gerakan Kharismatik Apakah itu?,C.2,BPK GUNUNG MULIA,1995,289 Su C.2,Jakarta ,979-415-623-9,Agama
+,99-610,"Sairin,Weinata","Pemilu, GBHN dan Visi Sosial Kemasyarakatan: persefektif Gereja-gereja di Indonesia",C.2,BPK GUNUNG MULIA,1998,261 Sa C.2,Jakarta ,979-415-542-X,Agama
+,21-00159,"Hole,Jonquil",The Three Angels And The Crescent: A Reader,,SDA Global Centre for Islamic Studies,1993,00159 Gi,England,0-9521787-0-2,Agama
+,99-643,"Njotorahardjo,Niko",Maju Merebut Tanah Perjanjian,,ANDI,1999,243 Hj,Yogyakarta,,Agama
+,07-286,"Nelson,Ethel R",HubunganAllah Dan Aksara Tiongkok Purbakala,C.1,Talenta Mulia Aksara,2006,260 Ne C.1,Jakarta ,979-25-8734-6,Agama
+,299-241,"Lohfink,Gerhard",Sekarang Saya Memahami Kitab Suci,,KANISIUS,1992,220.6 Lo,Yogyakarta,979-413-898-3,Agama
+,20-010,"Morris,Derek J",The Radical Prayer,,Autumn House Publishing,2008,200.2 Mo,U.S.A,978-0-8127-0487-7,Agama
+,14-073,"Jonge,C.de",Pembimbing Ke Dalam Sejarah Gereja,C.1,BPK GUNUNG MULIA,2012,270 Jo C.1,Jakarta ,978-979-415-461-8,Agama
+,99-342,"Peterson,Robert  L",Kepemimpinan Agape,,ANDI,1991,254 Pe,Yogyakarta,,Agama
+,07-382,"Jonge,C.de",Pembimbing Ke Dalam Sejarah Gereja,,BPK GUNUNG MULIA,2006,270 Jo C.2,Jakarta ,979-415-461-X,Agama
+,07-393,"Snoek,I",Sejarah Suci,C.1,BPK GUNUNG MULIA,2006,220 Sn C.1,Jakarta ,979-415-121-1,Agama
+,299-551,"Jonge,C.de",Apa Itu Calvinisme?,C.2,BPK GUNUNG MULIA,1999,284 Jo C.2,Jakarta ,979-415-567-5,Agama
+,99-229,"Geisler,Norman L",Reinkarnasi,,Gandum Mas,1986,261 Ge,Malang,,Agama
+,07-314,"Ismail,Andar",Awam dan Pendeta Mitra Membina Gereja,C.2,BPK GUNUNG MULIA,2005,262 Is C.2,Jakarta ,979-415-811-9,Agama
+,14-076,"End,Th van den",Harta Dalam Bejana,,BPK GUNUNG MULIA,2013,280 En,Jakarta ,978-979-415-838-8,Agama
+,200-015,"Rhodes,John",Success Secrets for Pastors,,Review And Herald,1984,253 Rh,Maryland,,Agama
+,07-171,"Tomatala,Yakob",Pemimpin Yang Handal,C.2,YT Leadership Foundation,1996,254 To C.2,Jakarta ,,Agama
+,99-727,"Selvaraj,Sadhu Sundar",Seni Menyembah,,Nafiri Gabriel,1996,242 Se,Jakarta ,,Agama
+,002-19,"Dewelt,Don",Kuasa Roh Kudus,,ANDI,2001,248 De,Yogyakarta,,Agama
+,99-405,"White,Arthur L",The Ellen G White Writings,C.5,Review And Herald,1973,288 Wh C.5,Washington,,Agama
+,298-163,"Iverson,Dick",Tetap Seimbang ,C.2,Harvest Publicatoin House,1994,239 Iv C.2,Jakarta ,,Agama
+,07-119,"Grant,Robert M",Sejarah Singkat Penafsiran Alkitab,C.2,BPK GUNUNG MULIA,2000,270 Gr C.2,Jakarta ,979-415-756-2,Agama
+,17-309,"Widagdho,Djoko",Ilmu Budaya Dasar,,Bumi Aksara,1999,302 Wi 1999,Jakarta ,979-526-048-0,Agama
+,09-210,"Peters,Cheri",Bebas Dari Belenggu Narkoba,,INDONESIA PUBLISHING HOUSE,2000,248 Pe,Bandung,979-504-133-9,Agama
+,2021-00048,"McFarland,Ken",The Called The Chosen,,Review And Herald,2006,00048 Gi,U.S.A,1-878951-05-X,Agama
+,02-034,"Barnett,Tommy",Multiplikasi,,IndoGracia,2001,254 Ba,Jakarta ,,Agama
+,99-203,"Soedarmo,R",Pokok-Pokok Iman Yang Perlu Ditekankan,,BPK GUNUNG MULIA,1997,234.2 So,Jakarta ,979-415-279-X,Agama
+,21-00079,"Hybels,Bill",Dipertemukan Untuk Dipersatukan,,Harvest Publicatoin House,2002,00079 Gi,Jakarta ,,Agama
+,298-203,"Packer,J.I",Kristen Sejati,,Lembaga Reformed Injili Indonesia,1990,234 Pa V.II,Jakarta ,979-8307-02-X,Agama
+,07-267,"Keene,Michael",Agama-Agama Dunia,C.1,KANISIUS,2006,290 Ke C.1,Yogyakarta,979-21-1044-5,Agama
+,17-270,"Pelt,Nancy Van",The Compleat Marriage,,INDONESIA PUBLISHING HOUSE,2006,306.8 Pe.1989,Bandung,979-504-165-5,Agama
+,299-761,"Graham,Billy",Anda Bertanya Billy Graham Menjawab,,Lembaga Literatur Baptis,1999,252 Gr V.2,Bandung,979-9043-20-4,Agama
+,09-266,"Bakhtiar,Amsal",Filsafat Agama,,RajaGrafindo,2007,210 Ba,Jakarta ,979-769-100-4,Agama
+,07-149,"Woodhouse,Mark B",Berfisafat Sebuah Langkah Awal,C.2,KANISIUS,2000,100 Wo C.2,Yogyakarta,979-672-639-4,Agama
+,21-00075,"Appel,James",Bani Timur,,Satu-Satu,2012,00075 Gi,Bandung,978-602-7653-00-9,Agama
+,09-232,"Kristiyanto,Eddy",Konsili Vatikan II Agenda yang belum Selesai,,OBOR,2006,230 Kr,Jakarta ,979-565-412-8,Agama
+,07-430,"Hadiwijono,Harun",Religi Suku Murba di Indonesia,C.1,BPK GUNUNG MULIA,2006,305.8 Ha C.1,Jakarta ,979-687-002-9,Agama
+,98-322,"Adams,Daniel J",Teologi Lintas Budaya ,C.2,BPK GUNUNG MULIA,1996,261 Ad C.2,Jakarta ,979-415-660-4,Agama
+,07-146,"Poedjawijatna,I.R",Pembimbing Ke Arah Alam Filsafat,,Rineka Cipta,2005,107 Po,Jakarta ,979-518-124-6,Agama
+,12-024,"Hermawan,Yusak B",My New Testament,C.1,ANDI,2010,225 He C.1,Yogyakarta,978-979-29-1822-9,Agama
+,07-281,"Robirosa,S.Christian",Panduan Praktis Penerapan,C.1,ANDI,2007,248 Ro C.1,Yogyakarta,979-763-477-9,Agama
+,06-020,William,I Chose Adventism,,Review And Herald,1988,238 Jo,Washington,0-8280-0407-2,Agama
+,12-019,"Ismail,Andar",Selamat Pagi Tuhan,,BPK GUNUNG MULIA,2010,248 Is,Jakarta ,978-979-415-681-0,Agama
+,98-400,"Manurung,M.R",Manajemen Keluarga,,INDONESIA PUBLISHING HOUSE,1995,249 Ma,Bandung,979-5040-082-2,Agama
+,07-003,"Knight,George R",Walking With Paul Through the Book of Romans,,Review And Herald,2002,227.1 Kn,U.S.A,0-8280-1646-1,Agama
+,05-015,"Schwarz,Richard W",Light Bearers,C.1,PACIFIC PRESS,2000,274 Sc C.1,U.S.A,0-8163-1795-X,Agama
+,14--318,"Schwarz,Richard W",Light Bearers,,PACIFIC PRESS,2000,288 Sc,U.S.A,0-8163-1795-X,Agama
+,12-041,"Schwarz,Richard W",Light Bearers,,PACIFIC PRESS,2000,274 Sc,U.S.A,0-8163-1795-X,Agama
+,21-00226,"Sorajjakool,Siroj","Spirituality, Health, and Wholeness",,The Haworth Press,2004,00226 Gi,U.S.A,0-7890-1496-3,Agama
+,99-336,"Liardon,Roberts",Mengapa Mereka Sukses & Beberapa di antaranya Gagal,V.1,METANOIA,1998,248 Li V.1,Jakarta ,,Agama
+,21-00124,"Carson,Ben",Take The Risk,,Zondervan  ,2008,00124 Gi,Michigan,0-310-25973-8,Agama
+,21-00138,"Steen,David A",God of Wonders,,Review And Herald,2012,00138 Gi,U.S.A,978-0-8280-2511-9,Agama
+,21-00135,"Stenbakken,Ardis Dick",RENEW,,Review And Herald,2011,00135 Gi,U.S.A,978-0-8280-2571-3,Agama
+,2021-00039,"Knight,George R",Turn Your Eyes Upon Jesus,,Review And Herald,2013,00039 Gi,U.S.A,978-0-8280-2699-4,Agama
+,21-00142,"Stenbakken,Ardis Dick",Altogether Lovely,,Review And Herald,2014,00142 Gi,U.S.A,978-0-8280-2808-0,Agama
+,07-631,"Sutikno,Raja Bambang",The Power of Empathy in Leadership,C.2,Gramedia Pustaka Utama,2007,458.4 Su C.2,Jakarta ,979-22-2912-4,Agama
+,07-391,"Hinson,David F",Sejarah Israel Pada Zaman Alkitab,C.1,BPK GUNUNG MULIA,2004,275 Hi C.1,Jakarta ,979-415-609-4,Agama
+,21-00132,"Rock,Calvin B",Something Better,,Review And Herald,2014,00132 Gi,U.S.A,978-0-8280-2751-9,Agama
+,21-00201,Kaykuzma,Fitforever,,Review And Herald,2005,00201 Gi,U.S.A,0-8280-1838-3,Agama
+,99-333,"Sherman,Dough",Pekerjaan Anda Penting Bagi Allah,,Yayasan Kalam Hidup,1997,261 Sh,Bandung,,Agama
+,21-00133,"Stenbakken,Ardis Dick",Fabric of Faith,,Review And Herald,2000,00133 Gi,U.S.A,0-8280-1514-7,Agama
+,21-00141,"Coffen,Richard W",Snapshots of God,,Review And Herald,2009,00141 Gi,U.S.A,978-0-8280-2460-0,Agama
+,18-117,"Klingbeil,Gerald A",The Genesis Creation Account,,Andrews University Press,2015,213 Kl,Michigan,978-1-940980-10-2,Agama
+,,"Brotosudarmo,Drie S",Seni Berkotbah & Public Speaking,,ANDI,2017,200.6 Br,Yogyakarta,978-979-29-6417-2,Agama
+,21-00109,"White,Ellen G",Homeward Bound,,Review And Herald,2015,00109 Gi,U.S.A,0-8163-5737-4,Agama
+,,"Marx,Dorothy Irene",Martin Luther,,Literatur Perkantas,2012,200 Ir,Jakarta ,978-979-1338-71-4,Agama
+,06-042,"Silitonga,H.S.P",Biarkanlah Daniel & Wahyu Berbicara,C.5,Prosa Media Prima,2005,228 Si C.5,Bandung,,Agama
+,,"Sutanto,Hasan",Hermeneutik: Prinsip dan Metode Penafsiran Alkitab,,Literatur SAAT,2007,200.4 Su,Malang,979-9532-03-5,Agama
+,,"Davids,Peter H",Ucapan Yang Sulit Dalam Perjanjian Baru,,Literatur SAAT,2013,200.3 Da,Malang,979-9532-05-1,Agama
+,,"Schafer,Ruth",Belajar Bahasa Yunani Koine,,BPK GUNUNG MULIA,2018,200.5 Sc,Jakarta ,978-979-687-844-4,Agama
+,,"Margianto,Yoppi",Belajar Sendiri Bahasa Yunani,C.1,ANDI,2005,200.5 Ma C.1,Yogyakarta,979-731-946-6,Agama
+,21-00131,"Stenbakken,Ardis Dick",Breathe,,Review And Herald,2013,00131 Gi,U.S.A,978-0-8280-2706-9,Agama
+,98-419,"Graham,Billy",Just As I Am,V.2,Interaksara,1999,248 Gr V.2,Batam,,Agama
+,02-027,"Wiebracht,Dean",Menjawab Tantangan Amanat Agung,C.2,ANDI,1997,266 Wi C.2,Yogyakarta,,Agama
+,07-170,"Tomatala,Yakob",Pemimpin Yang Handal,C.1,YT Leadership Foundation,1996,254 To C.1,Jakarta ,,Agama
+,07-164,"Lumbantobing,Andar M",Makna Wibawa Jabatan dalam Gereja Batak,C.2,BPK GUNUNG MULIA,1996,250 Lu C.2,Jakarta ,979-415-683-3,Agama
+,,"Nelson,Dwight K",Umat Pilihan,,INDONESIA PUBLISHING HOUSE,2014,230 Ne,Bandung,978-979-504-236-5,Agama
+,21-00136,"Stenbakken,Ardis Dick",Bouquets of Hope,,Review And Herald,2002,00136 Gi,U.S.A,0-8280-1648-8,Agama
+,21-00137,"Stenbakken,Ardis Dick",Grace Notes,,Review And Herald,2008,00137 Gi,U.S.A,978-0-8280-2359-7,Agama
+,07-249,"Chu,Zhao Pu",Tanya Jawab Mengenai Agama Budha,C.1,Yayasan Penerbit Karaniya,2007,294.3 Pu C.1,Indonesia,979-8727-08-8,Agama
+,14-066,"Drane,John",MEMAHAMI PERJANJIAN BARU,,BPK GUNUNG MULIA,2012,225 Dr,Jakarta ,978-979-415-905-7,Agama
+,07-075,,Panduan Aplikatif Menggunakan Internet Explorer 6.0,,ANDI,2003,005 An,Yogyakarta,979-533-990-7,Agama
+,299-167,"Agung,Markus",Intisari Firman Allah,,Principles of Bible Study,1999,220.2 Ag,Jakarta ,,Agama
+,298-451,SDA General Conference,What People Need to Know,,Review And Herald,1982,288 Da,U.S.A,,Agama
+,14-321,"McIver,Robert K",The Four Faces of Jesus,C.2,PACIFIC PRESS,2000,226.6 Mc C.2,U.S.A,0-8163-2118-3,Agama
+,14-319,"McIver,Robert K",The Four Faces of Jesus,C.2,PACIFIC PRESS,2000,226.06 Mc C.2,U.S.A,0-8163-2118-3,Agama
+,14-319,"McIver,Robert K",The Four Faces of Jesus,C.1,PACIFIC PRESS,2000,226.06 Mc C.1,U.S.A,0-8163-2118-3,Agama
+,00-007,"Dyer,Mercedes H",Prove All Things,,Adventists Affirm,2000,253 Dy,Michigan,0-9677622-0-0,Agama
+,2021-0006,"White,Ellen G",God's Amazing Grace,,Review And Herald,2001,0006 Gi,U.S.A,978-0-8280-2844-8,Agama
+,21-00162,"White,Ellen G",Our Father Cares,,Review And Herald,2013,00162 Gi,U.S.A,978-0-8280-2708-3,Agama
+,99-193,"Muhammad,Syaikh",Penjelasan Kitab 3 Landasan Utama,,Yayasan Al-Sofwa ,1998,297 Al,Jakarta ,,Agama
+,07-008,"Foxe,John",Foxe's Book of Martyrs,C.1,ANDI,2001,272 Fo C.1,Yogyakarta,979-763-449-3,Agama
+,14-040,"Achenbach,Reinhard",Kamus Ibrani-Indonesia Perjanjian Lama,,Yayasan Komunikasi Bina Kasih,2012,200.3924 Ac,Jakarta ,978-602-8009-78-2,Agama
+,99-057,"Gangel,Kenneth O",Membina Pemimpin Pendidikan Kristen,,Gandum Mas,1998,254 Ga,Malang,,Agama
+,25-092,"White,Ellen G",Nasihat Bagi Sidang,,INDONESIA PUBLISHING HOUSE,1975,209 Wh,Bandung,,Agama
+,07-287,"Nelson,Ethel R",Hubungan Allah dan Aksara Tiongkok Purbakala,C.2,Talenta Mulia Aksara,2004,260 Ne C.2,Jakarta ,979-25-8734-6,Agama
+,05-009,"Ramadhan,Arief",36 Jam Belajar Komputer Visual Basic 6.0,,Elex Media Komputindo,2004,005 Ra,Jakarta ,979-20-5464-2,Agama
+,98-039,"White,Ellen G",Muliakanlah Dia,,INDONESIA PUBLISHING HOUSE,,67X W,Bandung,979-504-020-0,Agama
+,,"Bauer,Bruce A","Narrative, Meaning & Truth",,Global Mission Centers,2017,173 Bc,Michigan,978-1-943507-08-5,Agama
+,06-060,"Vitrano,Steven P",Preaching The Four Faces of Salvation,,PACIFIC PRESS,2000,220 Vi,U.S.A,1-57847-073-0,Agama
+,13-100,"Nadeak,Wilson",Jangan Ada Dusta di Antara Kita,,INDONESIA PUBLISHING HOUSE,2012,243 Na,Bandung,978-979-504-226-6,Agama
+,06-050,"Knight,George R",I Used To Be Perfect,,Andrews University Press,2001,252 Kn,U.S.A,1-883925-31-2,Agama
+,,"Rosario,Manuel A",Urban Evangelism,,"CreateSpace, an Amazon Company",2014,200.1 Ma,U.S.A,,Agama
+,14-031,"Margianto,Yoppi",Belajar Sendiri Bahasa Yunani,,ANDI,2005,227.81 Ma,Yogyakarta,979-731-946-6,Agama
+,14-032,"Margianto,Yoppi",Belajar Sendiri Bahasa Yunani,,ANDI,2005,227.81 Ma C.1,Yogyakarta,979-731-946-6,Agama
+,,"White,Ellen G",Ministry To The Cities,,Review And Herald,2012,200.2 Wh,U.S.A,978-0-8280-2665-9,Agama
+,07-017,"Comiskey,Joel",Prinsip G12,,Yayasan Media Buana Indonesia,2001,254 Co,Jakarta ,979-9461-10-3,Agama
+,07-096,"Gintings,E.P",Khotbah Dan Pengkhotbah,C.2,BPK GUNUNG MULIA,2003,251 Gi C.2,Jakarta ,979-415-568-3,Agama
+,,"Douglass,Herbert Edgar",Kasih Memberikan Jalan,,INDONESIA PUBLISHING HOUSE,2009,230 Do,Bandung,978-979-504-210-5,Agama
+,,"Jo,Hendi",Orang-Orang di Garis Depan,,Matapadi Pressindo,2019,081 JO GD,Yogyakarta,978-602-1634-26-4,Agama
+,99-854,"Stanley,Charles",Hadiah Pengampunan,,IMMANUEL,1995,234 St,Jakarta ,,Agama
+,02-040,"Adams,Daniel J",Teologi Lintas Budaya ,C.4,BPK GUNUNG MULIA,1996,261 Ad C.4,Jakarta ,979-415-660-4,Agama
+,19-138,"White,Ellen G",Petunjuk Diet Dan Makanan Anda,,INDONESIA PUBLISHING HOUSE,1991,209 Wh,Bandung,979-504-023-5,Agama
+,99-705,"Swindoll,Charles R",Kepemimpinan Kristen yang Berhasil,,YAKIN,1985,254 Sw,Surabaya,,Agama
+,99-259,"Sopater,Sularso",Kepemimpinan dan Pembinaan Warga Gereja,,Pustaka Sinar Harapan,1998,248.4 So,Jakarta ,979-416-569-7,Agama
+,06-004,"White,Ellen G",The Upward Look,,Review And Herald,1982,29X Wh,U.S.A,0-8280-0114-6,Agama
+,21-00125,"Tibbits,Dick",Forgive to Live,,Florida Hospital,2007,00125 Gi,U.S.A,0-9719074-8-X,Agama
+,20-011,"Knight,George R",Walking With Jesus ,,Review And Herald,1996,200.1 Km,U.S.A,0-8280-0965-1,Agama
+,21-00178,"Doukhan,Jacques B",Secrets Of Daniel,,Review And Herald,2000,00178 Gi,U.S.A,0-8280-1424-8,Agama
+,07-222,"Brown,Michael L",Melawan Godaan Dosa,,ANDI,1999,252 Br,Yogyakarta,,Agama
+,07-036,"Towns,Elmer",Evaluating the Church Growth Movement,,Gandum Mas,2006,260 En,Malang,,Agama
+,07-322,"Bell,James S","Tulisan, Khotbah, dan Anekdot yang Memberi Kelegaan",C.2,ANDI,2003,251 Co C.2,Yogyakarta,,Agama
+,21-00144,"Johnsson,William G",Jesus A Heart Full of Grace,,Review And Herald,2007,00144 Gi,U.S.A,0-8280-1988-6,Agama
+,18-262,Sevent Day Adventis Church,Year Book 2016,,PACIFIC PRESS,2016,024.3 SDA,U.S.A,,Agama
+,2021-0008,Kaykuzma,Fitforever,,Review And Herald,2005,0008 Gi,U.S.A,0-8280-1838-3,Agama
+,,Mission Stories from PMM Missionaries,Reaching the Unreached,,Korean Publishing House,2010,00348 Gi,Seoul,,Agama
+,05-032,"Shea,William H",DANIEL,C.1,PACIFIC PRESS,2005,224.5 SHE D C.1,U.S.A,0-8163-2077-2,Agama
+,05-034,"Shea,William H",DANIEL,C.3,PACIFIC PRESS,2005,224.5 SHE D C.3,U.S.A,0-8163-2077-2,Agama
+,14-315,"Shea,William H",DANIEL,C.6,PACIFIC PRESS,2005,224.5 SHE D C.6,U.S.A,0-8163-2077-2,Agama
+,07-223,"Smith,Linda",Ide-Ide Filsafat dan Agama Dulu dan Sekarang,C.1,KANISIUS,2000,200.1 Sm C.1,Yogyakarta,979-672-745-5,Agama
+,07-228,"Cole,Edwin Louis",Suami Idaman Dambaan Wanita,,METANOIA,2002,241 Co,Jakarta ,,Agama
+,,"Margianto,Yoppi",Belajar Sendiri Bahasa Yunani,,ANDI,2004,200.5 Ma,Yogyakarta,979-731-904-0,Agama
+,14-038,"Margianto,Yoppi",Belajar Sendiri Bahasa Yunani,,ANDI,2004,227.81 Ma,Yogyakarta,979-731-904-0,Agama
+,07-295,"Grant,Bernard",First Class Leaders,C.1,MajestyBooks Publisher,2006,248 Gr C.1,Surabaya,979-25-4365-1,Agama
+,09-268,"White,Ellen G",Petunjuk Diet Dan Makanan Anda,C.6,INDONESIA PUBLISHING HOUSE,1991,41X Wh C.6,Bandung,979-504-023-5,Agama
+,14-035,"Drewes,B.F",Kunci Bahasa Yunani Perjanjian Baru,,BPK GUNUNG MULIA,2011,481 Dr,Jakarta ,978-979-687-223-7,Agama
+,08-001,"Panjaitan,BH",Konkordansi Topikal,,Surya Mahardika,2007,220.3 Pa,Jakarta ,978-979-16406-0-2,Agama
+,09-169,"Robinson,Haddon W",Cara Berkhotbah yang Baik,,ANDI,2002,251 Ro,Yogyakarta,979-763-266-0,Agama
+,09-170,"Robinson,Haddon W",Cara Berkhotbah yang Baik,C.1,ANDI,2002,251 Ro C.1,Yogyakarta,979-763-266-0,Agama
+,09-195,"Lumban Tobing,Joshua H",Nikmat Membawa Sengsara,,INDONESIA PUBLISHING HOUSE,2009,363.4 To,Bandung,,Agama
+,,"Hill,Andrew E",Survei Perjanjian Lama,,Gandum Mas,2021,221 Hi,Malang,978-602-7708-22-8,Agama
+,07-008,"Foxe,John",Foxe's Book of Martyrs,C.1,ANDI,2006,272 Fo C.1,Yogyakarta,979-763-449-3,Agama
+,4074,"White,Ellen G",The Acts of The Apostles,C.10,PACIFIC PRESS,1911,14X W C.10,California,,Agama
+,12-161,"Barna,George",Kepemimpinan Leaders on Leadership,,Gandum Mas,2009,158.4 Ha,Malang,,Agama
+,99-352,"Budijanto,Bambang",Torah Dalam Hidup Bangsa Israel,C.2,ANDI,1995,234 Bu C.2,Yogyakarta,,Agama
+,,"Cottrell,Raymond F",Beyond Tomorrow,,SOUTHERN ,1963,00291 Gi,Tennessee,,Agama
+,01-001,"Tambunan,Emil H",Bunga Rampai Seabad Pendidikan Advent di Indonesia,C.2,Departemen Pendidikan GMAHK,2000,274 Ta C.2,Jakarta ,,Agama
+,99-191,"Gangel,Kenneth O",Membina Pemimpin Pendidikan Kristen,C.2,Gandum Mas,1998,254 Ga C.2,Malang,,Agama
+,15-005,"Finley,Mark A",Hari Yang Hampir Dilupakan,C.5,INDONESIA PUBLISHING HOUSE,2013,263 Fi C.5,Bandung,979-504-060-X,Agama
+,21-00064,"Wilkinson,Bruce",Secrets of The Vine,,Multnomah,2001,00064 Gi,U.S.A,,Agama
+,6230,"White,Ellen G",The Greatest Love,C.13,Inspiration Books,1976,26X W C.13,Arizona,,Agama
+,06-005,"White,Ellen G",The Sanctified Life,,Review And Herald,1937,29X Wh,U.S.A,,Agama
+,16-021,"White,Ellen G",From Trials to Triumph,,PACIFIC PRESS,1984,204 Wh,U.S.A,0-8163-0565-X,Agama
+,9174,"White,Ellen G",The Greatest Love,C.11,Inspiration Books,1976,26X W C.11,Arizona,,Agama
+,9172,"White,Ellen G",The Greatest Love,C.11,Inspiration Books,1976,26X W C.11,Arizona,,Agama
+,9177,"White,Ellen G",Steps to Christ,C.9,United Publishers,1974,26X W C.9,U.S.A,,Agama
+,98-052,"White,Ellen G",Nasihat bagi Pendeta dan Pelayan Injil,C.3,INDONESIA PUBLISHING HOUSE,1997,209 Wh C.3,Bandung,979-504-099-2,Agama
+,2975,"White,Ellen G",The Great Controversy,,A Pyramid Book,1967,15X W,U.S.A,,Agama
+,07-238,Dennis,Pressure Proof Your Marriage,,Kairos Books,2007,241 De,Yogyakarta,979-3574-63-1,Agama
+,98-048,"White,Ellen G",Hamonangan Na Parpudi,,INDONESIA PUBLISHING HOUSE,1995,209 Wh,Bandung,979-504-092-8,Agama
+,6212,"White,Ellen G",EDUCATION,,PACIFIC PRESS,1903,209 Wh,U.S.A,,Agama
+,25274,"White,Ellen G",Khotbah Di Atas Bukit,,INDONESIA PUBLISHING HOUSE,1991,209 Wh,U.S.A,979-504-035-9,Agama
+,98-045,"White,Ellen G",SEJARAH PARA NABI,C.3,INDONESIA PUBLISHING HOUSE,1994,209 Wh C.3,Bandung,979-504-042-1,Agama
+,98-046,"White,Ellen G",SEJARAH PARA NABI,C.4,INDONESIA PUBLISHING HOUSE,1994,209 Wh C.4,Bandung,979-504-042-1,Agama
+,07-001,"White,Ellen G",SEJARAH PARA NABI,C.4,INDONESIA PUBLISHING HOUSE,1994,209 Wh C.4,Bandung,979-504-042-1,Agama
+,98-047,"White,Ellen G",SEJARAH PARA NABI,C.5,INDONESIA PUBLISHING HOUSE,1994,209 Wh C.5,Bandung,979-504-042-1,Agama
+,00-004,"White,Ellen G",SEJARAH PARA NABI,V.1,INDONESIA PUBLISHING HOUSE,1999,15X W V.1,Bandung,979-504-116-9,Agama
