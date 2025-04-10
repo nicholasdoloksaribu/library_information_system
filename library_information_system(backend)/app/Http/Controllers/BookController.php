@@ -6,6 +6,8 @@ use App\Models\Book;
 use App\Models\Activity_Staff as ActivityStaff;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class BookController extends Controller
 {
@@ -25,24 +27,56 @@ class BookController extends Controller
             'pengarang' => 'required|string',
             'penerbit' => 'required|string',
             'tahun_terbit' => 'required|integer',
+            'call_number' => 'required|string',
             'deskripsi' => 'nullable|string',
+            'isbn' => 'nullable|string',
             'foto_buku' => 'nullable|string',
             'stok' => 'required|integer',
-            'lantai' => 'required|string',
             'rak' => 'required|string',
-            'kategori' => 'required|string'
+            'kategori' => 'nullable|string'
        ]);
 
        // Menambahkan data buku ke database
-       $book = Book::create($validatedData);
+         $book = new Book();
+         $book->kode_buku = $validatedData['kode_buku'];
+            $book->judul = $validatedData['judul'];
+            $book->pengarang = $validatedData['pengarang'];
+            $book->penerbit = $validatedData['penerbit'];
+            $book->tahun_terbit = $validatedData['tahun_terbit'];
+            $book->call_number = $validatedData['call_number'];
+            $book->deskripsi = $validatedData['deskripsi'];
+            $book->isbn = $validatedData['isbn'];
+            $book->foto_buku = $validatedData['foto_buku'];
+            $book->stok = $validatedData['stok'];
+            $book->rak = $validatedData['rak'];
+            $book->save();
 
-       // Menambahkan activity staff
-       ActivityStaff::create([
-        'id_staff' => auth()->user()->id_staff,
-        'kode_buku' => $book->kode_buku,
-        'aktivitas'=> 'Menambahkan buku',
-        'timestamp' => now()
-       ]);
+        // 3. Kirim data ke FastAPI untuk prediksi kategori
+    try {
+        $response = Http::post('http://127.0.0.1:8001/predict', [
+            'judul' => $validatedData['judul'],
+            'call_number' => $validatedData['call_number'],
+        ]);
+
+        $kategori_diprediksi = $response->json()['kategori'] ?? null;
+
+        // 4. Update kategori buku jika berhasil
+        if ($kategori_diprediksi) {
+            $book->update(['kategori' => $kategori_diprediksi]);
+        }
+
+    } catch (\Exception $e) {
+        // Tangani jika FastAPI tidak merespons
+        Log::error('Gagal memanggil FastAPI: ' . $e->getMessage());
+    }
+
+    //    Menambahkan activity staff
+    //    ActivityStaff::create([
+    //     'id_staff' => auth()->user()->id_staff,
+    //     'kode_buku' => $book->kode_buku,
+    //     'aktivitas'=> 'Menambahkan buku',
+    //     'timestamp' => now()
+    //    ]);
 
        return response()->json([
            'message' => 'Buku sukses ditambahkan',

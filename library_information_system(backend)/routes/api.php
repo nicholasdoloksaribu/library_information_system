@@ -37,12 +37,6 @@ Route::post('/headPerpustakaan', [HeadPerpustakaanController::class, 'store']);
 
 
 
-
-
-// 🟢 **Route untuk Aktivitas Staff (Public Access)**
-Route::get('/activity_staffs', [ActivityStaffController::class, 'index']);
-Route::get('/activity_staffs/search/{aktivitas}', [ActivityStaffController::class, 'search']);
-
 // 🟢 **Route yang hanya bisa diakses oleh Student**
 Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->group(function () {
     
