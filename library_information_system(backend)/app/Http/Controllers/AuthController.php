@@ -11,6 +11,7 @@ use App\Models\HeadPerpustakaan;
 class AuthController extends Controller
 {
     // Method untuk login siswa
+    
     public function loginStudent(Request $request)
     {
         $request->validate([

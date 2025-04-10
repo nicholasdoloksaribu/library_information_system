@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Activity_Staff;
 use App\Models\Borrowing;
 use Illuminate\Http\Request;
 use App\Models\Book;
@@ -52,7 +53,7 @@ class BorrowingController extends Controller
             if ($existingBorrowingPending) {
                 # code...
                 return response()->json([
-                    'message' => 'Anda Sudah meminjam buku ini, harap menunggu peminjaman anda di setujui oleh staff',
+                    'message' => 'Anda diharap menunggu peminjaman anda di setujui oleh staff',
                 ], 400);
             }
             // Menyimpan peminjaman
@@ -270,7 +271,13 @@ class BorrowingController extends Controller
         return response()->json([
             'message' => 'status Peminjaman Berhasil disetujui sekarang user sudah bisa pinjam buku nya',
             'data' => $borrowing,
-            'stok' => $book->stok
+            'stok' => $book->stok,
+            Activity_Staff::create([
+                'id_staff' => auth()->user()->id_staff,
+                'id_peminjaman' => $borrowing->id_peminjaman,
+                'id_siswa' => $borrowing->id_siswa,
+                'aktivitas' => auth()->user()->name .'approve status peminjaman buku dari '.$borrowing->id_siswa,
+            ])
         ],200);
     }
 

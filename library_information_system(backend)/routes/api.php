@@ -22,21 +22,16 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 |--------------------------------------------------------------------------
 */
 
-// 🟢 **Route untuk Login & Register**
+// 🟢 **Route untuk Login & Register student**
 Route::post('/loginStudent', [AuthController::class, 'loginStudent']);
 Route::post('/students', [StudentController::class, 'register']);
 
-// Route::get('/books', [BookController::class, 'index']);
-  // 🌟 **Rating Buku**
-  Route::get('/ratings', [RatingController::class, 'index']);
-  Route::post('/ratings', [RatingController::class, 'store']);
 
-
-
+// 🟢 **Route untuk Login & Register Staff**
 Route::post('/staff', [StaffController::class, 'register']);
 Route::post('/loginStaff', [AuthController::class, 'loginStaff']);
 
-
+// 🟢 **Route untuk Login & Register Head Perpustakaan**
 Route::post('/loginHeadPerpustakaan', [AuthController::class, 'loginHeadPerpustakaan']);
 Route::post('/headPerpustakaan', [HeadPerpustakaanController::class, 'store']);
 
@@ -128,7 +123,8 @@ Route::middleware(['auth:sanctum', 'abilities:headperpustakaan'])->prefix('headp
     Route::get('/books', [BookController::class, 'index']);
     Route::post('/books', [BookController::class, 'store']);
     Route::put('/books/{kode_buku}', [BookController::class, 'update']);
-    Route::delete('/books/{kode_buku}', [BookController::class, 'destroy']);
+    Route::delete('/books/{kode_buku}', 
+    [BookController::class, 'destroy']);
     Route::get('/books/search/{judul}', [BookController::class, 'search']);
 
     //Manajemen Student
