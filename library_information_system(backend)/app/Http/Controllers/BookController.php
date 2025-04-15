@@ -22,7 +22,7 @@ class BookController extends Controller
     public function store (Request $request)
     {
          $validatedData =  request()->validate([
-           'kode_buku' => 'required|unique:books,kode_buku|string',
+            'kode_buku' => 'required|unique:books,kode_buku|string',
             'judul' => 'required|string',
             'pengarang' => 'required|string',
             'penerbit' => 'required|string',

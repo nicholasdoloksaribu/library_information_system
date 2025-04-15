@@ -25,7 +25,8 @@ class ActivityStaffController extends Controller
     function store(Request $request){
         $request->validate([
             'id_staff' => 'required|exists:staff,id_staff',
-            'kode_buku' => 'required|exists:books,kode_buku',
+            'kode_buku' => 'nullable|exists:books,kode_buku',
+            'id_siswa' => 'nullable|exists:students,id_siswa',
             'aktivitas' => 'required|string',
         ]);
 

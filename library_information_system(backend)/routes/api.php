@@ -46,19 +46,20 @@ Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->gr
     Route::get('/books/search/{judul}', [BookController::class, 'search']);
     Route::get('/books/filter/{kategori}', [BookController::class, 'filter']);
 
-    // 📘 **Profil Student**
-    Route::get('/{id_siswa}', [StudentController::class, 'show']);
-    Route::put('/{id_siswa}', [StudentController::class, 'update']);
-
-
+    
+    
     // 📌 **Peminjaman (Student hanya bisa melihat peminjamannya sendiri & meminjam buku)**
-    Route::get('/borrowings/{id_siswa}', [BorrowingController::class, 'showPeminjaman']);
+    Route::get('/borrowings', [BorrowingController::class, 'showPeminjamanStudent']);
     Route::post('/borrowings', [BorrowingController::class, 'store']);
-
+    
     // 🌟 **Rating Buku**
     Route::get('/ratings', [RatingController::class, 'index']);
     Route::post('/ratings', [RatingController::class, 'store']);
     Route::put('/ratings/{kode_buku}', [StudentController::class, 'updateRatings']);
+    
+    // 📘 **Profil Student**
+    Route::get('/{id_siswa}', [StudentController::class, 'show']);
+    Route::put('/{id_siswa}', [StudentController::class, 'update']);
 
     // 🚪 **Logout Student**
     Route::post('/logoutStudent', [AuthController::class, 'logoutStudent']);
@@ -78,6 +79,9 @@ Route::middleware(['auth:sanctum', 'abilities:staff', 'staff.access:crud_books']
     Route::put('/books/{kode_buku}', [BookController::class, 'update']);
     Route::delete('/books/{kode_buku}', [BookController::class, 'destroy']);
     Route::get('/books/search/{judul}', [BookController::class, 'search']);
+
+    //Update staff hanya untuk diri sendiri
+    Route::put('/staffs/{id_staff}', [StaffController::class, 'update']);
     
     // 🚪 **Logout Staff**
     Route::post('/logoutStaff', [AuthController::class, 'logoutStaff']);
@@ -104,6 +108,9 @@ Route::middleware(['auth:sanctum', 'abilities:staff', 'staff.access:approve'])->
 
     //Update Status Peminjaman
     Route::put('/updateStatus/{id_peminjaman}/{kode_buku}', [BorrowingController::class, 'updateStatus']);
+
+    //Update staff hanya untuk diri sendiri
+    Route::put('/staffs/{id_staff}', [StaffController::class, 'update']);
 
 
     // 🚪 **Logout Staff**
@@ -139,6 +146,9 @@ Route::middleware(['auth:sanctum', 'abilities:headperpustakaan'])->prefix('headp
     Route::put('/staffs/{id_staff}', [StaffController::class, 'update']);
     Route::delete('/staffs/{id_staff}', [StaffController::class, 'destroy']);
     Route::get('/staffs/search/{nama}', [StaffController::class, 'search']);
+
+    // Ubah Status dan hak akses staff
+    Route::put('/staffs/{id_staff}', [HeadPerpustakaanController::class, 'updateStatusStaff']);
 
     //Manajemen Peminjaman
     Route::get('/borrowings', [BorrowingController::class, 'index']);

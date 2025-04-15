@@ -19,10 +19,11 @@ class Book extends Model
     'pengarang',
     'penerbit',
     'tahun_terbit',
+    'call_number',
+    'isbn', 
     'foto_buku',
     'deskripsi',
     'stok', 
-    'lantai',
     'rak',
     'kategori'
 ]; 

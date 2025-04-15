@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\HeadPerpustakaan;
 use Illuminate\Support\Facades\Hash;
+use App\Models\Staff;
+use Illuminate\Support\Facades\Storage;
 
 class HeadPerpustakaanController extends Controller
 {
@@ -27,7 +29,7 @@ class HeadPerpustakaanController extends Controller
             'name' => 'required|string|min:5',
             'email'=> 'required|email|unique:headperpustakaan,email',
             'password' => 'required|string|min:6',
-            'no_telepon' => 'required|string|max:12',
+            'no_telepon' => 'required|string|min:11',
         ]);
 
         $headperpustakaan = HeadPerpustakaan::create([
@@ -87,5 +89,62 @@ class HeadPerpustakaanController extends Controller
                 'error' => $e->getMessage()
             ], 404);
         }
+    }
+
+    public function updateStatusStaff(Request $request, $id_staff){
+        $request->validate([
+        'name' => 'nullable|string',
+        'email' => 'nullable|string|email',
+        'no_telepon' => 'nullable|string|min:10|max:13|regex:/^([0-9\s\-\+\(\)]*)$/',
+        'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'password' => 'nullable|string|min:6',
+        'status' => 'nullable|string|in:pending,approved,rejected',
+        'hak_akses_CRUD' => 'nullable|boolean',
+        'hak_akses_approve' => 'nullable|boolean',
+        ]);
+
+        $staff = Staff::findOrFail($id_staff);
+
+
+        if ($request->filled('password')) {
+            $passwordSudahDigunakan = Staff::where('id', '!=', $id_staff)->get()->contains(function ($s) use ($request) {
+                return Hash::check($request->password, $s->password);
+            });
+    
+            if ($passwordSudahDigunakan) {
+                return response()->json([
+                    'message' => 'Password sudah digunakan, silahkan gunakan password lain'
+                ], 400);
+            }
+    
+            $staff->password = bcrypt($request->password);
+        }
+
+
+        if ($request->hasFile('foto_profil')) {
+            if ($staff->foto_profil && file_exists(storage_path('app/public/' . $staff->foto_profil))) {
+                Storage::delete('public/' . $staff->foto_profil);
+            }
+
+            $file = $request->file('foto_profil');
+            $fileName = $file->getClientOriginalName();
+            $file->storeAs('public', $fileName);
+            $staff->foto_profil = $fileName;
+        }
+
+         // Update semua data yang diizinkan admin
+    if ($request->filled('name')) $staff->name = $request->name;
+    if ($request->filled('email')) $staff->email = $request->email;
+    if ($request->filled('no_telepon')) $staff->no_telepon = $request->no_telepon;
+    if ($request->filled('status')) $staff->status = $request->status;
+    if ($request->filled('hak_akses_CRUD')) $staff->hak_akses_CRUD = $request->hak_akses_CRUD;
+    if ($request->filled('hak_akses_approve')) $staff->hak_akses_approve = $request->hak_akses_approve;
+
+    $staff->save();
+
+    return response()->json([
+        'message' => 'Data Staff berhasil diperbarui',
+        'data' => $staff
+    ], 200);
     }
 }

@@ -14,6 +14,7 @@ class Activity_Staff extends Model
     protected $fillable = [
         'id_staff',
         'id_siswa',
+        'id_peminjaman',
         'kode_buku',
         'aktivitas',
     ];
@@ -31,6 +32,12 @@ class Activity_Staff extends Model
     public function book()
     {
         return $this->belongsTo(Book::class, 'kode_buku', 'kode_buku');
+    }
+
+
+    public function borrowing()
+    {
+        return $this->belongsTo(Borrowing::class, 'id_peminjaman', 'id_peminjaman');
     }
 
     

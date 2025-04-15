@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('borrowings', function (Blueprint $table) {
             //
-            $table->enum('status', ['dipinjam', 'dikembalikan','pending','ditolak'])->default('pending')->nullable()->change();
+            $table->enum('status', ['dipinjam', 'dikembalikan','pending','ditolak','telat'])->default('pending')->nullable()->change();
         });
     }
 

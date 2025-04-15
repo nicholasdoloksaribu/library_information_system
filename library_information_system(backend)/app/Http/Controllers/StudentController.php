@@ -7,7 +7,6 @@ use App\Models\Student;
 use Illuminate\Http\Request;
 use App\Models\Activity_Staff;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Auth\Events\Registered;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Rating;
@@ -16,6 +15,7 @@ class StudentController extends Controller
 {
     //
     public function index()
+    
     {
         $students = Student::all();
         $students = response()->json($students);
@@ -216,21 +216,33 @@ public function updateStatus(Request $request, $id_siswa)
     // Mencari siswa berdasarkan ID
     $student = Student::findOrFail($id_siswa);
 
-    // Update status
-    $student->status = $request->status;
-    $student->save();
+    if($request->status == 'rejected'){
+        $student->status = 'rejected';
+        $student->save();
+        return response()->json([
+            'message' => 'Status siswa berhasil diperbarui',
+            'data' => $student,
+            'staff_activity' => Activity_Staff::create([
+                'id_staff' => auth()->user()->id_staff,
+                'id_siswa' => $id_siswa,
+                'aktivitas' => auth()->user()->name . ' menolak status siswa '.$student->name,
+            ])
+        ], 200);
+    }
 
-   
-
-    return response()->json([
-        'message' => 'Status siswa berhasil diperbarui',
-        'data' => $student,
-        'staff_activity' => Activity_Staff::create([
-            'id_staff' => auth()->user()->id_staff,
-            'id_siswa' => $id_siswa,
-            'aktivitas' => 'update status siswa',
-        ])
-    ], 200);
+    if ($request->status == 'approved') {
+        $student->status = 'approved';
+        $student->save();
+        return response()->json([
+            'message' => 'Status siswa berhasil diperbarui',
+            'data' => $student,
+            'staff_activity' => Activity_Staff::create([
+                'id_staff' => auth()->user()->id_staff,
+                'id_siswa' => $id_siswa,
+                'aktivitas' => auth()->user()->name.' menyetujui status siswa '.$student->name,
+            ])
+        ], 200);
+    }
 }
 
 
@@ -242,7 +254,8 @@ public function destroy($id_siswa)
         $student->delete();
 
         return response()->json([
-            'message' => 'Data Siswa sukses dihapus'
+            'message' => 'Data Siswa sukses dihapus',
+            
         ], 200);
     } catch (ModelNotFoundException $e) {
         return response()->json([

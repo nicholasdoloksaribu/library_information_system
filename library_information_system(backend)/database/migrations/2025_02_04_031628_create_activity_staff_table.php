@@ -22,6 +22,9 @@ return new class extends Migration
             $table->unsignedBigInteger('id_siswa')->nullable();
             $table->foreign('id_siswa')->references('id_siswa')->on('students')->onDelete('cascade');
 
+            $table->unsignedBigInteger('id_peminjaman')->nullable();
+            $table->foreign('id_peminjaman')->references('id_peminjaman')->on('borrowings')->onDelete('cascade');
+
             // Foreign key ke tabel books (kode_buku bertipe string)
             $table->string('kode_buku')->nullable();
             $table->foreign('kode_buku')->references('kode_buku')->on('books')->onDelete('cascade');

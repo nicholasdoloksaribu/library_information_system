@@ -21,9 +21,9 @@ class StaffController extends Controller
             'name' => 'required|string',
             'email' => 'required|unique:staff,email|string',
             'no_telepon' => 'required|string',
-            'foto_profil' => 'nullable|string|image|mimes:jpeg,png,jpg|max:2048',
+            'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'tanggal_daftar' => 'nullable|date',
-            'password' => 'required|string|min:6|confirmed',
+            'password' => 'required|string|min:6',
         ]);
       
         $noTeleponExist = Staff::where('no_telepon', $request->no_telepon)->exists();
@@ -60,11 +60,10 @@ class StaffController extends Controller
         }
 
 
-        if ($request->filled('foto_profil')) {
+        if ($request->hasFile('foto_profil')) {
             $foto_profil = $request->file('foto_profil');
-            $fileName = time() . '.' . $foto_profil->getClientOriginalExtension();
-            $filePath = $foto_profil->storeAs('uploads/staff/foto_profil', $fileName, 'public');
-            # code...
+            $fileName = $foto_profil->getClientOriginalName();
+            $filePath = $foto_profil->storeAs('uploads/staff/', $fileName, 'public');
         }else {
             return response()->json([
                 'message' => 'Foto profil harus diisi'
@@ -109,8 +108,17 @@ class StaffController extends Controller
         ], 404);
     }
 
-    public function update(Request $request, $id_staff){
+    public function updateProfil(Request $request, $id_staff){
         $staff = Staff::findOrFail($id_staff);
+        $staffLogin = auth()->user();
+        if ($staffLogin->id_staff != $id_staff) {
+            # code...
+            return response()->json([
+                'message' => 'anda tidak bisa update profil orang lain',
+            ], 403);
+        }
+
+        // Validasi input
     
         $request->validate([
             'name' => 'nullable|string',
@@ -118,9 +126,6 @@ class StaffController extends Controller
             'no_telepon' => 'nullable|string',
             'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'password' => 'nullable|string',
-            'status' => 'nullable|string|in:pending,approved,rejected',
-            'hak_akses_CRUD' => 'nullable|boolean',
-            'hak_akses_approve' => 'nullable|boolean',
         ]);
     
         // Cek apakah password sudah digunakan oleh staff lain
@@ -135,16 +140,45 @@ class StaffController extends Controller
                 ], 400);
             }
         }
-    
+
+        // Cek apakah email sudah digunakan oleh staff lain
+        if ($request->filled('email')) {
+            $emailSudahDigunakan = Staff::where('id', '!=', $id_staff)
+                ->where('email', $request->email)
+                ->exists();
+            if ($emailSudahDigunakan) {
+                return response()->json([
+                    'message' => 'Email sudah digunakan, silahkan gunakan email lain'
+                ], 400);
+            }
+        }
+
+        // Cek apakah no telepon sudah digunakan oleh staff lain
+        if ($request->filled('no_telepon')) {
+            $noTeleponSudahDigunakan = Staff::where('id', '!=', $id_staff)
+                ->where('no_telepon', $request->no_telepon)
+                ->exists();
+            if ($noTeleponSudahDigunakan) {
+                return response()->json([
+                    'message' => 'No telepon sudah digunakan, silahkan gunakan no telepon lain'
+                ], 400);
+            }
+        }
+
+        // Cek apakah foto profil diupload
+        if ($request->hasFile('foto_profil')) {
+            $foto_profil = $request->file('foto_profil');
+            $fileName = $foto_profil->getClientOriginalName();
+            $filePath = $foto_profil->storeAs('uploads/staff/', $fileName, 'public');
+            $staff->foto_profil = $filePath;
+        }
+
         // Update data staff jika ada perubahan
         if ($request->filled('name')) $staff->name = $request->name;
         if ($request->filled('email')) $staff->email = $request->email;
         if ($request->filled('no_telepon')) $staff->no_telepon = $request->no_telepon;
         if ($request->filled('foto_profil')) $staff->foto_profil = $request->foto_profil;
         if ($request->filled('password')) $staff->password = bcrypt($request->password);
-        if ($request->filled('status')) $staff->status = $request->status;
-        if ($request->filled('hak_akses_CRUD')) $staff->hak_akses_CRUD = $request->hak_akses_CRUD;
-        if ($request->filled('hak_akses_approve')) $staff->hak_akses_approve = $request->hak_akses_approve;
     
         $staff->save(); // Simpan perubahan ke database
     

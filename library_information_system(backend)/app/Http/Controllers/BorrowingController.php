@@ -6,6 +6,7 @@ use App\Models\Activity_Staff;
 use App\Models\Borrowing;
 use Illuminate\Http\Request;
 use App\Models\Book;
+use App\Models\Student;
 
 class BorrowingController extends Controller
 {
@@ -19,6 +20,17 @@ class BorrowingController extends Controller
                 'message' => 'Data Kosong',
             ], 404);
         }
+
+
+        foreach ($borrowings as $borrowing) {
+            
+        if ($borrowing->status == 'dipinjam' && $borrowings->tanggal_pengembalian < now()) {
+            # code...
+            $borrowings->update([
+                'status' => 'telat'
+            ]);
+        }
+    }
 
         return response()->json([
             'message' => 'Berhasil menampilkan data',
@@ -42,6 +54,7 @@ class BorrowingController extends Controller
             
             $existingBorrowingPinjam = Borrowing::where('id_siswa', $user->id_siswa)->where('kode_buku', $request->kode_buku)->where('status', 'dipinjam')->first();
             $existingBorrowingPending = Borrowing::where('id_siswa', $user->id_siswa)->where('kode_buku', $request->kode_buku)->where('status', 'pending')->first();
+
 
             if ($existingBorrowingPinjam) {
                 # code...
@@ -76,6 +89,25 @@ class BorrowingController extends Controller
                 'error' => $e->getMessage()
             ], 500);
         }
+    }
+
+    //Menampilkan Peminjaman untuk siswa sendiri tanpa bisa melihat peminjaman orang lain
+    public function showPeminjamanStudent(){
+
+        $user = auth()->user(); //ambil dari token
+
+        $borrowings = Borrowing::where('id_siswa', $user->id_siswa)->get();
+
+        if ($borrowings->isEmpty()) {
+            return response()->json([
+                'message' => 'Data Kosong',
+            ], 404);
+        }
+        
+        return response()->json([
+            'message' => 'Berhasil menampilkan data',
+            'data' => $borrowings,
+        ], 200);
     }
 
     // Menampilkan detail peminjaman
@@ -123,8 +155,6 @@ class BorrowingController extends Controller
 
         
         $borrowing->save();
-
-
 
         return response()->json([
             'message' => 'Peminjaman sukses diupdate',
@@ -201,6 +231,7 @@ class BorrowingController extends Controller
         ]);
 
         $borrowing = Borrowing::where('id_peminjaman', $id_peminjaman)->where('kode_buku', $kode_buku)->first();
+        $nama_peminjam = Student::where('id_siswa', $borrowing->id_siswa)->first();
         $book = Book::where('kode_buku', $borrowing->kode_buku)->first();
 
         if (!$borrowing) {
@@ -238,18 +269,20 @@ class BorrowingController extends Controller
             ], 400);
         }
         
-          
-
 
         if ($request->status == 'dikembalikan') {
-            # code...
+
             $book->increment('stok', 1);
             $borrowing->status = $request->status;
             $borrowing->save();
             return response()->json([
                 'message' => 'oke buku sudah dikembalikan',
                 'data' => $borrowing,
-                'stok'=> $book->stok
+                'stok'=> $book->stok,
+                'Aktivitas'=> Activity_Staff::create([
+                    'id_staff' => auth()->user()->id_staff,
+                    'id_peminjaman' => $borrowing->id_peminjaman,
+                ])
             ]);
         }
 
@@ -260,6 +293,11 @@ class BorrowingController extends Controller
             return response()->json([
                 'message' => 'status Peminjaman Berhasil ditolak',
                 'data' => $borrowing,
+                'Aktivitas' => Activity_Staff::create([
+                    'id_staff' => auth()->user()->id_staff,
+                    'id_siswa' => $borrowing->id_siswa,
+                    'aktivitas' => auth()->user()->name .'tolak status peminjaman buku dari '.$nama_peminjam,
+                ])
             ]);
         }
 
@@ -274,9 +312,8 @@ class BorrowingController extends Controller
             'stok' => $book->stok,
             Activity_Staff::create([
                 'id_staff' => auth()->user()->id_staff,
-                'id_peminjaman' => $borrowing->id_peminjaman,
                 'id_siswa' => $borrowing->id_siswa,
-                'aktivitas' => auth()->user()->name .'approve status peminjaman buku dari '.$borrowing->id_siswa,
+                'aktivitas' => auth()->user()->name .'approve status peminjaman buku dari '.$nama_peminjam,
             ])
         ],200);
     }
