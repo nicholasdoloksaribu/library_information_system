@@ -16,7 +16,7 @@ class BookSeeder extends Seeder
     {
         DB::table('books')->insert([
             [
-                'kode_buku' => 'B001',
+                'kode_buku' => '1',
                 'judul' => 'Pemrograman Laravel',
                 'pengarang' => 'Nicholas Doloksaribu',
                 'penerbit' => 'Informatika Bandung',
@@ -30,7 +30,7 @@ class BookSeeder extends Seeder
                 'kategori' => 'Teknologi',
             ],
             [
-                'kode_buku' => 'B002',
+                'kode_buku' => '2',
                 'judul' => 'Dasar-dasar Matematika Diskrit',
                 'pengarang' => 'Budi Santoso',
                 'penerbit' => 'Graha Ilmu',
@@ -44,7 +44,7 @@ class BookSeeder extends Seeder
                 'kategori' => 'Matematika',
             ],
             [
-                'kode_buku' => 'B003',
+                'kode_buku' => '3',
                 'judul' => 'Pengantar Kecerdasan Buatan',
                 'pengarang' => 'Sari Lestari',
                 'penerbit' => 'DeepPublish',
