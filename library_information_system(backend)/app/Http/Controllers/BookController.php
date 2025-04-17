@@ -85,22 +85,28 @@ class BookController extends Controller
     }
 
     public function show($kode_buku)
-    {
-        $book = Book::with('ratings')->where('kode_buku', $kode_buku)->first();
-        if($book){
-            $totalRating = $book->ratings->sum('rating');
-            $jumlahOrang = $book->ratings->count();
-            $averageRating = $jumlahOrang > 0 ? round($totalRating / $jumlahOrang, 2) : 0;
-            return response()->json(
-                [
-                   'Book' => $book,
-                   'Rata-Rata rating' => $averageRating
-                ]);
-        }
+{
+    // Ambil buku beserta relasi borrowings yang statusnya dikembalikan dan memiliki rating
+    $book = Book::with(['borrowings' => function ($query) {
+        $query->whereNotNull('rating')->where('status', 'dikembalikan');
+    }])->where('kode_buku', $kode_buku)->first();
+
+    if ($book) {
+        $totalRating = $book->borrowings->sum('rating');
+        $jumlahOrang = $book->borrowings->count();
+        $averageRating = $jumlahOrang > 0 ? round($totalRating / $jumlahOrang, 2) : 0;
+
         return response()->json([
-            'message' => 'Buku tidak ditemukan'
-        ], 404);
+            'Book' => $book,
+            'Rata-Rata rating' => $averageRating
+        ]);
     }
+
+    return response()->json([
+        'message' => 'Buku tidak ditemukan'
+    ], 404);
+}
+
 
     public function update(Request $request, $kode_buku){
         $book = Book::where('kode_buku', $kode_buku)->first();
