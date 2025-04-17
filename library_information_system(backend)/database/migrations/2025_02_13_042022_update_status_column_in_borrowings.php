@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::table('borrowings', function (Blueprint $table) {
             //
             $table->enum('status', ['dipinjam', 'dikembalikan','pending','ditolak','telat'])->default('pending')->nullable()->change();
+            $table->unsignedTinyInteger('rating')->nullable()->after('kode_buku')->comment('Rating dari 1-5');
         });
     }
 
