@@ -204,7 +204,7 @@ class BorrowingController extends Controller
     public function filter($status)
     {
         // Validasi status
-        $validStatuses = ['pending', 'approved', 'returned'];
+        $validStatuses = ['dipinjam', 'dikembalikan', 'pending', 'ditolak'];
         if (!in_array($status, $validStatuses)) {
             return response()->json([
                 'message' => 'Status tidak valid'
@@ -225,7 +225,7 @@ class BorrowingController extends Controller
         ], 200);
     }
 
-    public function updateStatus(Request $request, $id_peminjaman, $kode_buku){
+    public function updateStatusPeminjaman(Request $request, $id_peminjaman, $kode_buku){
         $request->validate([
             'status' => 'required|in:dipinjam,pending,dikembalikan,ditolak'
         ]);
@@ -282,6 +282,7 @@ class BorrowingController extends Controller
                 'Aktivitas'=> Activity_Staff::create([
                     'id_staff' => auth()->user()->id_staff,
                     'id_peminjaman' => $borrowing->id_peminjaman,
+                    'aktivitas' => auth()->user()->name . ' menyetujui pengembalian buku dari'
                 ])
             ]);
         }
@@ -296,7 +297,7 @@ class BorrowingController extends Controller
                 'Aktivitas' => Activity_Staff::create([
                     'id_staff' => auth()->user()->id_staff,
                     'id_siswa' => $borrowing->id_siswa,
-                    'aktivitas' => auth()->user()->name .'tolak status peminjaman buku dari '.$nama_peminjam,
+                    'aktivitas' => auth()->user()->name .' menolak status peminjaman buku dari '.$nama_peminjam,
                 ])
             ]);
         }
@@ -307,13 +308,13 @@ class BorrowingController extends Controller
         $book->save();
 
         return response()->json([
-            'message' => 'status Peminjaman Berhasil disetujui sekarang user sudah bisa pinjam buku nya',
+            'message' => 'status Peminjaman Berhasil disetujui sekarang siswa sudah bisa pinjam buku nya',
             'data' => $borrowing,
             'stok' => $book->stok,
             Activity_Staff::create([
                 'id_staff' => auth()->user()->id_staff,
                 'id_siswa' => $borrowing->id_siswa,
-                'aktivitas' => auth()->user()->name .'approve status peminjaman buku dari '.$nama_peminjam,
+                'aktivitas' => auth()->user()->name .' approve status peminjaman buku dari '.$nama_peminjam
             ])
         ],200);
     }
@@ -357,6 +358,7 @@ class BorrowingController extends Controller
     ], 200);
     }
     
+
     public function beriRating(Request $request, $id_peminjaman)
 {
     $user = auth()->user();
