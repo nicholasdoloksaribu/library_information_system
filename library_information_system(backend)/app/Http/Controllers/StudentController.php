@@ -206,7 +206,7 @@ class StudentController extends Controller
     }
 }
 
-public function updateStatus(Request $request, $id_siswa)
+public function updateStatusSiswa(Request $request, $id_siswa)
 {
     // Validasi request
     $request->validate([
@@ -245,8 +245,6 @@ public function updateStatus(Request $request, $id_siswa)
     }
 }
 
-
-
 public function destroy($id_siswa)
 {
     try {
@@ -277,29 +275,6 @@ public function search($search)
         ->get();
 
     return response()->json($students);
-}
-
-public function updateRatings(Request $request, $kode_buku)
-{
-    $request->validate([
-        'rating' => 'required|integer|min:1|max:5',
-    ]);
-
-    $id_siswa = auth()->user()->id_siswa;
-
-    $student = Student::find($id_siswa);
-    if (!$student) {
-        return response()->json(['message' => 'Siswa tidak ditemukan'], 404);
-    }
-
-    $rating = Rating::where('kode_buku', $kode_buku)->where('id_siswa', $id_siswa)->first();
-    if ($rating) {
-        $rating->update($request->all());
-        return response()->json(['message' => 'Rating updated successfully', 'data' => $rating]);
-    } else {
-        return response()->json(['message' => 'Rating not found'], 404);
-    }
-
 }
 
 }
