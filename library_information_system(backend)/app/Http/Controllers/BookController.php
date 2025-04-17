@@ -267,7 +267,4 @@ public function trainModel()
 
     return response()->json($result);
 }
-
-    
-    
 }
