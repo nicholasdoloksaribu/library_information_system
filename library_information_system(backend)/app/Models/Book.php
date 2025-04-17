@@ -30,7 +30,7 @@ class Book extends Model
 
     public function borrowings() : HasMany
     {
-        return $this->hasMany(Borrowing::class);
+        return $this->hasMany(Borrowing::class,'kode_buku','kode_buku');
     }
 
     public function ratings() : HasMany
