@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Student;
 use Illuminate\Support\Facades\Hash;
+use Faker\Factory as Faker;
 
 class StudentSeeder extends Seeder
 {
@@ -14,29 +15,19 @@ class StudentSeeder extends Seeder
      */
     public function run(): void
     {
-         $students = [
-            [
-                'name' => 'Andi Wijaya',
-                'email' => 'andi@example.com',
-                'no_telepon' => '081234567890',
-                'password' => Hash::make('Andi-123'),
-                'tanggal_daftar' => now(),
-                'foto_profil' => null,
-                'status' => 'approved'
-            ],
-            [
-                'name' => 'Budi Santoso',
-                'email' => 'budi@example.com',
-                'no_telepon' => '081298765432',
-                'password' => Hash::make('Budi-123'),
-                'tanggal_daftar' => now(),
-                'foto_profil' => null,
-                'status' => 'approved'
-            ],
-        ];
+        $faker = Faker::create();
 
-        foreach ($students as $student) {
-            Student::create($student);
+        // Misalnya kita mau generate 10 siswa
+        for ($i = 0; $i < 10; $i++) {
+            Student::create([
+                'name' => $faker->name,
+                'email' => $faker->unique()->safeEmail,
+                'no_telepon' => $faker->phoneNumber,
+                'password' => Hash::make('Nicholas-123'), // semua default password sama
+                'tanggal_daftar' => now(),
+                'foto_profil' => null,
+                'status' => 'approved'
+            ]);
         }
     }
 }
