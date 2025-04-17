@@ -231,8 +231,8 @@ class BookController extends Controller
         $client = new \GuzzleHttp\Client();
         $response = $client->post('http://127.0.0.1:5000/recommend', [
             'json' => [
-                'user_id' => $id_siswa,
-                'top_k' => 5
+                'user_id' => (string) $id_siswa,
+                'top_k' => 3
             ]
         ]);
 
@@ -240,7 +240,7 @@ class BookController extends Controller
 
         return response()->json([
             'message' => 'Rekomendasi berdasarkan model Flask',
-            'recommendations' => $recommendations['recommendations']
+            'recommendations' => $recommendations['recommendations'],
         ]);
 
     } catch (\Exception $e) {
@@ -255,19 +255,22 @@ public function trainModel()
 {
     $data = Borrowing::select('id_siswa', 'kode_buku', 'rating')
         ->whereNotNull('rating')
-        ->get();
+        ->get()->map(function ($item) {
+            return [
+                'user_id' => (string) $item->id_siswa,
+                'book_id' => (string) $item->kode_buku,
+                'rating' =>  $item->rating,
+            ];
+        })->values()->toArray();
 
     $client = new \GuzzleHttp\Client();
 
     $response = $client->post('http://127.0.0.1:5000/train', [
-        'json' => ['data' => $data->toArray()]
+        'json' => ['data' => $data]
     ]);
 
     $result = json_decode($response->getBody(), true);
 
     return response()->json($result);
 }
-
-    
-    
 }
