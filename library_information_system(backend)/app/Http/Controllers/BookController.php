@@ -8,6 +8,8 @@ use App\Models\Activity_Staff as ActivityStaff;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use App\Models\Borrowing;
+use App\Models\Student;
 
 class BookController extends Controller
 {
@@ -188,6 +190,84 @@ class BookController extends Controller
             'message' => 'Buku tidak ditemukan'
         ], 404);
     }
+
+    public function recommendBuku()
+    {
+    $id_siswa = auth()->user()->id_siswa;
+    $siswa = Student::find($id_siswa);
+
+    if (!$siswa) {
+        return response()->json(['message' => 'Siswa tidak ditemukan'], 404);
+    }
+
+    // Cek apakah siswa ini sudah pernah meminjam
+    $jumlahPeminjaman = Borrowing::where('id_siswa', $id_siswa)->count();
+
+    if ($jumlahPeminjaman === 0) {
+        // 🔁 Belum pernah minjam → ambil buku rating tertinggi
+        $books = Book::with('borrowings')
+            ->get()
+            ->map(function ($book) {
+                $ratings = $book->borrowings->pluck('rating')->filter();
+                $avg = $ratings->count() > 0 ? round($ratings->avg(), 2) : 0;
+                return [
+                    'kode_buku' => $book->kode_buku,
+                    'judul' => $book->judul,
+                    'average_rating' => $avg,
+                ];
+            })
+            ->sortByDesc('average_rating')
+            ->values()
+            ->take(10)->where('average_rating', '>', 0); // ambil 10 buku teratas
+
+        return response()->json([
+            'message' => 'Rekomendasi buku berdasarkan rating tertinggi',
+            'recommendations' => $books
+        ]);
+    }
+
+    // ✅ Sudah pernah minjam → kirim request ke Flask
+    try {
+        $client = new \GuzzleHttp\Client();
+        $response = $client->post('http://127.0.0.1:5000/recommend', [
+            'json' => [
+                'user_id' => $id_siswa,
+                'top_k' => 5
+            ]
+        ]);
+
+        $recommendations = json_decode($response->getBody(), true);
+
+        return response()->json([
+            'message' => 'Rekomendasi berdasarkan model Flask',
+            'recommendations' => $recommendations['recommendations']
+        ]);
+
+    } catch (\Exception $e) {
+        return response()->json(
+            ['message' => 'Gagal mendapatkan rekomendasi dari model',
+             'error' => $e->getMessage()
+         ], 500);
+    }
+}
+
+public function trainModel()
+{
+    $data = Borrowing::select('id_siswa', 'kode_buku', 'rating')
+        ->whereNotNull('rating')
+        ->get();
+
+    $client = new \GuzzleHttp\Client();
+
+    $response = $client->post('http://127.0.0.1:5000/train', [
+        'json' => ['data' => $data->toArray()]
+    ]);
+
+    $result = json_decode($response->getBody(), true);
+
+    return response()->json($result);
+}
+
     
     
 }
