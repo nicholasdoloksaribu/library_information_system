@@ -25,7 +25,7 @@ class StaffSeeder extends Seeder
                 'no_telepon' => $faker->phoneNumber,
                 'foto_profil' => null, // karena nullable
                 'tanggal_daftar' => $faker->date(),
-                'password' => Hash::make('password123'), // default password
+                'password' => Hash::make('Nicholas-123'), // default password
             ]);
         }
     }
