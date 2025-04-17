@@ -75,7 +75,7 @@ class BorrowingController extends Controller
                 'tanggal_pinjam' => $request->tanggal_pinjam,
                 'tanggal_pengembalian' => $request->tanggal_pengembalian,
                 'status' => 'pending',
-                'kode_buku' => $request->kode_buku
+                'kode_buku' => $request->kode_buku,
             ]);
                 # code...
                return response()->json([
@@ -356,4 +356,42 @@ class BorrowingController extends Controller
         'data' => $peminjaman
     ], 200);
     }
+    
+    public function beriRating(Request $request, $id_peminjaman)
+{
+    $user = auth()->user();
+
+    // Validasi input
+    $request->validate([
+        'rating' => 'required|integer|min:1|max:5',
+    ]);
+
+    // Cari data peminjaman
+    $borrowing = Borrowing::where('id_peminjaman', $id_peminjaman)
+        ->where('id_siswa', $user->id_siswa)
+        ->first();
+
+    if (!$borrowing) {
+        return response()->json([
+            'message' => 'Peminjaman tidak ditemukan',
+        ], 404);
+    }
+
+    if ($borrowing->status !== 'dikembalikan') {
+        return response()->json([
+            'message' => 'Rating hanya bisa diberikan setelah buku dikembalikan',
+        ], 403);
+    }
+
+    // Update rating
+    $borrowing->rating = $request->rating;
+    $borrowing->save();
+
+    return response()->json([
+        'message' => 'Rating berhasil disimpan',
+        'data' => $borrowing
+    ], 200);
 }
+
+}
+
