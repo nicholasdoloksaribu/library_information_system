@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('foto_buku')->nullable();
             $table->integer('stok')->default(1);
             $table->string('rak')->nullable();
-            $table->string('kategori')->nullable(); 
+            $table->string('kategori')->nullable();
             $table->timestamps();
         });
     }

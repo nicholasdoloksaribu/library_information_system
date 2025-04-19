@@ -3,30 +3,33 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Borrowing;
-use Carbon\Carbon;
-use Faker\Factory as Faker;
+use App\Models\Book; // Import the Book model
+use App\Models\Borrowing; // Import the Borrowing model
+use App\Models\Student; // Import the Student model
+
 
 class BorrowingSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        $faker = Faker::create();
+        $bookIds = Book::pluck('kode_buku')->toArray();
+        $studentIds = Student::pluck('id_siswa')->toArray();
 
-        // Daftar id siswa dan kode buku yang tersedia di database
-        $id_siswa_list = range(1, 13); // sesuaikan jumlah siswa yang ada
-        $kode_buku_list = [101, 102, 103, 104, 105, 106, 107, 108, 109, 110 ]; // sesuaikan dengan kode buku yang ada di tabel books
+        if (empty($bookIds) || empty($studentIds)) {
+            echo "No books or students found. Please seed the books and students tables first.\n";
+            return;
+        }
 
-        foreach (range(1, 30) as $i) {
+        for ($i = 0; $i < 30; $i++) {
+            $randomBookId = $bookIds[array_rand($bookIds)];
+            $randomStudentId = $studentIds[array_rand($studentIds)];
+
             Borrowing::create([
-                'id_siswa' => $faker->randomElement($id_siswa_list),
-                'kode_buku' => $faker->randomElement($kode_buku_list),
-                'tanggal_pinjam' => Carbon::now()->subDays(rand(1, 30)),
-                'tanggal_pengembalian' => Carbon::now()->addDays(rand(1, 14)),
-                'rating' => $faker->numberBetween(1, 5),
+                'id_siswa' => $randomStudentId,
+                'kode_buku' => $randomBookId,
+                'tanggal_pinjam' => now(),
+                'tanggal_pengembalian' => now()->addDays(rand(7, 14)),
+                'rating' => rand(1, 5),
             ]);
         }
     }

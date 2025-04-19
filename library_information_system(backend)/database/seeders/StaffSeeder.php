@@ -10,9 +10,6 @@ use Faker\Factory as Faker;
 
 class StaffSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         //
@@ -23,9 +20,9 @@ class StaffSeeder extends Seeder
                 'name' => $faker->name,
                 'email' => $faker->unique()->safeEmail,
                 'no_telepon' => $faker->phoneNumber,
-                'foto_profil' => null, // karena nullable
+                'foto_profil' => null,
                 'tanggal_daftar' => $faker->date(),
-                'password' => Hash::make('Nicholas-123'), // default password
+                'password' => Hash::make('password123'),
             ]);
         }
     }

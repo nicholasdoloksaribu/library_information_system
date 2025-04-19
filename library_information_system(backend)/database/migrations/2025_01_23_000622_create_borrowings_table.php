@@ -13,18 +13,16 @@ return new class extends Migration
     {
         Schema::create('borrowings', function (Blueprint $table) {
             $table->bigIncrements('id_peminjaman');
-            $table->unsignedBigInteger('id_siswa');            
+            $table->unsignedBigInteger('id_siswa');
             $table->date('tanggal_pinjam');
             $table->date('tanggal_pengembalian');
             $table->enum('status', ['dipinjam', 'dikembalikan'])->default('dipinjam')->nullable();
             $table->string('kode_buku');
-            
+
             $table->timestamps();
 
-            //menambahkan foreign key
-            $table->foreign('kode_buku')->references('kode_buku')->on('books')->onDelete('cascade');
-            $table->foreign('id_siswa')->references('id_siswa')->on('students')->onDelete('cascade');
-        
+            $table->foreign('kode_buku', 'fk_borrowings_kode_buku')->references('kode_buku')->on('books')->onDelete('cascade');
+            $table->foreign('id_siswa', 'fk_borrowings_id_siswa')->references('id_siswa')->on('students')->onDelete('cascade');
         });
     }
 

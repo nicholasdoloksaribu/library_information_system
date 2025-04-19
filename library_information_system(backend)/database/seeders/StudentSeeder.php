@@ -10,9 +10,6 @@ use Faker\Factory as Faker;
 
 class StudentSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $faker = Faker::create();
@@ -23,7 +20,7 @@ class StudentSeeder extends Seeder
                 'name' => $faker->name,
                 'email' => $faker->unique()->safeEmail,
                 'no_telepon' => $faker->phoneNumber,
-                'password' => Hash::make('Nicholas-123'), // semua default password sama
+                'password' => Hash::make('password123'),
                 'tanggal_daftar' => now(),
                 'foto_profil' => null,
                 'status' => 'approved'
