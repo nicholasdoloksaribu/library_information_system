@@ -32,7 +32,7 @@ class BookController extends Controller
             'call_number' => 'required|string',
             'deskripsi' => 'nullable|string',
             'isbn' => 'nullable|string',
-            'foto_buku' => 'nullable|string',
+            'foto_buku' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'stok' => 'required|integer',
             'rak' => 'required|string',
             'kategori' => 'nullable|string'
@@ -48,9 +48,17 @@ class BookController extends Controller
             $book->call_number = $validatedData['call_number'];
             $book->deskripsi = $validatedData['deskripsi'];
             $book->isbn = $validatedData['isbn'];
-            $book->foto_buku = $validatedData['foto_buku'];
             $book->stok = $validatedData['stok'];
             $book->rak = $validatedData['rak'];
+
+
+        // Jika ada foto buku yang diupload, simpan ke storage dan ambil path-nya
+        if ($request->hasFile('foto_buku')) {
+            $file = $request->file('foto_buku');
+            $fileName = $file->getClientOriginalName();
+            $filePath = $file->storeAs('uploads/buku', $fileName, 'public');
+            $book->foto_buku = $filePath;
+        }
             $book->save();
 
         // 3. Kirim data ke FastAPI untuk prediksi kategori
@@ -66,6 +74,10 @@ class BookController extends Controller
         if ($kategori_diprediksi) {
             $book->update(['kategori' => $kategori_diprediksi]);
         }
+        
+        
+
+
 
     } catch (\Exception $e) {
         // Tangani jika FastAPI tidak merespons
@@ -73,18 +85,19 @@ class BookController extends Controller
     }
 
     //    Menambahkan activity staff
-    //    ActivityStaff::create([
-    //     'id_staff' => auth()->user()->id_staff,
-    //     'kode_buku' => $book->kode_buku,
-    //     'aktivitas'=> 'Menambahkan buku',
-    //     'timestamp' => now()
-    //    ]);
+       ActivityStaff::create([
+        'id_staff' => auth()->user()->id_staff,
+        'kode_buku' => $book->kode_buku,
+        'aktivitas'=> auth()->user()->name .'Menambahkan buku berjudul ' . $book->judul,
+        'timestamp' => now()
+       ]);
 
        return response()->json([
            'message' => 'Buku sukses ditambahkan',
            'data' => $book
        ], 201);
     }
+    
 
     public function show($kode_buku)
 {
@@ -114,28 +127,54 @@ class BookController extends Controller
         $book = Book::where('kode_buku', $kode_buku)->first();
         
         $request->validate([
-            'judul' => 'nullable|required|string',
-            'pengarang' => 'nullable|required|string',
-            'penerbit' => 'nullable|required|string',
-            'tahun_terbit' => 'nullable|required|integer',
+            'judul' => 'nullable|string',
+            'pengarang' => 'nullable|string',
+            'penerbit' => 'nullable|string',
+            'tahun_terbit' => 'nullable|integer',
             'deskripsi' => 'nullable|string',
-            'foto_buku' => 'nullable|string',
-            'stok' => 'nullable|required|integer',
-            'lantai' => 'nullable|required|string',
-            'rak' => 'nullable|required|string',
-            'kategori' => 'nullable|required|string'
+            'call_number' => 'nullable|string',
+            'isbn' => 'nullable|string',
+            'foto_buku' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'stok' => 'nullable|integer',
+            'rak' => 'nullable|string',
+            'kategori' => 'nullable|string'
         ]);
 
         try {
-       
-            $book->update($request->all());
+            if($request->filled('judul')) $book->judul = $request->judul;
+            if($request->filled('pengarang')) $book->pengarang = $request->pengarang;
+            if($request->filled('penerbit')) $book->penerbit = $request->penerbit;
+            if($request->filled('tahun_terbit')) $book->tahun_terbit = $request->tahun_terbit;
+            if($request->filled('deskripsi')) $book->deskripsi = $request->deskripsi;
+            if($request->filled('stok')) $book->stok = $request->stok;
+            if($request->filled('lantai')) $book->lantai = $request->lantai;
+            if($request->filled('rak')) $book->rak = $request->rak;
+            if($request->filled('kategori')) $book->kategori = $request->kategori;
+
+            if ($request->hasFile('foto_buku')) {
+
+                // Hapus foto buku yang lama jika ada
+                if ($book->foto_buku) {
+                    $oldFilePath = public_path('storage/uploads/buku/' . $book->foto_buku);
+                    if (file_exists($oldFilePath)) {
+                        unlink($oldFilePath);
+                    }
+                }
+
+                // Simpan foto buku yang baru
+                $file = $request->file('foto_buku');
+                $fileName = $file->getClientOriginalName();
+                $filePath = $file->storeAs('uploads/buku', $fileName, 'public');
+                $book->foto_buku = $filePath;
+            }
+            
             return response()->json([
                 'message' => 'Buku sukses diupdate',
                 'data' => $book,
                 ActivityStaff::create([
                     'id_staff' => auth()->user()->id_staff,
                     'kode_buku' => $book->kode_buku,
-                    'aktivitas'=> 'Mengupdate buku',
+                    'aktivitas'=> auth()->user()->name  .' Mengupdate buku berjudul ' . $book->judul,
                     'timestamp' => now()
                 ])
             ], 200);
