@@ -48,7 +48,6 @@ class RatingController extends Controller
             ], 422);
         }
 
-        
         try {
             $rating = Rating::create([
                 'kode_buku' => $request->kode_buku,
