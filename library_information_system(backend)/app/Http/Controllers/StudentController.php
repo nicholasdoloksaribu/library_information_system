@@ -91,9 +91,9 @@ class StudentController extends Controller
         if ($request->hasFile('foto_profil')) {
             $file = $request->file('foto_profil');
             $fileName = $file->getClientOriginalName();
-            $filePath = $file->storeAs('uploads/foto_profil', $fileName, 'public');
+            $filePath = $file->storeAs('uploads/mahasiswa', $fileName, 'public');
         }
-        
+
         try {
             $student = Student::create([
                 'name' => $request->name,
@@ -104,8 +104,6 @@ class StudentController extends Controller
                 'password' => bcrypt($request->password),
                 'status' =>'pending'
             ]);
-            
-
 
              # code...
             return response()->json([
@@ -172,22 +170,18 @@ class StudentController extends Controller
 
         //hapus foto lama 
         if ($student->foto_profil && file_exists(storage_path('app/public/' . $student->foto_profil))) {
-            Storage::delete('public/' . $student->foto_profil);
+            Storage::delete('public/storage/uploads/mahasiswa/' . $student->foto_profil);
         }
 
         $file = $request->file('foto_profil');
         $fileName = $file->getClientOriginalName();
-        $filePath = $file->storeAs('uploads/foto_profil', $fileName, 'public');
+        $filePath = $file->storeAs('uploads/mahasiswa', $fileName, 'public');
         $validatedData['foto_profil'] = $filePath;
-        # code...
     } else{
         $validatedData['foto_profil'] = $student->foto_profil;
     }
 
     $student->save();
-        
-
-
         return response()->json([
             'message' => 'Data Siswa sukses diupdate',
             'data' => $student
