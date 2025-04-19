@@ -167,6 +167,16 @@ class StaffController extends Controller
 
         // Cek apakah foto profil diupload
         if ($request->hasFile('foto_profil')) {
+
+            // Hapus foto profil lama jika ada
+            if ($staff->foto_profil) {
+                $oldFilePath = public_path('storage/uploads/staff/' . $staff->foto_profil);
+                if (file_exists($oldFilePath)) {
+                    unlink($oldFilePath);
+                }
+            }
+
+            // Simpan foto profil baru
             $foto_profil = $request->file('foto_profil');
             $fileName = $foto_profil->getClientOriginalName();
             $filePath = $foto_profil->storeAs('uploads/staff/', $fileName, 'public');
