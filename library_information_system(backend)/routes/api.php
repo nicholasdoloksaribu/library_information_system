@@ -21,7 +21,7 @@ use App\Http\Controllers\{
 
 // 🟢 **Route untuk Login & Register student**
 Route::post('/loginStudent', [AuthController::class, 'loginStudent']);
-Route::post('/students', [StudentController::class, 'register']);
+Route::post('/students/reg', [StudentController::class, 'register']);
 
 
 // 🟢 **Route untuk Login & Register Staff**
@@ -62,7 +62,7 @@ Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->gr
     
     // 📘 **Profil Student**
     Route::get('/', [StudentController::class, 'show']);
-    Route::put('/', [StudentController::class, 'update']);
+    Route::put('/upt', [StudentController::class, 'update']);
 
     // 🚪 **Logout Student**
     Route::post('/logoutStudent', [AuthController::class, 'logoutStudent']);

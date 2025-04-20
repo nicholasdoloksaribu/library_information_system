@@ -15,25 +15,24 @@ class BorrowingController extends Controller
     public function index()
     {
         $borrowings = Borrowing::all();
+
         if ($borrowings->isEmpty()) {
             return response()->json([
-                'message' => 'Data Kosong',
-            ], 404);
+                'message' => 'Belum ada data peminjaman',
+                'data' => []
+            ], 200);
         }
-
 
         foreach ($borrowings as $borrowing) {
-            
-        if ($borrowing->status == 'dipinjam' && $borrowings->tanggal_pengembalian < now()) {
-            # code...
-            $borrowings->update([
-                'status' => 'telat'
-            ]);
+            if ($borrowing->status == 'dipinjam' && $borrowing->tanggal_pengembalian < now()) {
+                $borrowing->update([
+                    'status' => 'telat'
+                ]);
+            }
         }
-    }
 
         return response()->json([
-            'message' => 'Berhasil menampilkan data',
+            'message' => 'Berhasil menampilkan data peminjaman',
             'data' => $borrowings
         ], 200);
     }
@@ -92,8 +91,8 @@ class BorrowingController extends Controller
     }
 
     //Menampilkan Peminjaman untuk siswa sendiri tanpa bisa melihat peminjaman orang lain
-    public function showPeminjamanStudent(){
-
+    public function showPeminjamanStudent()
+    {
         $user = auth()->user();
 
         $borrowings = Borrowing::where('id_siswa', $user->id_siswa)
@@ -102,8 +101,9 @@ class BorrowingController extends Controller
 
         if ($borrowings->isEmpty()) {
             return response()->json([
-                'message' => 'Data Kosong',
-            ], 404);
+                'message' => 'Tidak ada data peminjaman untuk siswa ini.',
+                'data' => []
+            ], 200);
         }
 
         $data = $borrowings->map(function ($borrowing) {
@@ -118,7 +118,7 @@ class BorrowingController extends Controller
         });
 
         return response()->json([
-            'message' => 'Berhasil menampilkan data',
+            'message' => 'Berhasil menampilkan data peminjaman siswa',
             'data' => $data,
         ], 200);
     }

@@ -89,7 +89,8 @@ class AuthController extends Controller
             'message' => 'Login berhasil',
             'token' => $token,
             'abilities' => $abilities, // Menampilkan abilities dari token yang dibuat
-            'staff' => $staff
+            'staff' => $staff,
+            'status' => 'success'
         ], 200);
     }
 
