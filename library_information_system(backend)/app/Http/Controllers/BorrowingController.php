@@ -94,19 +94,32 @@ class BorrowingController extends Controller
     //Menampilkan Peminjaman untuk siswa sendiri tanpa bisa melihat peminjaman orang lain
     public function showPeminjamanStudent(){
 
-        $user = auth()->user(); //ambil dari token
+        $user = auth()->user();
 
-        $borrowings = Borrowing::where('id_siswa', $user->id_siswa)->get();
+        $borrowings = Borrowing::where('id_siswa', $user->id_siswa)
+            ->with('book')
+            ->get();
 
         if ($borrowings->isEmpty()) {
             return response()->json([
                 'message' => 'Data Kosong',
             ], 404);
         }
-        
+
+        $data = $borrowings->map(function ($borrowing) {
+            return [
+                'id_peminjaman' => $borrowing->id_peminjaman,
+                'tanggal_pinjam' => $borrowing->tanggal_pinjam,
+                'tanggal_pengembalian' => $borrowing->tanggal_pengembalian,
+                'kode_buku' => $borrowing->kode_buku,
+                'status' => $borrowing->status,
+                'buku' => $borrowing->book,
+            ];
+        });
+
         return response()->json([
             'message' => 'Berhasil menampilkan data',
-            'data' => $borrowings,
+            'data' => $data,
         ], 200);
     }
 

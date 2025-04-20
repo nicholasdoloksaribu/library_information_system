@@ -52,7 +52,7 @@ Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->gr
     
     
     // 📌 **Peminjaman (Student hanya bisa melihat peminjamannya sendiri & meminjam buku)**
-    Route::get('/borrowings', [BorrowingController::class, 'showPeminjamanStudent']);
+    Route::get('/borrowings/sh', [BorrowingController::class, 'showPeminjamanStudent']);
     Route::post('/borrowings', [BorrowingController::class, 'store']);
     
     // 🌟 **Rating Buku**

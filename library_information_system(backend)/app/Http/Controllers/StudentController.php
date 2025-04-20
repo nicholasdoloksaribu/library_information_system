@@ -22,17 +22,10 @@ class StudentController extends Controller
         return $students;
     }
 
-    public function show($id_siswa)
+    public function show()
     {
 
     $student = auth()->user();
-
-    if ($student->id_siswa != $id_siswa) {
-        # code...
-        return response()->json([
-            'message' => 'anda tidak bisa lihat profil orang lain ya',
-        ], 403);
-    }
 
     if (!$student) {
         return response()->json([
