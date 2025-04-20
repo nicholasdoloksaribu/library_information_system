@@ -56,13 +56,13 @@ Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->gr
     Route::post('/borrowings', [BorrowingController::class, 'store']);
     
     // 🌟 **Rating Buku**
-    Route::get('/ratings', [RatingController::class, 'index']);
+    Route::get('/ratings/get', [RatingController::class, 'index']);
     Route::post('/ratings', [RatingController::class, 'store']);
     Route::put('/beriRating/{id_peminjaman}', [BorrowingController::class, 'beriRating']);
     
     // 📘 **Profil Student**
-    Route::get('/{id_siswa}', [StudentController::class, 'show']);
-    Route::put('/{id_siswa}', [StudentController::class, 'update']);
+    Route::get('/', [StudentController::class, 'show']);
+    Route::put('/', [StudentController::class, 'update']);
 
     // 🚪 **Logout Student**
     Route::post('/logoutStudent', [AuthController::class, 'logoutStudent']);

@@ -17,26 +17,17 @@ class RatingController extends Controller
     {
         $request->validate([
             'kode_buku' => 'required|string',
-            'id_siswa' => 'required|integer',
             'rating' => 'required|integer|min:1|max:5',
         ]);
 
         // Cek apakah kode_buku dan id_siswa ada di database
         $bookExist = DB::table('books')->where('kode_buku', $request->kode_buku)->exists();
-        $siswaExist = DB::table('students')->where('id_siswa', $request->id_siswa)->exists();
 
         // Jika salah satu tidak ditemukan, kembalikan 422
         if (!$bookExist) {
             return response()->json([
                 'message' => 'Kode Buku tidak ditemukan',
                 'errors' => ['kode_buku' => ['The selected kode_buku is invalid.']]
-            ], 422);
-        }
-
-        if (!$siswaExist) {
-            return response()->json([
-                'message' => 'ID Siswa tidak ditemukan',
-                'errors' => ['id_siswa' => ['The selected id_siswa is invalid.']]
             ], 422);
         }
 
@@ -51,7 +42,7 @@ class RatingController extends Controller
         try {
             $rating = Rating::create([
                 'kode_buku' => $request->kode_buku,
-                'id_siswa' => $request->id_siswa,
+                'id_siswa' => auth()->user()->id_siswa,
                 'rating' => $request->rating,
             ]);
 
