@@ -72,7 +72,7 @@ Route::middleware(['auth:sanctum', 'abilities:student'])->prefix('students')->gr
 Route::middleware(['auth:sanctum', 'abilities:staff', 'staff.access:crud_books'])->prefix('staff')->group(function () {
 
     // 📘 **Staff Management**
-    Route::get('/staffs/{id_staff}', [StaffController::class, 'show']);
+    Route::get('/', [StaffController::class, 'show']);
     Route::put('/staffs/{id_staff}', [StaffController::class, 'update']);
    
 

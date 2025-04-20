@@ -98,14 +98,10 @@ class StaffController extends Controller
 
     }
 
-    public function show($id_staff){
-        $staff = Staff::where('id_staff', $id_staff)->first();
-        if($staff){
-            return response()->json($staff);
-        }
-        return response()->json([
-            'message' => 'Staff tidak ditemukan'
-        ], 404);
+    public function show(Request $request)
+    {
+        $loggedInStaff = $request->user();
+        return $loggedInStaff;
     }
 
     public function updateProfil(Request $request, $id_staff){
