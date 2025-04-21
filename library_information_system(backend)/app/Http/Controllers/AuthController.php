@@ -65,34 +65,36 @@ class AuthController extends Controller
 
         $staff = Staff::where('email', $request->email)->first();
 
-        if ($staff->status == 'pending' ) {
-            # code...
-            return response()->json([
-                'message' => 'Akses ditolak. Status staff belum disetujui'
-            ],403);
+        if (!$staff) {
+            return $this->loginHeadperpustakaan($request);
         }
 
-        if (!$staff || !Hash::check($request->password, $staff->password)) {
+        if ($staff->status == 'pending') {
+            return response()->json([
+                'message' => 'Akses ditolak. Status staff belum disetujui'
+            ], 403);
+        }
+
+        if (!Hash::check($request->password, $staff->password)) {
             return response()->json([
                 'message' => 'Email atau password salah'
             ], 401);
         }
 
-        // Membuat token dan mendapatkan objeknya
         $createdToken = $staff->createToken('staff-token', ['staff']);
         $token = $createdToken->plainTextToken;
 
-        // Mengambil abilities dari token
         $abilities = $createdToken->accessToken->abilities ?? [];
 
         return response()->json([
             'message' => 'Login berhasil',
             'token' => $token,
-            'abilities' => $abilities, // Menampilkan abilities dari token yang dibuat
+            'abilities' => $abilities,
             'staff' => $staff,
             'status' => 'success'
         ], 200);
     }
+
 
     // Method untuk logout staff
     public function logoutStaff(Request $request)
@@ -128,7 +130,8 @@ class AuthController extends Controller
             'message' => 'Login berhasil',
             'token' => $token,
             'abilities' => $abilities, // Menampilkan abilities dari token yang dibuat
-            'headperpustakaan' => $headPerpustakaan
+            'headperpustakaan' => $headPerpustakaan,
+            'status' => 'success'
         ], 200);
     }
 

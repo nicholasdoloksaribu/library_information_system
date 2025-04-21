@@ -94,8 +94,6 @@ class StaffController extends Controller
             ], 400);
 
         }
-
-
     }
 
     public function show(Request $request)

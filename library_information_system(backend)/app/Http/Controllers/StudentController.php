@@ -36,6 +36,73 @@ class StudentController extends Controller
         return response()->json($student);
     }
 
+    public function store(Request $request)
+    {
+        try {
+            $request->validate([
+                'name' => 'required|string',
+                'email' => 'required|email|unique:students,email',
+                'no_telepon' => 'required|string|min:10|max:13|unique:students,no_telepon|regex:/^([0-9\s\-\+\(\)]*)$/',
+                'foto_profil' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'tanggal_daftar' => 'nullable|date',
+                'password' => 'required|string|min:6|confirmed',
+                'status' => 'nullable|string|in:pending,approved,rejected'
+            ]);
+
+            //cek apakah no telepon sudah digunakan
+            $noTeleponExist = Student::where('no_telepon', $request->no_telepon)->exists();
+            $noTeleponExistStaff = Staff::where('no_telepon', $request->no_telepon)->exists();
+            if ($noTeleponExist || $noTeleponExistStaff) {
+                return response()->json([
+                    'message' => 'No telepon sudah digunakan'
+                ], 400);
+            }
+
+            //cek apakah email sudah digunakan
+            $emailExistStudent = Student::where('email', $request->email)->exists();
+            $emailExistStaff = Staff::where('email', $request->email)->exists();
+            if ($emailExistStudent || $emailExistStaff) {
+                return response()->json([
+                    'message' => 'Email sudah digunakan'
+                ], 400);
+            }
+
+            $filePath = null;
+
+            if ($request->hasFile('foto_profil')) {
+                $file = $request->file('foto_profil');
+                $fileName = $file->getClientOriginalName();
+                $filePath = $file->storeAs('uploads/mahasiswa', $fileName, 'public');
+            }
+
+            $student = Student::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'no_telepon' => $request->no_telepon,
+                'foto_profil' => $filePath,
+                'tanggal_daftar' => now(),
+                'password' => Hash::make($request->password),
+                'status' => $request->status
+            ]);
+
+            return response()->json([
+                'message' => 'Registrasi Berhasil',
+                'data' => $student
+            ]);
+
+        } catch (ValidationException $e) {
+            return response()->json([
+                'message' => 'Validasi Gagal',
+                'errors' => $e->errors()
+            ], 422);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Siswa gagal ditambahkan',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
+
 
     public function register(Request $request)
     {

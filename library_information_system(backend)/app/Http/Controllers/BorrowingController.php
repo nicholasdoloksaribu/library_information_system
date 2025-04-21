@@ -14,7 +14,7 @@ class BorrowingController extends Controller
 
     public function index()
     {
-        $borrowings = Borrowing::all();
+        $borrowings = Borrowing::with('book', 'student')->get();
 
         if ($borrowings->isEmpty()) {
             return response()->json([

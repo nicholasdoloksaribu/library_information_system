@@ -73,13 +73,13 @@ Route::middleware(['auth:sanctum', 'abilities:staff', 'staff.access:crud_books']
 
     // 📘 **Staff Management**
     Route::get('/', [StaffController::class, 'show']);
-    Route::put('/staffs/{id_staff}', [StaffController::class, 'update']);
+    Route::put('/{id_staff}', [StaffController::class, 'update']);
    
 
     // 📚 **Manajemen Buku**
     Route::get('/books', [BookController::class, 'index']);
-    Route::post('/books', [BookController::class, 'store']);
-    Route::put('/books/{kode_buku}', [BookController::class, 'update']);
+    Route::post('/books/str', [BookController::class, 'store']);
+    Route::put('/books/upt/{id}', [BookController::class, 'update']);
     Route::delete('/books/{kode_buku}', [BookController::class, 'destroy']);
     Route::get('/books/search/{judul}', [BookController::class, 'search']);
 
@@ -131,8 +131,10 @@ Route::middleware(['auth:sanctum', 'abilities:headperpustakaan'])->prefix('headp
     [BookController::class, 'destroy']);
     Route::get('/books/search/{judul}', [BookController::class, 'search']);
 
+    Route::get('/', [StaffController::class, 'show']);
+
     //Manajemen Student
-    Route::get('/students', [StudentController::class, 'index']);
+    Route::get('/students/sh', [StudentController::class, 'index']);
     Route::post('/students', [StudentController::class, 'store']);
     Route::get('/students/{id_siswa}', [StudentController::class, 'show']);
     Route::put('/students/{id_siswa}', [StudentController::class, 'update']);
