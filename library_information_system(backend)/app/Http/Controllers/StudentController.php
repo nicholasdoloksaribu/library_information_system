@@ -26,7 +26,6 @@ class StudentController extends Controller
     {
 
         $student = auth()->user();
-
         if (!$student) {
             return response()->json([
                 'message' => 'Siswa tidak ditemukan'
@@ -34,7 +33,14 @@ class StudentController extends Controller
         }
 
         return response()->json($student);
+    if ($student instanceof Student && $student->id_siswa != $id_siswa) {
+        # code...
+        return response()->json([
+            'message' => 'anda tidak bisa lihat profil orang lain ya',
+        ], 403);
     }
+
+}
 
     public function store(Request $request)
     {
