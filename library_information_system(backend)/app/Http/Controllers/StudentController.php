@@ -32,7 +32,6 @@ class StudentController extends Controller
             ], 404);
         }
 
-        return response()->json($student);
     if ($student instanceof Student && $student->id_siswa != $id_siswa) {
         # code...
         return response()->json([
