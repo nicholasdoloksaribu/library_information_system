@@ -148,10 +148,10 @@ class BookController extends Controller
             return response()->json(['message' => 'Book updated successfully']);
         } catch (\Illuminate\Validation\ValidationException $e) {
             // Log validation errors
-            \Log::error('Validation errors: ', $e->errors());
+            Log::error('Validation errors: ', $e->errors());
             return response()->json(['errors' => $e->errors()], 422);
         } catch (\Exception $e) {
-            \Log::error('Error updating book: ', [$e->getMessage(), $e->getTraceAsString()]);
+            Log::error('Error updating book: ', [$e->getMessage(), $e->getTraceAsString()]);
             return response()->json(['message' => 'Failed to update book'], 500);
         }
     }
@@ -204,14 +204,39 @@ class BookController extends Controller
     {
         $id_siswa = auth()->user()->id_siswa;
         $siswa = Student::find($id_siswa);
-
+    
         if (!$siswa) {
             return response()->json(['message' => 'Siswa tidak ditemukan'], 404);
         }
-
-        // Cek apakah siswa ini sudah pernah meminjam
+    
+        // 🔁 Step 1: Selalu latih model dulu sebelum rekomendasi
+        try {
+            $trainingData = Borrowing::select('id_siswa', 'kode_buku', 'rating')
+                ->whereNotNull('rating')
+                ->get()
+                ->map(function ($item) {
+                    return [
+                        'user_id' => (string) $item->id_siswa,
+                        'book_id' => (string) $item->kode_buku,
+                        'rating' => (string) $item->rating,
+                    ];
+                })
+                ->values()
+                ->toArray();
+    
+            $client = new \GuzzleHttp\Client();
+            $client->post('http://127.0.0.1:5000/train', [
+                'json' => ['data' => $trainingData]
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Gagal melakukan pelatihan model',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    
+        // 🔄 Step 2: Cek apakah siswa ini sudah pernah meminjam
         $jumlahPeminjaman = Borrowing::where('id_siswa', $id_siswa)->count();
-
         if ($jumlahPeminjaman === 0) {
             // 🔁 Belum pernah minjam → ambil buku rating tertinggi
             $books = Book::with('borrowings')
@@ -226,9 +251,9 @@ class BookController extends Controller
                     ];
                 })
                 ->sortByDesc('average_rating')
+                ->where('average_rating', '>', 0)
                 ->values()
-                ->take(10)->where('average_rating', '>', 0); // ambil 10 buku teratas
-
+                ->take(10);
             return response()->json([
                 'message' => 'Rekomendasi buku berdasarkan rating tertinggi',
                 'recommendations' => $books
@@ -236,22 +261,24 @@ class BookController extends Controller
         }
 
         // ✅ Sudah pernah minjam → kirim request ke Flask
+
+    
+        // ✅ Step 3: Sudah pernah minjam → minta rekomendasi dari Flask
         try {
             $client = new \GuzzleHttp\Client();
             $response = $client->post('http://127.0.0.1:5000/recommend', [
                 'json' => [
-                    'user_id' => $id_siswa,
+                    'user_id' => (string) $id_siswa,
                     'top_k' => 5
                 ]
             ]);
-
+    
             $recommendations = json_decode($response->getBody(), true);
-
+    
             return response()->json([
                 'message' => 'Rekomendasi berdasarkan model Flask',
                 'recommendations' => $recommendations['recommendations']
             ]);
-
         } catch (\Exception $e) {
             return response()->json(
                 [
@@ -261,22 +288,5 @@ class BookController extends Controller
                 500
             );
         }
-    }
-
-    public function trainModel()
-    {
-        $data = Borrowing::select('id_siswa', 'kode_buku', 'rating')
-            ->whereNotNull('rating')
-            ->get();
-
-        $client = new \GuzzleHttp\Client();
-
-        $response = $client->post('http://127.0.0.1:5000/train', [
-            'json' => ['data' => $data->toArray()]
-        ]);
-
-        $result = json_decode($response->getBody(), true);
-
-        return response()->json($result);
     }
 }
