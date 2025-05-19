@@ -1,0 +1,19 @@
+body{
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.h-box{
+  height: calc(100% - 80px)
+}
+
+.h-manajemen-buku{
+  height: calc(100% - 4em);
+}
+
+.scroll{
+  overflow : auto;
+  scrollbar-width: none;
+}
+
+@import "tailwindcss";
